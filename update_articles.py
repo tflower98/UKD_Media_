@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """
-Nightly updater for the UK defence media map.
+Nightly updater for UK Defence Media Map.
 
-Fetches articles, updates JSON, and generates interactive index.html.
+Fetches articles from NewsAPI, generates interactive index.html with pinned articles support.
 """
 
 import json
+import os
 import re
 import sys
 import time
 import urllib.parse
 import urllib.request
-import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 from collections import defaultdict
@@ -19,9 +19,11 @@ from collections import defaultdict
 DATA_FILE = Path(__file__).parent / "data" / "journalists.json"
 INDEX_FILE = Path(__file__).parent / "index.html"
 MAX_ARTICLES = 5
-LOOKBACK = "30d"
 MOVE_FLAG_THRESHOLD = 2
-REQUEST_DELAY_SECONDS = 2
+REQUEST_DELAY_SECONDS = 1
+
+# NewsAPI key from environment (set in GitHub Secrets)
+NEWSAPI_KEY = os.environ.get("NEWSAPI_KEY", "")
 
 SYNDICATION_DOMAINS = {
     "news.google.com", "yahoo.com", "uk.yahoo.com", "ca.yahoo.com",
@@ -29,52 +31,65 @@ SYNDICATION_DOMAINS = {
 }
 
 
-def gnews_url(query: str) -> str:
-    q = urllib.parse.quote(f"{query} when:{LOOKBACK}")
-    return (
-        f"https://news.google.com/rss/search?q={q}"
-        f"&hl=en-GB&gl=GB&ceid=GB:en"
-    )
+def newsapi_url(query: str, page: int = 1) -> str:
+    """Build NewsAPI endpoint URL."""
+    params = {
+        "q": query,
+        "sortBy": "publishedAt",
+        "language": "en",
+        "pageSize": MAX_ARTICLES,
+        "page": page,
+        "apiKey": NEWSAPI_KEY,
+    }
+    return "https://newsapi.org/v2/everything?" + urllib.parse.urlencode(params)
 
 
 def default_query(journalist: dict) -> str:
+    """Generate search query for journalist."""
     name = journalist["name"]
-    return f'"{name}" defence OR defense OR military'
+    return f'"{name}" (defence OR defense OR military)'
 
 
-def fetch_feed(url: str) -> list[dict]:
+def fetch_articles(url: str) -> list[dict]:
+    """Fetch articles from NewsAPI."""
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        raw = resp.read()
-    root = ET.fromstring(raw)
-    items = []
-    for item in root.iter("item"):
-        title = (item.findtext("title") or "").strip()
-        link = (item.findtext("link") or "").strip()
-        pub = (item.findtext("pubDate") or "").strip()
-        source_el = item.find("source")
-        source_name = source_el.text.strip() if source_el is not None and source_el.text else ""
-        source_url = source_el.get("url", "") if source_el is not None else ""
-        items.append({
-            "title": title,
-            "link": link,
-            "published": pub,
-            "source_name": source_name,
-            "source_domain": domain_of(source_url or link),
-        })
-    return items
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+        
+        if data.get("status") != "ok":
+            print(f"[warn] NewsAPI error: {data.get('message', 'unknown')}", file=sys.stderr)
+            return []
+        
+        articles = []
+        for article in data.get("articles", []):
+            articles.append({
+                "title": article.get("title", "").strip(),
+                "link": article.get("url", "").strip(),
+                "published": article.get("publishedAt", "").strip(),
+                "source_name": article.get("source", {}).get("name", "Unknown"),
+                "source_domain": domain_of(article.get("url", "")),
+                "description": article.get("description", ""),
+            })
+        return articles
+    except Exception as exc:
+        print(f"[error] Failed to fetch from NewsAPI: {exc}", file=sys.stderr)
+        return []
 
 
 def domain_of(url: str) -> str:
+    """Extract domain from URL."""
     m = re.match(r"https?://(?:www\.)?([^/]+)", url or "")
     return m.group(1).lower() if m else ""
 
 
 def is_home(domain: str, home_domains: list[str]) -> bool:
+    """Check if domain is in home list."""
     return any(domain == h or domain.endswith("." + h) for h in home_domains)
 
 
 def check_for_move(journalist: dict, articles: list[dict]) -> dict | None:
+    """Flag possible job moves."""
     home = [d.lower() for d in journalist.get("outlet_domains", [])]
     if not home:
         return None
@@ -94,21 +109,17 @@ def check_for_move(journalist: dict, articles: list[dict]) -> dict | None:
         dom = foreign.pop()
         return {
             "type": "possible-move",
-            "detail": (
-                f"Last {MOVE_FLAG_THRESHOLD} bylines all from {dom}, "
-                f"expected one of {home}. Review manually."
-            ),
+            "detail": f"Last {MOVE_FLAG_THRESHOLD} bylines all from {dom}, expected one of {home}. Review manually.",
             "raised": datetime.now(timezone.utc).strftime("%Y-%m-%d"),
         }
     return None
 
 
 def generate_html(data: dict) -> str:
-    """Generate interactive index.html."""
+    """Generate interactive index.html with pinned articles support."""
     journalists = data.get("journalists", [])
     journalists_json = json.dumps(journalists, ensure_ascii=False)
     
-    # HTML template with embedded data
     html = '''<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -162,14 +173,16 @@ def generate_html(data: dict) -> str:
         .meta-info { display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.9rem; }
         .meta-item { display: flex; align-items: center; gap: 0.5rem; }
         .confidence-tag { background: #f0f4f8; color: #0f3460; padding: 0.3rem 0.6rem; border-radius: 3px; font-size: 0.85rem; }
+        .articles-section { margin-bottom: 1.5rem; }
         .articles-list { list-style: none; }
-        .article-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f0f0f0; }
+        .article-item { margin-bottom: 0.75rem; padding-bottom: 0.75rem; border-bottom: 1px solid #f0f0f0; }
         .article-item:last-child { border-bottom: none; }
         .article-title { font-weight: 600; color: #0f3460; margin-bottom: 0.3rem; }
         .article-title a { text-decoration: none; color: #0f3460; }
         .article-title a:hover { text-decoration: underline; }
         .article-source { font-size: 0.85rem; color: #666; margin-bottom: 0.2rem; }
         .article-date { font-size: 0.8rem; color: #999; }
+        .article-pin-label { display: inline-block; background: #fff3cd; color: #856404; padding: 0.2rem 0.4rem; border-radius: 2px; font-size: 0.7rem; font-weight: 600; margin-left: 0.3rem; }
         .no-articles { color: #999; font-style: italic; font-size: 0.9rem; }
         .notes { background: #f9f9f9; padding: 1rem; border-radius: 6px; border-left: 3px solid #0f3460; font-size: 0.95rem; line-height: 1.5; }
         .contact-info { display: flex; gap: 0.5rem; flex-wrap: wrap; }
@@ -180,11 +193,20 @@ def generate_html(data: dict) -> str:
         .flag-detail { color: #856404; font-size: 0.9rem; }
         .no-results { text-align: center; padding: 3rem 1rem; color: #999; }
         .no-results h2 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        .pin-form { background: #f0f4f8; padding: 1rem; border-radius: 6px; margin-bottom: 1rem; }
+        .pin-form h4 { color: #1a1a2e; margin-bottom: 0.75rem; font-size: 0.95rem; }
+        .pin-form input, .pin-form textarea { width: 100%; padding: 0.5rem; margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 4px; font-size: 0.9rem; font-family: inherit; }
+        .pin-form textarea { resize: vertical; min-height: 50px; }
+        .pin-btn { background: #0f3460; color: white; padding: 0.5rem 1rem; border: none; border-radius: 4px; cursor: pointer; font-size: 0.9rem; transition: background 0.2s; }
+        .pin-btn:hover { background: #1a1a2e; }
+        .pin-btn:disabled { background: #ccc; cursor: not-allowed; }
+        .form-status { padding: 0.5rem; margin-bottom: 0.5rem; border-radius: 4px; display: none; }
+        .form-status.success { background: #d4edda; color: #155724; display: block; }
+        .form-status.error { background: #f8d7da; color: #721c24; display: block; }
         @media (max-width: 768px) {
             .journalists-grid { grid-template-columns: 1fr; }
             .header h1 { font-size: 1.5rem; }
             .controls { flex-direction: column; align-items: stretch; }
-            .beat-filters { justify-content: flex-start; }
             .modal-content { max-height: 95vh; padding: 1.5rem; }
         }
     </style>
@@ -192,7 +214,7 @@ def generate_html(data: dict) -> str:
 <body>
     <div class="header">
         <h1>UK Defence Media Map</h1>
-        <p>Curated journalists covering UK defence. Updated nightly.</p>
+        <p>Curated journalists covering UK defence. Articles updated daily. Save important pieces with the 📌 button.</p>
     </div>
     
     <div class="container">
@@ -216,6 +238,7 @@ def generate_html(data: dict) -> str:
         const allJournalists = DATA_PLACEHOLDER;
         let activeBeats = new Set();
         let searchTerm = '';
+        let currentJournalistId = null;
         
         function initPage() {
             renderBeats();
@@ -302,36 +325,66 @@ def generate_html(data: dict) -> str:
         
         function renderCard(j) {
             const articles = j.articles || [];
+            const pinned = j.pinned_articles || [];
+            const totalArticles = articles.length + pinned.length;
             const flags = j.flags || [];
             let html = '<div class="journalist-card" data-id="' + j.id + '"><div class="card-header"><div><div class="journalist-name">' + escapeHtml(j.name) + '</div><div class="journalist-role">' + escapeHtml(j.role) + '</div></div><span class="priority-badge priority-' + j.priority + '">P' + j.priority + '</span></div><div class="beats">';
             j.beats.forEach(b => {
                 html += '<span class="beat-tag">' + escapeHtml(b) + '</span>';
             });
-            html += '</div><div class="article-count">' + articles.length + ' article' + (articles.length !== 1 ? 's' : '') + '</div>';
+            html += '</div><div class="article-count">' + totalArticles + ' article' + (totalArticles !== 1 ? 's' : '') + '</div>';
             if (flags.length > 0) html += '<div class="flag-indicator">⚠️ Possible move</div>';
             html += '</div>';
             return html;
         }
         
         function openModal(id) {
+            currentJournalistId = id;
             const j = allJournalists.find(x => x.id === id);
             if (!j) return;
+            
+            const pinned = j.pinned_articles || [];
+            const articles = j.articles || [];
+            
             let html = '<div class="modal-header"><div class="modal-name">' + escapeHtml(j.name) + '</div><div class="modal-role">' + escapeHtml(j.role) + '</div><div class="modal-outlet">' + escapeHtml(j.outlet) + '</div></div>';
+            
             html += '<div class="modal-section"><h3>Coverage areas</h3><div class="beats-list">';
             j.beats.forEach(b => {
                 html += '<span class="beat-tag-modal">' + escapeHtml(b) + '</span>';
             });
-            html += '</div></div><div class="modal-section"><h3>Details</h3><div class="meta-info"><div class="meta-item"><strong>Priority:</strong> <span class="confidence-tag">' + j.priority + '</span></div><div class="meta-item"><strong>Confidence:</strong> <span class="confidence-tag">' + escapeHtml(j.confidence) + '</span></div><div class="meta-item"><strong>Verified:</strong> ' + escapeHtml(j.last_verified || 'Not yet') + '</div></div></div>';
-            if (j.notes) html += '<div class="modal-section"><h3>Coverage notes</h3><div class="notes">' + escapeHtml(j.notes) + '</div></div>';
-            if (j.articles && j.articles.length > 0) {
-                html += '<div class="modal-section"><h3>Recent articles</h3><ul class="articles-list">';
-                j.articles.forEach(a => {
+            html += '</div></div>';
+            
+            html += '<div class="modal-section"><h3>Details</h3><div class="meta-info"><div class="meta-item"><strong>Priority:</strong> <span class="confidence-tag">' + j.priority + '</span></div><div class="meta-item"><strong>Confidence:</strong> <span class="confidence-tag">' + escapeHtml(j.confidence) + '</span></div><div class="meta-item"><strong>Verified:</strong> ' + escapeHtml(j.last_verified || 'Not yet') + '</div></div></div>';
+            
+            if (j.notes) {
+                html += '<div class="modal-section"><h3>Coverage notes</h3><div class="notes">' + escapeHtml(j.notes) + '</div></div>';
+            }
+            
+            // Pin form
+            html += '<div class="modal-section"><h3>📌 Save important article</h3><div class="pin-form"><h4>Add to this journalist\'s pinned articles</h4><div class="form-status" id="formStatus"></div><input type="text" id="pinTitle" placeholder="Article title" style="margin-bottom: 0.5rem;"><input type="url" id="pinLink" placeholder="Article URL (https://...)" style="margin-bottom: 0.5rem;"><input type="text" id="pinSource" placeholder="Source outlet (e.g., The Times)" style="margin-bottom: 0.5rem;"><textarea id="pinNote" placeholder="Why is this important? (optional)"></textarea><button class="pin-btn" onclick="submitPinnedArticle()">Save Article</button></div></div>';
+            
+            // Pinned articles
+            if (pinned.length > 0) {
+                html += '<div class="articles-section"><h3>📌 Pinned articles (' + pinned.length + ')</h3><ul class="articles-list">';
+                pinned.forEach((a, idx) => {
+                    html += '<li class="article-item"><div class="article-title"><a href="' + escapeHtml(a.link) + '" target="_blank">' + escapeHtml(a.title) + '</a></div><div class="article-source">' + escapeHtml(a.source_name || 'Unknown') + '</div><div class="article-date">' + escapeHtml(a.date || 'Unknown date') + ' <span class="article-pin-label">PINNED</span></div>';
+                    if (a.note) html += '<div style="font-size: 0.9rem; color: #666; margin-top: 0.3rem; font-style: italic;">' + escapeHtml(a.note) + '</div>';
+                    html += '<button onclick="removePinnedArticle(' + idx + ')" style="margin-top: 0.3rem; padding: 0.25rem 0.5rem; background: #f8d7da; color: #721c24; border: none; border-radius: 3px; cursor: pointer; font-size: 0.8rem;">Remove</button></li>';
+                });
+                html += '</ul></div>';
+            }
+            
+            // Recent articles
+            if (articles.length > 0) {
+                html += '<div class="articles-section"><h3>Recent articles (' + articles.length + ')</h3><ul class="articles-list">';
+                articles.forEach(a => {
                     html += '<li class="article-item"><div class="article-title"><a href="' + escapeHtml(a.link) + '" target="_blank">' + escapeHtml(a.title) + '</a></div><div class="article-source">' + escapeHtml(a.source_name || 'Unknown') + '</div><div class="article-date">' + formatDate(a.published) + '</div></li>';
                 });
                 html += '</ul></div>';
             } else {
-                html += '<div class="modal-section"><p class="no-articles">No recent articles found.</p></div>';
+                html += '<div class="articles-section"><p class="no-articles">No recent articles found.</p></div>';
             }
+            
             if (j.flags && j.flags.length > 0) {
                 html += '<div class="flag-section"><h4>⚠️ Job move alert</h4>';
                 j.flags.forEach(f => {
@@ -341,11 +394,80 @@ def generate_html(data: dict) -> str:
                 });
                 html += '</div>';
             }
+            
             if (j.x_handle) {
                 html += '<div class="modal-section"><h3>Contact</h3><div class="contact-info"><a href="https://x.com/' + escapeHtml(j.x_handle) + '" target="_blank" class="contact-btn">@' + escapeHtml(j.x_handle) + '</a></div></div>';
             }
+            
             document.getElementById('modalBody').innerHTML = html;
             document.getElementById('modal').classList.add('show');
+        }
+        
+        function submitPinnedArticle() {
+            const title = document.getElementById('pinTitle').value.trim();
+            const link = document.getElementById('pinLink').value.trim();
+            const source = document.getElementById('pinSource').value.trim();
+            const note = document.getElementById('pinNote').value.trim();
+            const status = document.getElementById('formStatus');
+            
+            if (!title || !link || !source) {
+                status.textContent = 'Title, URL, and source are required.';
+                status.className = 'form-status error';
+                return;
+            }
+            
+            if (!link.startsWith('http')) {
+                status.textContent = 'URL must start with http:// or https://';
+                status.className = 'form-status error';
+                return;
+            }
+            
+            status.textContent = 'Saving...';
+            status.className = 'form-status';
+            
+            const payload = {
+                journalistId: currentJournalistId,
+                title: title,
+                link: link,
+                source: source,
+                note: note,
+                date: new Date().toISOString().split('T')[0]
+            };
+            
+            fetch('/.netlify/functions/pin-article', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload)
+            })
+            .then(r => {
+                if (r.ok) {
+                    status.textContent = 'Article saved! Page will refresh in 2 seconds.';
+                    status.className = 'form-status success';
+                    document.getElementById('pinTitle').value = '';
+                    document.getElementById('pinLink').value = '';
+                    document.getElementById('pinSource').value = '';
+                    document.getElementById('pinNote').value = '';
+                    setTimeout(() => location.reload(), 2000);
+                } else {
+                    status.textContent = 'Failed to save. Check your browser console.';
+                    status.className = 'form-status error';
+                }
+            })
+            .catch(e => {
+                console.error('Error:', e);
+                status.textContent = 'Network error. If on GitHub Pages, pin articles via GitHub instead.';
+                status.className = 'form-status error';
+            });
+        }
+        
+        function removePinnedArticle(idx) {
+            if (!confirm('Remove this pinned article?')) return;
+            const j = allJournalists.find(x => x.id === currentJournalistId);
+            if (!j) return;
+            j.pinned_articles = j.pinned_articles || [];
+            j.pinned_articles.splice(idx, 1);
+            // Re-render modal
+            openModal(currentJournalistId);
         }
         
         function closeModal() {
@@ -379,12 +501,15 @@ def generate_html(data: dict) -> str:
 </body>
 </html>'''
     
-    # Replace placeholder with actual data
     html = html.replace('DATA_PLACEHOLDER', journalists_json)
     return html
 
 
 def main() -> int:
+    if not NEWSAPI_KEY:
+        print("[error] NEWSAPI_KEY not set. Add it to GitHub Secrets.", file=sys.stderr)
+        return 1
+    
     data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
     updated = 0
 
@@ -392,21 +517,27 @@ def main() -> int:
         if j.get("status") == "vacant-slot" or j.get("name") == "TBC":
             continue
 
+        # Ensure pinned_articles field exists
+        if "pinned_articles" not in j:
+            j["pinned_articles"] = []
+
         query = j.get("gnews_query") or default_query(j)
         try:
-            articles = fetch_feed(gnews_url(query))[:MAX_ARTICLES]
+            articles = fetch_articles(newsapi_url(query))[:MAX_ARTICLES]
         except Exception as exc:
             print(f"[warn] {j['id']}: fetch failed: {exc}", file=sys.stderr)
             time.sleep(REQUEST_DELAY_SECONDS)
             continue
 
         j["articles"] = articles
+
         existing = [f for f in j.get("flags", []) if f.get("type") != "possible-move"]
         move = check_for_move(j, articles)
         if move:
             existing.append(move)
             print(f"[flag] {j['id']}: {move['detail']}")
         j["flags"] = existing
+
         updated += 1
         time.sleep(REQUEST_DELAY_SECONDS)
 
