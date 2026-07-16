@@ -33,7 +33,7 @@ SYNDICATION_DOMAINS = {
 }
 
 
-def newsapi_url(query: str, page: int = 1) -> str:
+def newsapi_url(query: str, domains: str = "", page: int = 1) -> str:
     params = {
         "q": query,
         "sortBy": "publishedAt",
@@ -42,12 +42,25 @@ def newsapi_url(query: str, page: int = 1) -> str:
         "page": page,
         "apiKey": NEWSAPI_KEY,
     }
+    # Restrict to the journalist's own outlet domain(s). Without this,
+    # a name search matches ANY article mentioning that name anywhere on
+    # the web — including unrelated people who share the name (e.g. a
+    # historic football manager called "George Allison" showing up for
+    # a defence journalist called George Allison). Domain restriction
+    # is what actually confirms "this is that person's own byline".
+    if domains:
+        params["domains"] = domains
     return "https://newsapi.org/v2/everything?" + urllib.parse.urlencode(params)
 
 
 def default_query(journalist: dict) -> str:
     name = journalist["name"]
-    return f'"{name}" (defence OR defense OR military)'
+    return f'"{name}"'
+
+
+def outlet_domains_param(journalist: dict) -> str:
+    domains = journalist.get("outlet_domains", [])
+    return ",".join(domains)
 
 
 def fetch_articles(url: str) -> list:
@@ -377,9 +390,15 @@ def main() -> int:
         if j.get("status") == "vacant-slot" or j.get("name") == "TBC":
             continue
 
+        domains = outlet_domains_param(j)
+        if not domains:
+            print(f"[skip] {j['id']}: no outlet_domains set, skipping to avoid name-collision matches", file=sys.stderr)
+            j["articles"] = []
+            continue
+
         query = j.get("gnews_query") or default_query(j)
         try:
-            articles = fetch_articles(newsapi_url(query))[:MAX_ARTICLES]
+            articles = fetch_articles(newsapi_url(query, domains=domains))[:MAX_ARTICLES]
         except Exception as exc:
             print(f"[warn] {j['id']}: fetch failed: {exc}", file=sys.stderr)
             time.sleep(REQUEST_DELAY_SECONDS)
