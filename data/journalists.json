@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-07-16T10:03:50+00:00"
+    "last_script_run": "2026-07-16T12:59:32+00:00"
   },
   "journalists": [
     {
@@ -51,16 +51,14 @@
           "link": "https://freerepublic.com/focus/f-news/4386528/posts",
           "published": "2026-07-03T18:33:42Z",
           "source_name": "Freerepublic.com",
-          "source_domain": "freerepublic.com",
-          "description": "Ministers are concerned that President Trump will publicly turn on Sir Keir Starmer at a Nato summit next week for failing to commit to spending more on defence. The prime minister this week committed to spending an additional £15 billion on defence as he pub…"
+          "source_domain": "freerepublic.com"
         },
         {
           "title": "Trouble in Whitehall: UK Armed Forces Chief Warns of Operational Cutbacks Without Additional Funding",
           "link": "https://theaviationist.com/2026/06/18/trouble-in-whitehall-uk-defence-budget/",
           "published": "2026-06-18T00:47:36Z",
           "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com",
-          "description": "Days after the high profile resignations from the Ministry of Defence’s political leadership, the professional head of the UK’s armed forces, Sir Rich Knighton, has said that without more funding the UK will need to ‘dial back’ both its military exercises and…"
+          "source_domain": "theaviationist.com"
         }
       ],
       "flags": [],
@@ -189,8 +187,7 @@
           "link": "https://theaviationist.com/2026/06/16/russian-frigate-opens-fire-with-warning-shots-in-the-english-channel/",
           "published": "2026-06-16T18:52:17Z",
           "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com",
-          "description": "The incident, which reportedly occurred at around 11:40 BST, happened as a civilian yacht sailed near the warship Admiral Grigorovich, operating in international waters approximately 20 nautical miles south of the Isle of Wight. Coming just days after the UK …"
+          "source_domain": "theaviationist.com"
         }
       ],
       "flags": [],
@@ -294,16 +291,14 @@
           "link": "https://www.dailymail.com/news/article-15945099/labour-defence-investment-plan-starmer-u-turn-mark-nicol.html",
           "published": "2026-07-02T06:00:49Z",
           "source_name": "Dailymail.com",
-          "source_domain": "dailymail.com",
-          "description": "'In a premiership that will probably be remembered for its U-turns, its wobbles, its misjudgments, this may turn out to be the biggest of them all', Nicol said."
+          "source_domain": "dailymail.com"
         },
         {
           "title": "Starmer versus reality: His speech had so many startling boasts you wondered why he was forced out. Here's our fact check...",
           "link": "https://www.dailymail.com/news/article-15921211/Starmer-speech-fact-check.html",
           "published": "2026-06-22T23:01:52Z",
           "source_name": "Dailymail.com",
-          "source_domain": "dailymail.com",
-          "description": "Sir Keir Starmer used his resignation speech to reel off a series of dubious boasts and half-truths about his 'achievements' in office."
+          "source_domain": "dailymail.com"
         }
       ],
       "flags": [
@@ -340,32 +335,28 @@
           "link": "http://prospect.org/2026/07/14/silicon-valley-needs-washington-intel-facebook-meta-zuckerberg-openai-anthropic/",
           "published": "2026-07-14T09:00:00Z",
           "source_name": "The American Prospect",
-          "source_domain": "prospect.org",
-          "description": "The industry that spent 50 years insisting it didn’t need the state has discovered it can’t do without it.\nThe post Silicon Valley Needs Washington After All appeared first on The American Prospect."
+          "source_domain": "prospect.org"
         },
         {
           "title": "Britain's military boosted by £15billion spend in huge move to defend against Russian attack",
           "link": "https://freerepublic.com/focus/f-news/4386119/posts",
           "published": "2026-06-30T19:15:20Z",
           "source_name": "Freerepublic.com",
-          "source_domain": "freerepublic.com",
-          "description": "Keir Starmer has said the UK will be prepared for war with Russia as he unveiled a £15billion military spending boost for the next four years. Defence chiefs are racing to arm-up in readiness to defend against Russian attack, with new land, sea and air drones…"
+          "source_domain": "freerepublic.com"
         },
         {
           "title": "David Beckham treats mum Sandra to their annual day out in Wimbledon's Royal Box - as son Romeo and his girlfriend Kim Turnbull take in the tennis from the stands",
           "link": "https://www.dailymail.com/tvshowbiz/article-15938381/David-Beckham-treats-mum-Sandra-annual-day-Wimbledons-Royal-Box-son-Romeo-girlfriend-Kim-Turnbull-tennis-stands.html",
           "published": "2026-06-29T13:12:56Z",
           "source_name": "Dailymail.com",
-          "source_domain": "dailymail.com",
-          "description": "David Beckham was back in the Royal Box for day one of Wimbledon on Monday."
+          "source_domain": "dailymail.com"
         },
         {
           "title": "The rise of machine identities and agentic AI: Securing trust in the next era of digital autonomy",
           "link": "https://10.51.0.121/2026/06/16/delinea-securing-machine-identities-and-agentic-ai/",
           "published": "2026-06-16T05:00:09Z",
           "source_name": "0.121",
-          "source_domain": "10.51.0.121",
-          "description": "In the latest episode of Identity Insider, I sat down with Chris Hughes, a cybersecurity expert who’s involved in OWASP’s work on non-human and machine identity security. Unsurprisingly, our discussion centered on the rapidly changing cybersecurity landscape,…"
+          "source_domain": "10.51.0.121"
         }
       ],
       "flags": [],
@@ -420,8 +411,7 @@
           "link": "https://biztoc.com/x/f0cc60696cfbea47",
           "published": "2026-06-15T18:48:15Z",
           "source_name": "Biztoc.com",
-          "source_domain": "biztoc.com",
-          "description": "From flying fighter jets to travelling on destroyers, Shashank Joshi pens his final edition of this newsletter"
+          "source_domain": "biztoc.com"
         }
       ],
       "flags": [],
@@ -477,40 +467,35 @@
           "link": "https://www.bbc.co.uk/news/videos/cn75n0lyzedo",
           "published": "2026-07-08T16:05:37Z",
           "source_name": "BBC News",
-          "source_domain": "bbc.co.uk",
-          "description": "US President Donald Trump has used the Nato summit to criticise the lack of support for his war on Iran, and revive his interest in taking over Greenland."
+          "source_domain": "bbc.co.uk"
         },
         {
           "title": "Trump looms large as Nato grapples with challenge of rearming Europe",
           "link": "https://www.bbc.co.uk/news/articles/ckg06d3dgnlo",
           "published": "2026-07-07T18:56:19Z",
           "source_name": "BBC News",
-          "source_domain": "bbc.co.uk",
-          "description": "The US president's inflammatory words have punctuated the image of unity at this crucial gathering, Security Correspondent Frank Gardner writes."
+          "source_domain": "bbc.co.uk"
         },
         {
           "title": "What Does It Cost To Keep The UK Safe?",
           "link": "https://www.bbc.co.uk/sounds/play/p0nvr8wv?at_campaign=rss",
           "published": "2026-06-30T19:38:00Z",
           "source_name": "BBC News",
-          "source_domain": "bbc.co.uk",
-          "description": "The government releases it’s long awaited defence investment plan."
+          "source_domain": "bbc.co.uk"
         },
         {
           "title": "Frank Gardner: Key points from government's defence spending plan - BBC",
           "link": "https://slashdot.org/firehose.pl?op=view&amp;id=184216404",
           "published": "2026-06-30T19:33:38Z",
           "source_name": "Slashdot.org",
-          "source_domain": "slashdot.org",
-          "description": "Frank Gardner: Key points from government's defence spending planBBC Starmer warns Burnham not to borrow to fund defence as he reveals £15bn planThe Guardian Britain unveils its new Ukraine-modeled armed forcespolitico.eu In Defence Investment Plan preview, B…"
+          "source_domain": "slashdot.org"
         },
         {
           "title": "Frank Gardner: Key points from government's defence spending plan",
           "link": "https://www.bbc.co.uk/news/articles/cn0vzjn54eeo",
           "published": "2026-06-30T17:43:17Z",
           "source_name": "BBC News",
-          "source_domain": "bbc.co.uk",
-          "description": "The BBC's security correspondent analyses the details of the plan, and what they mean for the UK's armed forces."
+          "source_domain": "bbc.co.uk"
         }
       ],
       "flags": [],
@@ -543,16 +528,14 @@
           "link": "https://www.c21media.net/news/sky-adapts-political-crisis-podcast-the-wargame-for-tv-featuring-michael-gove/",
           "published": "2026-06-22T07:54:24Z",
           "source_name": "C21media.net",
-          "source_domain": "c21media.net",
-          "description": "UK pay TV broadcaster Sky has commissioned an immersive documentary format called The Wargame, adapted from the Sky News podcast of the same name. Produced by The Garden, the ITV Studios-owned prodco b..."
+          "source_domain": "c21media.net"
         },
         {
           "title": "Sky Confirms Production Of Crisis Room Docuseries ‘The Wargame’",
           "link": "https://www.forbes.com/sites/rickellis/2026/06/21/sky-confirms-production-of-crisis-room-docuseries-the-wargame/",
           "published": "2026-06-21T19:10:39Z",
           "source_name": "Forbes",
-          "source_domain": "forbes.com",
-          "description": "Based on the podcast of the same name, the docuseries tries to figure out the government's response to the crisis of an attack by Russia"
+          "source_domain": "forbes.com"
         }
       ],
       "flags": [],
@@ -704,16 +687,14 @@
           "link": "https://www.justarsenal.com/the-untold-story-of-arsenals-wartime-triumphs-and-heartbreaking-sacrifices/417598",
           "published": "2026-06-26T22:00:00Z",
           "source_name": "Just Arsenal News",
-          "source_domain": "justarsenal.com",
-          "description": "The Second World War (1939-1945) was one of the darkest periods in human history, affecting millions of lives across the globe. Football was no exception, with the regular league programme suspended and countless players seeing their careers interrupted or br…"
+          "source_domain": "justarsenal.com"
         },
         {
           "title": "How Ted Drake’s Legacy Has Shaped My Life and Arsenal Journey",
           "link": "https://www.justarsenal.com/how-ted-drakes-legacy-has-shaped-my-life-and-arsenal-journey/417502",
           "published": "2026-06-24T22:00:00Z",
           "source_name": "Just Arsenal News",
-          "source_domain": "justarsenal.com",
-          "description": "For some people, being related to a well-known footballer completely changes the trajectory of their lives and circumstances. For me, however, that has never really been the case. As many readers know, my great-grandad was Arsenal legend Ted Drake, who to thi…"
+          "source_domain": "justarsenal.com"
         }
       ],
       "flags": [
@@ -750,24 +731,21 @@
           "link": "https://theaviationist.com/2026/07/04/uk-defence-investment-plan-at-a-glance/",
           "published": "2026-07-04T14:20:40Z",
           "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com",
-          "description": "The long awaited Defence Investment Plan has finally been published for public viewing and it seemingly generates more questions for UK Defence than it answers. In one of his last acts as Prime Minister of the United Kingdom, Sir Keir Starmer has released the…"
+          "source_domain": "theaviationist.com"
         },
         {
           "title": "Royal Navy Trials First At-Sea Strike Drone Launch",
           "link": "https://theaviationist.com/2026/07/03/royal-navy-trials-strike-drone-launch/",
           "published": "2026-07-03T14:12:20Z",
           "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com",
-          "description": "A Nyan One Way Effector (OWE) was launched from the experimental testbed vessel XV Patrick Blackett while the ship was underway off the south coast of England. The trial, which according to image data took place in early June 2026, is billed as the next step …"
+          "source_domain": "theaviationist.com"
         },
         {
           "title": "Trouble in Whitehall: UK Armed Forces Chief Warns of Operational Cutbacks Without Additional Funding",
           "link": "https://theaviationist.com/2026/06/18/trouble-in-whitehall-uk-defence-budget/",
           "published": "2026-06-18T00:47:36Z",
           "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com",
-          "description": "Days after the high profile resignations from the Ministry of Defence’s political leadership, the professional head of the UK’s armed forces, Sir Rich Knighton, has said that without more funding the UK will need to ‘dial back’ both its military exercises and…"
+          "source_domain": "theaviationist.com"
         }
       ],
       "flags": [
@@ -805,8 +783,7 @@
           "link": "https://theaviationist.com/2026/07/04/uk-defence-investment-plan-at-a-glance/",
           "published": "2026-07-04T14:20:40Z",
           "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com",
-          "description": "The long awaited Defence Investment Plan has finally been published for public viewing and it seemingly generates more questions for UK Defence than it answers. In one of his last acts as Prime Minister of the United Kingdom, Sir Keir Starmer has released the…"
+          "source_domain": "theaviationist.com"
         }
       ],
       "flags": [],
@@ -960,8 +937,7 @@
           "link": "https://theaviationist.com/2026/06/26/airbus-kawasaki-asw-eurodrone/",
           "published": "2026-06-26T15:29:36Z",
           "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com",
-          "description": "Airbus and Kawasaki Heavy Industries have signed a memorandum of understanding to cooperate on the concept of a Eurodrone development focused on the anti-submarine warfare (ASW) and maritime patrol role. The two companies will now begin work on deciding the n…"
+          "source_domain": "theaviationist.com"
         }
       ],
       "flags": [],
@@ -1063,36 +1039,39 @@
       "gnews_query": "\"Howard Mustoe\" OR Rearmament defence",
       "articles": [
         {
-          "title": "Next Israel government must halt rise in debt burden, central bank chief says",
-          "link": "https://biztoc.com/x/2d010119a1d5e243",
-          "published": "2026-07-15T10:00:49Z",
-          "source_name": "Biztoc.com",
-          "source_domain": "biztoc.com",
-          "description": "ASML, Inflation boost, Earnings roll on - What’s moving markets\nBy Steven Scheer\nJERUSALEM, July 15 (Reuters) - Whoever wins the election in Israel later this year must rein in defence-led state spending that has grown in recent years and invest more in educa…"
+          "title": "Senate approves ₦50m for families of security personnel, teachers killed in Oyo rescue operation",
+          "link": "https://www.vanguardngr.com/2026/07/senate-approves-₦50m-for-families-of-security-personnel-teachers-killed-in-oyo-rescue-operation/",
+          "published": "2026-07-15T12:59:19Z",
+          "source_name": "Vanguard",
+          "source_domain": "vanguardngr.com"
         },
         {
-          "title": "Terence Corcoran: The ’taboo’ push to make the military a growth industry",
-          "link": "https://financialpost.com/opinion/taboo-push-make-military-growth-industry",
-          "published": "2026-07-15T10:00:42Z",
-          "source_name": "Financial Post",
-          "source_domain": "financialpost.com",
-          "description": "Can a new international 'defence' bank really trigger economic gains? Find out more."
+          "title": "As the US restarts war on Iran, is its weapons stockpile running low?",
+          "link": "https://www.aljazeera.com/news/2026/7/15/as-the-us-restarts-war-on-iran-is-its-weapons-stockpile-running-low",
+          "published": "2026-07-15T12:55:33Z",
+          "source_name": "Al Jazeera English",
+          "source_domain": "aljazeera.com"
         },
         {
-          "title": "The White House’s Gold Eagle wants to patch cyber flaws at machine speed",
-          "link": "https://thenextweb.com/news/gold-eagle-white-house-ai-cyber-clearinghouse/",
-          "published": "2026-07-15T09:56:24Z",
-          "source_name": "The Next Web",
-          "source_domain": "thenextweb.com",
-          "description": "The White House wants frontier AI on cyber defence, and it wants it fast. Gold Eagle, a new AI-backed clearinghouse, will pool software vulnerability findings from government and industry. It ranks the worst, then coordinates fixes across US critical infrastr…"
+          "title": "Annexation with a Sales Pitch",
+          "link": "https://www.lrb.co.uk/blog/2026/july/annexation-with-a-sales-pitch",
+          "published": "2026-07-15T12:53:50Z",
+          "source_name": "London Review of Books",
+          "source_domain": "lrb.co.uk"
         },
         {
-          "title": "Government Procurement in the National Interest",
-          "link": "https://www.gov.uk/government/speeches/government-procurement-in-the-national-interest",
-          "published": "2026-07-15T09:50:32Z",
-          "source_name": "Www.gov.uk",
-          "source_domain": "gov.uk",
-          "description": "Cabinet Office Minister, Chris Ward's speech to D-Group members on procurement."
+          "title": "Post-Quantum's Algorithm - Classic McEliece - Achieves Global ISO Standardization to Protect the World From Quantum Cyber Attack",
+          "link": "https://onlinenews9.in/business/post-quantums-algorithm-classic-mceliece-achieves-global-iso-standardization-to-protect-the-world-from-quantum-cyber-attack/",
+          "published": "2026-07-15T12:52:44Z",
+          "source_name": "Onlinenews9.in",
+          "source_domain": "onlinenews9.in"
+        },
+        {
+          "title": "Brit paratrooper hero faces £60,000 bill after he was imprisoned in Georgia for possessing legally prescribed drugs",
+          "link": "https://www.dailymail.com/news/article-15979309/Brit-paratrooper-hero-bill-imprisoned-Georgia-possessing-legal-drugs.html",
+          "published": "2026-07-15T12:47:56Z",
+          "source_name": "Dailymail.com",
+          "source_domain": "dailymail.com"
         }
       ],
       "flags": [],
@@ -1176,16 +1155,14 @@
           "link": "https://post.rlsbb.to/soldier-magazine-july-august-2026/",
           "published": "2026-07-02T15:41:16Z",
           "source_name": "Rlsbb.to",
-          "source_domain": "post.rlsbb.to",
-          "description": "Soldier Magazine - official monthly publication of the British Army, is produced by an in-house team and published by the Ministry of Defence. It strives to offer an effective means of communication aimed primarily at junior ranks but also of interest to all …"
+          "source_domain": "post.rlsbb.to"
         },
         {
           "title": "Soldier Magazine - June 2026",
           "link": "https://post.rlsbb.to/soldier-magazine-june-2026/",
           "published": "2026-06-19T12:53:16Z",
           "source_name": "Rlsbb.to",
-          "source_domain": "post.rlsbb.to",
-          "description": "Soldier Magazine - official monthly publication of the British Army, is produced by an in-house team and published by the Ministry of Defence. It strives to offer an effective means of communication aimed primarily at junior ranks but also of interest to all …"
+          "source_domain": "post.rlsbb.to"
         }
       ],
       "flags": [
