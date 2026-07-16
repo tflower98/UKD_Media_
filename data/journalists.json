@@ -1,0 +1,886 @@
+{
+  "meta": {
+    "description": "UK defence media map. Seed dataset, requires human review before first use.",
+    "schema_version": "1.0",
+    "last_human_review": null,
+    "field_guide": {
+      "id": "Stable slug. Never change once set, the nightly script keys on it.",
+      "name": "Full name as it appears in bylines.",
+      "outlet": "Current primary outlet.",
+      "outlet_domains": "Domains the nightly script treats as 'home'. Bylines outside these domains count toward a job-move flag.",
+      "role": "Job title as best known.",
+      "beats": "One or more of: land, air, sea, cross-domain, industry, procurement, politics-security.",
+      "priority": "1 = must-know, sector-shaping voice or daily-read outlet | 2 = important for regular engagement | 3 = monitor. Client-agnostic: weight by influence, not by any one client's domain.",
+      "x_handle": "Without the @.",
+      "status": "active | maternity-leave | moved | review | vacant-slot",
+      "confidence": "verified = checked against live sources July 2026 | likely = strong inference, unchecked | guessing = fill from memory, check before relying on it",
+      "last_verified": "Date the entry was last confirmed by a human or a checked source.",
+      "notes": "Coverage patch, editorial slant, pitch angle.",
+      "relationship_notes": "Your own history with them. Keep this out of anything client-facing.",
+      "gnews_query": "Optional override for the nightly article search. Defaults to quoted name + outlet.",
+      "articles": "Script-managed. Do not edit by hand.",
+      "flags": "Script-managed. Possible-move flags land here for your review."
+    }
+  },
+  "journalists": [
+    {
+      "id": "larisa-brown",
+      "name": "Larisa Brown",
+      "outlet": "The Times / Sunday Times",
+      "outlet_domains": [
+        "thetimes.com",
+        "thetimes.co.uk"
+      ],
+      "role": "Defence Editor",
+      "beats": [
+        "cross-domain",
+        "politics-security"
+      ],
+      "priority": 1,
+      "x_handle": "larisamlbrown",
+      "status": "active",
+      "confidence": "verified",
+      "last_verified": "2026-07-16",
+      "notes": "Agenda-setting on MoD politics, procurement rows, Ukraine. Bylining actively as of June 2026. Strong record on personnel and kit stories across domains.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "george-grylls",
+      "name": "George Grylls",
+      "outlet": "The Times",
+      "outlet_domains": [
+        "thetimes.com",
+        "thetimes.co.uk"
+      ],
+      "role": "Defence Correspondent",
+      "beats": [
+        "cross-domain",
+        "procurement"
+      ],
+      "priority": 1,
+      "x_handle": "georgegrylls",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "Moved from politics to defence at The Times. Good on procurement detail and industrial policy. Confirm current title.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "danielle-sheridan",
+      "name": "Danielle Sheridan",
+      "outlet": "The Telegraph",
+      "outlet_domains": [
+        "telegraph.co.uk"
+      ],
+      "role": "Defence Editor",
+      "beats": [
+        "cross-domain",
+        "land"
+      ],
+      "priority": 1,
+      "x_handle": "SheridanDani",
+      "status": "maternity-leave",
+      "confidence": "verified",
+      "last_verified": "2026-07-16",
+      "notes": "On maternity leave per her own X and Muck Rack bios. Identify who is covering the desk in her absence before pitching Telegraph.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "dominic-nicholls",
+      "name": "Dominic Nicholls",
+      "outlet": "The Telegraph",
+      "outlet_domains": [
+        "telegraph.co.uk"
+      ],
+      "role": "Associate Editor, Defence",
+      "beats": [
+        "cross-domain",
+        "land"
+      ],
+      "priority": 1,
+      "x_handle": "DomNicholls",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "Former Army officer, co-hosts Ukraine: The Latest podcast. Likely the senior defence voice at the Telegraph while Sheridan is on leave. Land background makes him a natural LionStrike and GRAYBURN target.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "dan-sabbagh",
+      "name": "Dan Sabbagh",
+      "outlet": "The Guardian",
+      "outlet_domains": [
+        "theguardian.com"
+      ],
+      "role": "Defence and Security Editor",
+      "beats": [
+        "cross-domain",
+        "politics-security"
+      ],
+      "priority": 2,
+      "x_handle": "dansabbagh",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "More policy and accountability angle than kit. Useful for spend-scrutiny framing, less receptive to straight industry stories.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "lucy-fisher",
+      "name": "Lucy Fisher",
+      "outlet": "Financial Times",
+      "outlet_domains": [
+        "ft.com"
+      ],
+      "role": "Whitehall Editor",
+      "beats": [
+        "politics-security",
+        "procurement"
+      ],
+      "priority": 2,
+      "x_handle": "LOS_Fisher",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "Ex-Times defence correspondent, now covers Whitehall including MoD. Strong on the politics of defence spending; investment plan and procurement policy sit squarely in her patch.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "sylvia-pfeifer",
+      "name": "Sylvia Pfeifer",
+      "outlet": "Financial Times",
+      "outlet_domains": [
+        "ft.com"
+      ],
+      "role": "Defence and Aerospace Correspondent",
+      "beats": [
+        "industry",
+        "air"
+      ],
+      "priority": 1,
+      "x_handle": "SylviaPfeifer",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "The key UK industry-side reporter. Covers primes, supply chain, sovereign capability arguments. First call for any manufacturing story with a business angle.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "john-paul-rathbone",
+      "name": "John Paul Rathbone",
+      "outlet": "Financial Times",
+      "outlet_domains": [
+        "ft.com"
+      ],
+      "role": "Security and Defence Correspondent",
+      "beats": [
+        "cross-domain",
+        "politics-security"
+      ],
+      "priority": 2,
+      "x_handle": "jprathbone",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "Covers strategy, NATO, threat picture at the FT alongside Pfeifer's industry beat.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "jerome-starkey",
+      "name": "Jerome Starkey",
+      "outlet": "The Sun",
+      "outlet_domains": [
+        "thesun.co.uk"
+      ],
+      "role": "Defence Editor",
+      "beats": [
+        "cross-domain",
+        "land"
+      ],
+      "priority": 2,
+      "x_handle": "jeromestarkey",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "High-reach, kit-friendly, likes exclusives with strong visuals across all domains.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "mark-nicol",
+      "name": "Mark Nicol",
+      "outlet": "Daily Mail / Mail on Sunday",
+      "outlet_domains": [
+        "dailymail.co.uk"
+      ],
+      "role": "Defence Editor",
+      "beats": [
+        "cross-domain",
+        "land"
+      ],
+      "priority": 2,
+      "x_handle": null,
+      "status": "review",
+      "confidence": "guessing",
+      "last_verified": null,
+      "notes": "Confirm both name and title. Mail defence desk has churned; verify who holds it before adding to any distribution list.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "chris-hughes",
+      "name": "Chris Hughes",
+      "outlet": "Daily Mirror",
+      "outlet_domains": [
+        "mirror.co.uk"
+      ],
+      "role": "Defence and Security Editor",
+      "beats": [
+        "cross-domain"
+      ],
+      "priority": 3,
+      "x_handle": "TheMirrorHughes",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "Long-serving. Useful for forces-welfare and personnel angles.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "marco-giannangeli",
+      "name": "Marco Giannangeli",
+      "outlet": "Sunday Express",
+      "outlet_domains": [
+        "express.co.uk"
+      ],
+      "role": "Defence and Diplomatic Editor",
+      "beats": [
+        "cross-domain"
+      ],
+      "priority": 3,
+      "x_handle": "MGiannangeli",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "Receptive to sovereign capability and British jobs framing.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "shashank-joshi",
+      "name": "Shashank Joshi",
+      "outlet": "The Economist",
+      "outlet_domains": [
+        "economist.com"
+      ],
+      "role": "Defence Editor",
+      "beats": [
+        "cross-domain",
+        "politics-security"
+      ],
+      "priority": 1,
+      "x_handle": "shashj",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "Most influential analytical defence journalist in the UK. Not a product-story target, but shapes the strategic argument every other outlet borrows. Worth briefing on the sovereign capability thesis rather than pitching.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "jonathan-beale",
+      "name": "Jonathan Beale",
+      "outlet": "BBC News",
+      "outlet_domains": [
+        "bbc.co.uk",
+        "bbc.com"
+      ],
+      "role": "Defence Correspondent",
+      "beats": [
+        "cross-domain"
+      ],
+      "priority": 1,
+      "x_handle": "bealejonathan",
+      "status": "active",
+      "confidence": "verified",
+      "last_verified": "2026-07-16",
+      "notes": "Bylining actively through 2026. Broadcast reach plus online. Embeds and access-led pieces are his preferred format; site visits and exercises beat press releases.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "frank-gardner",
+      "name": "Frank Gardner",
+      "outlet": "BBC News",
+      "outlet_domains": [
+        "bbc.co.uk",
+        "bbc.com"
+      ],
+      "role": "Security Correspondent",
+      "beats": [
+        "politics-security"
+      ],
+      "priority": 2,
+      "x_handle": "FrankRGardner",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "Security and intelligence rather than kit. Relevant when the story is threat-led.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "deborah-haynes",
+      "name": "Deborah Haynes",
+      "outlet": "Sky News",
+      "outlet_domains": [
+        "news.sky.com",
+        "sky.com"
+      ],
+      "role": "Security and Defence Editor",
+      "beats": [
+        "cross-domain",
+        "politics-security"
+      ],
+      "priority": 1,
+      "x_handle": "haynesdeborah",
+      "status": "active",
+      "confidence": "verified",
+      "last_verified": "2026-07-16",
+      "notes": "Ex-Times defence editor. The Wargame podcast is being turned into a TV series, announced June 2026, so her profile is rising further. Strong on preparedness and resilience narratives.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "ali-bunkall",
+      "name": "Alistair Bunkall",
+      "outlet": "Sky News",
+      "outlet_domains": [
+        "news.sky.com",
+        "sky.com"
+      ],
+      "role": "Middle East Correspondent",
+      "beats": [
+        "politics-security"
+      ],
+      "priority": 3,
+      "x_handle": "AliBunkallSKY",
+      "status": "moved",
+      "confidence": "verified",
+      "last_verified": "2026-07-16",
+      "notes": "Formerly Sky defence and security correspondent, now Middle East. Kept on the map as a worked example of the moved status. Not a UK defence pitch target now.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "itv-defence-slot",
+      "name": "TBC",
+      "outlet": "ITV News",
+      "outlet_domains": [
+        "itv.com"
+      ],
+      "role": "Defence / Security Correspondent",
+      "beats": [
+        "cross-domain"
+      ],
+      "priority": 3,
+      "x_handle": null,
+      "status": "vacant-slot",
+      "confidence": "guessing",
+      "last_verified": null,
+      "notes": "ITV has no consistent dedicated defence correspondent; security stories rotate. Fill with whoever is covering when relevant.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "forces-news-desk",
+      "name": "TBC",
+      "outlet": "BFBS Forces News",
+      "outlet_domains": [
+        "forces.net",
+        "forcesnews.com"
+      ],
+      "role": "Reporters and presenters, multiple",
+      "beats": [
+        "land",
+        "air",
+        "sea"
+      ],
+      "priority": 2,
+      "x_handle": null,
+      "status": "vacant-slot",
+      "confidence": "guessing",
+      "last_verified": null,
+      "notes": "Highest-engagement outlet inside the forces community itself. Team churns; you likely know current names from event circuits. Fill from your own contacts.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "reuters-uk-defence",
+      "name": "TBC",
+      "outlet": "Reuters",
+      "outlet_domains": [
+        "reuters.com"
+      ],
+      "role": "UK defence / aerospace coverage",
+      "beats": [
+        "industry",
+        "politics-security"
+      ],
+      "priority": 2,
+      "x_handle": null,
+      "status": "vacant-slot",
+      "confidence": "guessing",
+      "last_verified": null,
+      "notes": "Wire pickup multiplies everything. Identify the current London reporter covering BAE, Babcock, Rolls-Royce results, that person owns UK defence industry at Reuters.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "pa-defence",
+      "name": "TBC",
+      "outlet": "PA Media",
+      "outlet_domains": [
+        "pa.media"
+      ],
+      "role": "Defence Correspondent",
+      "beats": [
+        "cross-domain"
+      ],
+      "priority": 3,
+      "x_handle": null,
+      "status": "vacant-slot",
+      "confidence": "guessing",
+      "last_verified": null,
+      "notes": "PA copy feeds every regional title. Matters for any constituency-level or site-specific story.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "george-allison",
+      "name": "George Allison",
+      "outlet": "UK Defence Journal",
+      "outlet_domains": [
+        "ukdefencejournal.org.uk"
+      ],
+      "role": "Editor / Founder",
+      "beats": [
+        "cross-domain",
+        "sea"
+      ],
+      "priority": 2,
+      "x_handle": "geoallison",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "Very high social reach in the UK defence-interested public. Fast, fair, and will cover procurement announcements the nationals skip.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "navy-lookout",
+      "name": "Navy Lookout (editorial team)",
+      "outlet": "Navy Lookout",
+      "outlet_domains": [
+        "navylookout.com"
+      ],
+      "role": "Editor",
+      "beats": [
+        "sea"
+      ],
+      "priority": 2,
+      "x_handle": "NavyLookout",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "The authoritative independent RN watcher. Largely pseudonymous; engage via the site and X.",
+      "relationship_notes": "",
+      "gnews_query": "\"Navy Lookout\"",
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "nicholas-drummond",
+      "name": "Nicholas Drummond",
+      "outlet": "UK Land Power / freelance",
+      "outlet_domains": [
+        "uklandpower.com"
+      ],
+      "role": "Defence industry analyst and commentator",
+      "beats": [
+        "land",
+        "industry"
+      ],
+      "priority": 2,
+      "x_handle": "nicholadrummond",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "Not a journalist, but the most-read independent voice on UK land systems and quoted constantly by those who are. Treat as an influencer node, not a media target.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "francis-tusa",
+      "name": "Francis Tusa",
+      "outlet": "Defence Analysis",
+      "outlet_domains": [],
+      "role": "Editor",
+      "beats": [
+        "procurement",
+        "industry"
+      ],
+      "priority": 2,
+      "x_handle": "francis_tusa",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "The procurement scrutineer other journalists ring. Subscription newsletter, so the nightly article feed will catch little; his value is broadcast punditry and being quoted. Brief, don't pitch.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "janes-uk-slot",
+      "name": "TBC",
+      "outlet": "Janes",
+      "outlet_domains": [
+        "janes.com"
+      ],
+      "role": "UK reporters, all domains",
+      "beats": [
+        "land",
+        "air",
+        "sea",
+        "industry"
+      ],
+      "priority": 2,
+      "x_handle": null,
+      "status": "vacant-slot",
+      "confidence": "guessing",
+      "last_verified": null,
+      "notes": "Janes bylines rotate and much sits behind the paywall. Identify current UK reporters per domain from recent show-cycle bylines.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "shephard-uk-slot",
+      "name": "TBC",
+      "outlet": "Shephard Media",
+      "outlet_domains": [
+        "shephardmedia.com"
+      ],
+      "role": "UK and domain-desk reporters",
+      "beats": [
+        "land",
+        "air",
+        "sea",
+        "industry"
+      ],
+      "priority": 2,
+      "x_handle": null,
+      "status": "vacant-slot",
+      "confidence": "guessing",
+      "last_verified": null,
+      "notes": "Domain titles (Land Warfare Intl, Defence Helicopter, naval desks) are the natural home for product and programme coverage. Fill from current mastheads.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "tim-martin",
+      "name": "Tim Martin",
+      "outlet": "Breaking Defense",
+      "outlet_domains": [
+        "breakingdefense.com"
+      ],
+      "role": "Europe / UK Reporter",
+      "beats": [
+        "cross-domain",
+        "industry"
+      ],
+      "priority": 2,
+      "x_handle": null,
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "Belfast-based, covers UK programmes for a US and international industry audience. Good route to reach US primes' UK-watching audiences.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "defense-news-uk-slot",
+      "name": "TBC",
+      "outlet": "Defense News",
+      "outlet_domains": [
+        "defensenews.com"
+      ],
+      "role": "UK / Europe coverage",
+      "beats": [
+        "cross-domain",
+        "industry"
+      ],
+      "priority": 3,
+      "x_handle": null,
+      "status": "vacant-slot",
+      "confidence": "guessing",
+      "last_verified": null,
+      "notes": "Andrew Chuter held this beat for years; believed retired. Confirm who covers the UK now.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "craig-hoyle",
+      "name": "Craig Hoyle",
+      "outlet": "FlightGlobal",
+      "outlet_domains": [
+        "flightglobal.com"
+      ],
+      "role": "Defence Editor",
+      "beats": [
+        "air",
+        "industry"
+      ],
+      "priority": 2,
+      "x_handle": null,
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "The UK air-domain trade reference. RIAT circuit regular.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "tony-osborne",
+      "name": "Tony Osborne",
+      "outlet": "Aviation Week",
+      "outlet_domains": [
+        "aviationweek.com"
+      ],
+      "role": "London Bureau Chief",
+      "beats": [
+        "air",
+        "industry"
+      ],
+      "priority": 2,
+      "x_handle": "Rotorfocus",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "European military aviation lead for AvWeek.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "thomas-newdick",
+      "name": "Thomas Newdick",
+      "outlet": "The War Zone (TWZ)",
+      "outlet_domains": [
+        "twz.com",
+        "thedrive.com"
+      ],
+      "role": "Staff Writer",
+      "beats": [
+        "air",
+        "cross-domain"
+      ],
+      "priority": 3,
+      "x_handle": null,
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "UK-based writer for the highest-traffic defence-enthusiast outlet. Deep-dive kit pieces with long shelf life.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "politico-defence-slot",
+      "name": "TBC",
+      "outlet": "Politico Europe",
+      "outlet_domains": [
+        "politico.eu"
+      ],
+      "role": "UK defence / Morning Defense contributors",
+      "beats": [
+        "politics-security",
+        "procurement"
+      ],
+      "priority": 2,
+      "x_handle": null,
+      "status": "vacant-slot",
+      "confidence": "guessing",
+      "last_verified": null,
+      "notes": "Politico's defence newsletter is read in exactly the SW1 rooms your clients care about. Identify the current UK-focused byline.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "howard-mustoe",
+      "name": "Howard Mustoe",
+      "outlet": "Rearmament",
+      "outlet_domains": [
+        "rearmament.co.uk"
+      ],
+      "role": "Founder / Editor",
+      "beats": [
+        "industry",
+        "procurement",
+        "cross-domain"
+      ],
+      "priority": 1,
+      "x_handle": "MustReadMustoe",
+      "status": "active",
+      "confidence": "verified",
+      "last_verified": "2026-07-16",
+      "notes": "Launched Rearmament in 2026 as a morning defence industry briefing after business desks at the Independent, Telegraph, BBC and Bloomberg. Daily-read potential in exactly the industry and SW1 audience that matters; covering Eurosatory, Challenger 2 delays, subscriber features. Early relationship-building here is cheap now and expensive later. X account is protected; LinkedIn and the newsletter itself are the channels.",
+      "relationship_notes": "",
+      "gnews_query": "\"Howard Mustoe\" OR Rearmament defence",
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "globaldata-defence-verticals",
+      "name": "TBC (shared GlobalData desk)",
+      "outlet": "Army Technology / Naval Technology / Airforce Technology",
+      "outlet_domains": [
+        "army-technology.com",
+        "naval-technology.com",
+        "airforce-technology.com"
+      ],
+      "role": "Defence reporters and analysts",
+      "beats": [
+        "land",
+        "sea",
+        "air",
+        "industry"
+      ],
+      "priority": 3,
+      "x_handle": null,
+      "status": "vacant-slot",
+      "confidence": "guessing",
+      "last_verified": null,
+      "notes": "GlobalData verticals with a small shared editorial team and heavy analyst or syndicated content. Low editorial influence but reliable pickup of company announcements and strong SEO shelf life, so useful for coverage volume rather than agenda-setting. Identify the named defence reporters currently bylining across the three sites.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "defense-one-slot",
+      "name": "TBC",
+      "outlet": "Defense One",
+      "outlet_domains": [
+        "defenseone.com"
+      ],
+      "role": "Global Business / Europe coverage",
+      "beats": [
+        "industry",
+        "politics-security",
+        "air"
+      ],
+      "priority": 3,
+      "x_handle": null,
+      "status": "vacant-slot",
+      "confidence": "guessing",
+      "last_verified": null,
+      "notes": "US policy-and-technology outlet, Washington-read. UK coverage is intermittent and usually tied to NATO, AUKUS or US-prime angles. Route in via the business desk when a UK story has a transatlantic hook.",
+      "relationship_notes": "",
+      "gnews_query": null,
+      "articles": [],
+      "flags": []
+    },
+    {
+      "id": "soldier-magazine",
+      "name": "Editorial desk",
+      "outlet": "Soldier Magazine",
+      "outlet_domains": [
+        "soldiermagazine.co.uk"
+      ],
+      "role": "Official magazine of the British Army",
+      "beats": [
+        "land"
+      ],
+      "priority": 3,
+      "x_handle": "soldiermagazine",
+      "status": "review",
+      "confidence": "likely",
+      "last_verified": null,
+      "notes": "MoD-owned publication, not independent press. No news pitching in the conventional sense; content goes through Army channels. Useful for equipment-in-service features and reaching serving soldiers once kit is on contract, so a post-award channel rather than a campaign one.",
+      "relationship_notes": "",
+      "gnews_query": "\"Soldier Magazine\" British Army",
+      "articles": [],
+      "flags": []
+    }
+  ]
+}
