@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Defence Media Map</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f5f5; color: #333; line-height: 1.6; }
+        .header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 2rem; text-align: center; border-bottom: 3px solid #0f3460; }
+        .header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .header p { font-size: 0.95rem; opacity: 0.9; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 2rem 1rem; }
+        .controls { display: flex; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; align-items: center; }
+        .search-box { flex: 1; min-width: 250px; }
+        .search-box input { width: 100%; padding: 0.75rem 1rem; border: 1px solid #ddd; border-radius: 6px; font-size: 1rem; }
+        .search-box input:focus { outline: none; border-color: #0f3460; box-shadow: 0 0 0 3px rgba(15, 52, 96, 0.1); }
+        .beat-filters { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .beat-btn { padding: 0.5rem 1rem; border: 2px solid #ddd; background: white; border-radius: 20px; cursor: pointer; font-size: 0.9rem; transition: all 0.2s; }
+        .beat-btn:hover { border-color: #0f3460; color: #0f3460; }
+        .beat-btn.active { background: #0f3460; color: white; border-color: #0f3460; }
+        .outlet-section { margin-bottom: 2.5rem; }
+        .outlet-heading { font-size: 1.3rem; font-weight: 600; color: #1a1a2e; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid #0f3460; }
+        .journalists-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.5rem; }
+        .journalist-card { background: white; border-radius: 8px; padding: 1.5rem; cursor: pointer; border: 1px solid #e0e0e0; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .journalist-card:hover { box-shadow: 0 6px 12px rgba(0,0,0,0.1); transform: translateY(-2px); border-color: #0f3460; }
+        .card-header { display: flex; justify-content: space-between; align-items: start; margin-bottom: 0.75rem; }
+        .journalist-name { font-size: 1.1rem; font-weight: 600; color: #1a1a2e; }
+        .priority-badge { display: inline-block; padding: 0.25rem 0.6rem; border-radius: 3px; font-size: 0.8rem; font-weight: 600; }
+        .priority-1 { background: #e8f4f8; color: #0f3460; }
+        .priority-2 { background: #f0f4f8; color: #333; }
+        .priority-3 { background: #f5f5f5; color: #666; }
+        .journalist-role { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; }
+        .beats { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.75rem; }
+        .beat-tag { display: inline-block; background: #f0f4f8; color: #0f3460; padding: 0.3rem 0.6rem; border-radius: 3px; font-size: 0.8rem; }
+        .article-count { font-size: 0.85rem; color: #666; }
+        .flag-indicator { display: inline-block; background: #fff3cd; color: #856404; padding: 0.3rem 0.6rem; border-radius: 3px; font-size: 0.8rem; font-weight: 600; margin-top: 0.5rem; }
+        .modal { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 1000; overflow-y: auto; padding: 2rem 1rem; }
+        .modal.show { display: flex; align-items: center; justify-content: center; }
+        .modal-content { background: white; border-radius: 12px; max-width: 700px; width: 100%; max-height: 85vh; overflow-y: auto; padding: 2rem; position: relative; }
+        .modal-close { position: absolute; top: 1rem; right: 1rem; background: none; border: none; font-size: 1.5rem; cursor: pointer; color: #666; }
+        .modal-close:hover { color: #000; }
+        .modal-header { margin-bottom: 1.5rem; padding-right: 2rem; }
+        .modal-name { font-size: 1.5rem; font-weight: 700; color: #1a1a2e; margin-bottom: 0.5rem; }
+        .modal-role { color: #666; font-size: 1rem; margin-bottom: 0.5rem; }
+        .modal-outlet { font-size: 0.95rem; color: #0f3460; font-weight: 600; }
+        .modal-section { margin-bottom: 1.5rem; }
+        .modal-section h3 { font-size: 1rem; font-weight: 600; color: #1a1a2e; margin-bottom: 0.75rem; border-bottom: 1px solid #e0e0e0; padding-bottom: 0.5rem; }
+        .beats-list { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+        .beat-tag-modal { background: #f0f4f8; color: #0f3460; padding: 0.4rem 0.8rem; border-radius: 4px; font-size: 0.9rem; }
+        .meta-info { display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.9rem; }
+        .meta-item { display: flex; align-items: center; gap: 0.5rem; }
+        .confidence-tag { background: #f0f4f8; color: #0f3460; padding: 0.3rem 0.6rem; border-radius: 3px; font-size: 0.85rem; }
+        .articles-list { list-style: none; }
+        .article-item { margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid #f0f0f0; }
+        .article-item:last-child { border-bottom: none; }
+        .article-title { font-weight: 600; color: #0f3460; margin-bottom: 0.3rem; }
+        .article-title a { text-decoration: none; color: #0f3460; }
+        .article-title a:hover { text-decoration: underline; }
+        .article-source { font-size: 0.85rem; color: #666; margin-bottom: 0.2rem; }
+        .article-date { font-size: 0.8rem; color: #999; }
+        .no-articles { color: #999; font-style: italic; font-size: 0.9rem; }
+        .notes { background: #f9f9f9; padding: 1rem; border-radius: 6px; border-left: 3px solid #0f3460; font-size: 0.95rem; line-height: 1.5; }
+        .contact-info { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .contact-btn { display: inline-block; padding: 0.5rem 0.8rem; background: #0f3460; color: white; text-decoration: none; border-radius: 4px; font-size: 0.9rem; transition: background 0.2s; }
+        .contact-btn:hover { background: #1a1a2e; }
+        .flag-section { background: #fff3cd; padding: 1rem; border-radius: 6px; border-left: 3px solid #ffc107; margin-top: 1rem; }
+        .flag-section h4 { color: #856404; margin-bottom: 0.5rem; font-size: 0.95rem; }
+        .flag-detail { color: #856404; font-size: 0.9rem; }
+        .no-results { text-align: center; padding: 3rem 1rem; color: #999; }
+        .no-results h2 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+        @media (max-width: 768px) {
+            .journalists-grid { grid-template-columns: 1fr; }
+            .header h1 { font-size: 1.5rem; }
+            .controls { flex-direction: column; align-items: stretch; }
+            .beat-filters { justify-content: flex-start; }
+            .modal-content { max-height: 95vh; padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>UK Defence Media Map</h1>
+        <p>Curated journalists covering UK defence. Updated nightly.</p>
+    </div>
+    
+    <div class="container">
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search journalist or outlet...">
+            </div>
+            <div class="beat-filters" id="beatFilters"></div>
+        </div>
+        <div id="outletSections"></div>
+    </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+    
+    <script>
+        const allJournalists = [{"id": "larisa-brown", "name": "Larisa Brown", "outlet": "The Times / Sunday Times", "outlet_domains": ["thetimes.com", "thetimes.co.uk"], "role": "Defence Editor", "beats": ["cross-domain", "politics-security"], "priority": 1, "x_handle": "larisamlbrown", "status": "active", "confidence": "verified", "last_verified": "2026-07-16", "notes": "Agenda-setting on MoD politics, procurement rows, Ukraine. Bylining actively as of June 2026. Strong record on personnel and kit stories across domains.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "george-grylls", "name": "George Grylls", "outlet": "The Times", "outlet_domains": ["thetimes.com", "thetimes.co.uk"], "role": "Defence Correspondent", "beats": ["cross-domain", "procurement"], "priority": 1, "x_handle": "georgegrylls", "status": "review", "confidence": "likely", "last_verified": null, "notes": "Moved from politics to defence at The Times. Good on procurement detail and industrial policy. Confirm current title.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "danielle-sheridan", "name": "Danielle Sheridan", "outlet": "The Telegraph", "outlet_domains": ["telegraph.co.uk"], "role": "Defence Editor", "beats": ["cross-domain", "land"], "priority": 1, "x_handle": "SheridanDani", "status": "maternity-leave", "confidence": "verified", "last_verified": "2026-07-16", "notes": "On maternity leave per her own X and Muck Rack bios. Identify who is covering the desk in her absence before pitching Telegraph.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "dominic-nicholls", "name": "Dominic Nicholls", "outlet": "The Telegraph", "outlet_domains": ["telegraph.co.uk"], "role": "Associate Editor, Defence", "beats": ["cross-domain", "land"], "priority": 1, "x_handle": "DomNicholls", "status": "review", "confidence": "likely", "last_verified": null, "notes": "Former Army officer, co-hosts Ukraine: The Latest podcast. Likely the senior defence voice at the Telegraph while Sheridan is on leave. Land background makes him a natural LionStrike and GRAYBURN target.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "dan-sabbagh", "name": "Dan Sabbagh", "outlet": "The Guardian", "outlet_domains": ["theguardian.com"], "role": "Defence and Security Editor", "beats": ["cross-domain", "politics-security"], "priority": 2, "x_handle": "dansabbagh", "status": "review", "confidence": "likely", "last_verified": null, "notes": "More policy and accountability angle than kit. Useful for spend-scrutiny framing, less receptive to straight industry stories.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "lucy-fisher", "name": "Lucy Fisher", "outlet": "Financial Times", "outlet_domains": ["ft.com"], "role": "Whitehall Editor", "beats": ["politics-security", "procurement"], "priority": 2, "x_handle": "LOS_Fisher", "status": "review", "confidence": "likely", "last_verified": null, "notes": "Ex-Times defence correspondent, now covers Whitehall including MoD. Strong on the politics of defence spending; investment plan and procurement policy sit squarely in her patch.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "sylvia-pfeifer", "name": "Sylvia Pfeifer", "outlet": "Financial Times", "outlet_domains": ["ft.com"], "role": "Defence and Aerospace Correspondent", "beats": ["industry", "air"], "priority": 1, "x_handle": "SylviaPfeifer", "status": "review", "confidence": "likely", "last_verified": null, "notes": "The key UK industry-side reporter. Covers primes, supply chain, sovereign capability arguments. First call for any manufacturing story with a business angle.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "john-paul-rathbone", "name": "John Paul Rathbone", "outlet": "Financial Times", "outlet_domains": ["ft.com"], "role": "Security and Defence Correspondent", "beats": ["cross-domain", "politics-security"], "priority": 2, "x_handle": "jprathbone", "status": "review", "confidence": "likely", "last_verified": null, "notes": "Covers strategy, NATO, threat picture at the FT alongside Pfeifer's industry beat.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "jerome-starkey", "name": "Jerome Starkey", "outlet": "The Sun", "outlet_domains": ["thesun.co.uk"], "role": "Defence Editor", "beats": ["cross-domain", "land"], "priority": 2, "x_handle": "jeromestarkey", "status": "review", "confidence": "likely", "last_verified": null, "notes": "High-reach, kit-friendly, likes exclusives with strong visuals across all domains.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "mark-nicol", "name": "Mark Nicol", "outlet": "Daily Mail / Mail on Sunday", "outlet_domains": ["dailymail.co.uk"], "role": "Defence Editor", "beats": ["cross-domain", "land"], "priority": 2, "x_handle": null, "status": "review", "confidence": "guessing", "last_verified": null, "notes": "Confirm both name and title. Mail defence desk has churned; verify who holds it before adding to any distribution list.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "chris-hughes", "name": "Chris Hughes", "outlet": "Daily Mirror", "outlet_domains": ["mirror.co.uk"], "role": "Defence and Security Editor", "beats": ["cross-domain"], "priority": 3, "x_handle": "TheMirrorHughes", "status": "review", "confidence": "likely", "last_verified": null, "notes": "Long-serving. Useful for forces-welfare and personnel angles.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "marco-giannangeli", "name": "Marco Giannangeli", "outlet": "Sunday Express", "outlet_domains": ["express.co.uk"], "role": "Defence and Diplomatic Editor", "beats": ["cross-domain"], "priority": 3, "x_handle": "MGiannangeli", "status": "review", "confidence": "likely", "last_verified": null, "notes": "Receptive to sovereign capability and British jobs framing.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "shashank-joshi", "name": "Shashank Joshi", "outlet": "The Economist", "outlet_domains": ["economist.com"], "role": "Defence Editor", "beats": ["cross-domain", "politics-security"], "priority": 1, "x_handle": "shashj", "status": "review", "confidence": "likely", "last_verified": null, "notes": "Most influential analytical defence journalist in the UK. Not a product-story target, but shapes the strategic argument every other outlet borrows. Worth briefing on the sovereign capability thesis rather than pitching.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "jonathan-beale", "name": "Jonathan Beale", "outlet": "BBC News", "outlet_domains": ["bbc.co.uk", "bbc.com"], "role": "Defence Correspondent", "beats": ["cross-domain"], "priority": 1, "x_handle": "bealejonathan", "status": "active", "confidence": "verified", "last_verified": "2026-07-16", "notes": "Bylining actively through 2026. Broadcast reach plus online. Embeds and access-led pieces are his preferred format; site visits and exercises beat press releases.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "frank-gardner", "name": "Frank Gardner", "outlet": "BBC News", "outlet_domains": ["bbc.co.uk", "bbc.com"], "role": "Security Correspondent", "beats": ["politics-security"], "priority": 2, "x_handle": "FrankRGardner", "status": "review", "confidence": "likely", "last_verified": null, "notes": "Security and intelligence rather than kit. Relevant when the story is threat-led.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "deborah-haynes", "name": "Deborah Haynes", "outlet": "Sky News", "outlet_domains": ["news.sky.com", "sky.com"], "role": "Security and Defence Editor", "beats": ["cross-domain", "politics-security"], "priority": 1, "x_handle": "haynesdeborah", "status": "active", "confidence": "verified", "last_verified": "2026-07-16", "notes": "Ex-Times defence editor. The Wargame podcast is being turned into a TV series, announced June 2026, so her profile is rising further. Strong on preparedness and resilience narratives.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "ali-bunkall", "name": "Alistair Bunkall", "outlet": "Sky News", "outlet_domains": ["news.sky.com", "sky.com"], "role": "Middle East Correspondent", "beats": ["politics-security"], "priority": 3, "x_handle": "AliBunkallSKY", "status": "moved", "confidence": "verified", "last_verified": "2026-07-16", "notes": "Formerly Sky defence and security correspondent, now Middle East. Kept on the map as a worked example of the moved status. Not a UK defence pitch target now.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "itv-defence-slot", "name": "TBC", "outlet": "ITV News", "outlet_domains": ["itv.com"], "role": "Defence / Security Correspondent", "beats": ["cross-domain"], "priority": 3, "x_handle": null, "status": "vacant-slot", "confidence": "guessing", "last_verified": null, "notes": "ITV has no consistent dedicated defence correspondent; security stories rotate. Fill with whoever is covering when relevant.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "forces-news-desk", "name": "TBC", "outlet": "BFBS Forces News", "outlet_domains": ["forces.net", "forcesnews.com"], "role": "Reporters and presenters, multiple", "beats": ["land", "air", "sea"], "priority": 2, "x_handle": null, "status": "vacant-slot", "confidence": "guessing", "last_verified": null, "notes": "Highest-engagement outlet inside the forces community itself. Team churns; you likely know current names from event circuits. Fill from your own contacts.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "reuters-uk-defence", "name": "TBC", "outlet": "Reuters", "outlet_domains": ["reuters.com"], "role": "UK defence / aerospace coverage", "beats": ["industry", "politics-security"], "priority": 2, "x_handle": null, "status": "vacant-slot", "confidence": "guessing", "last_verified": null, "notes": "Wire pickup multiplies everything. Identify the current London reporter covering BAE, Babcock, Rolls-Royce results, that person owns UK defence industry at Reuters.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "pa-defence", "name": "TBC", "outlet": "PA Media", "outlet_domains": ["pa.media"], "role": "Defence Correspondent", "beats": ["cross-domain"], "priority": 3, "x_handle": null, "status": "vacant-slot", "confidence": "guessing", "last_verified": null, "notes": "PA copy feeds every regional title. Matters for any constituency-level or site-specific story.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "george-allison", "name": "George Allison", "outlet": "UK Defence Journal", "outlet_domains": ["ukdefencejournal.org.uk"], "role": "Editor / Founder", "beats": ["cross-domain", "sea"], "priority": 2, "x_handle": "geoallison", "status": "review", "confidence": "likely", "last_verified": null, "notes": "Very high social reach in the UK defence-interested public. Fast, fair, and will cover procurement announcements the nationals skip.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "navy-lookout", "name": "Navy Lookout (editorial team)", "outlet": "Navy Lookout", "outlet_domains": ["navylookout.com"], "role": "Editor", "beats": ["sea"], "priority": 2, "x_handle": "NavyLookout", "status": "review", "confidence": "likely", "last_verified": null, "notes": "The authoritative independent RN watcher. Largely pseudonymous; engage via the site and X.", "relationship_notes": "", "gnews_query": "\"Navy Lookout\"", "articles": [], "flags": []}, {"id": "nicholas-drummond", "name": "Nicholas Drummond", "outlet": "UK Land Power / freelance", "outlet_domains": ["uklandpower.com"], "role": "Defence industry analyst and commentator", "beats": ["land", "industry"], "priority": 2, "x_handle": "nicholadrummond", "status": "review", "confidence": "likely", "last_verified": null, "notes": "Not a journalist, but the most-read independent voice on UK land systems and quoted constantly by those who are. Treat as an influencer node, not a media target.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "francis-tusa", "name": "Francis Tusa", "outlet": "Defence Analysis", "outlet_domains": [], "role": "Editor", "beats": ["procurement", "industry"], "priority": 2, "x_handle": "francis_tusa", "status": "review", "confidence": "likely", "last_verified": null, "notes": "The procurement scrutineer other journalists ring. Subscription newsletter, so the nightly article feed will catch little; his value is broadcast punditry and being quoted. Brief, don't pitch.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "janes-uk-slot", "name": "TBC", "outlet": "Janes", "outlet_domains": ["janes.com"], "role": "UK reporters, all domains", "beats": ["land", "air", "sea", "industry"], "priority": 2, "x_handle": null, "status": "vacant-slot", "confidence": "guessing", "last_verified": null, "notes": "Janes bylines rotate and much sits behind the paywall. Identify current UK reporters per domain from recent show-cycle bylines.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "shephard-uk-slot", "name": "TBC", "outlet": "Shephard Media", "outlet_domains": ["shephardmedia.com"], "role": "UK and domain-desk reporters", "beats": ["land", "air", "sea", "industry"], "priority": 2, "x_handle": null, "status": "vacant-slot", "confidence": "guessing", "last_verified": null, "notes": "Domain titles (Land Warfare Intl, Defence Helicopter, naval desks) are the natural home for product and programme coverage. Fill from current mastheads.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "tim-martin", "name": "Tim Martin", "outlet": "Breaking Defense", "outlet_domains": ["breakingdefense.com"], "role": "Europe / UK Reporter", "beats": ["cross-domain", "industry"], "priority": 2, "x_handle": null, "status": "review", "confidence": "likely", "last_verified": null, "notes": "Belfast-based, covers UK programmes for a US and international industry audience. Good route to reach US primes' UK-watching audiences.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "defense-news-uk-slot", "name": "TBC", "outlet": "Defense News", "outlet_domains": ["defensenews.com"], "role": "UK / Europe coverage", "beats": ["cross-domain", "industry"], "priority": 3, "x_handle": null, "status": "vacant-slot", "confidence": "guessing", "last_verified": null, "notes": "Andrew Chuter held this beat for years; believed retired. Confirm who covers the UK now.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "craig-hoyle", "name": "Craig Hoyle", "outlet": "FlightGlobal", "outlet_domains": ["flightglobal.com"], "role": "Defence Editor", "beats": ["air", "industry"], "priority": 2, "x_handle": null, "status": "review", "confidence": "likely", "last_verified": null, "notes": "The UK air-domain trade reference. RIAT circuit regular.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "tony-osborne", "name": "Tony Osborne", "outlet": "Aviation Week", "outlet_domains": ["aviationweek.com"], "role": "London Bureau Chief", "beats": ["air", "industry"], "priority": 2, "x_handle": "Rotorfocus", "status": "review", "confidence": "likely", "last_verified": null, "notes": "European military aviation lead for AvWeek.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "thomas-newdick", "name": "Thomas Newdick", "outlet": "The War Zone (TWZ)", "outlet_domains": ["twz.com", "thedrive.com"], "role": "Staff Writer", "beats": ["air", "cross-domain"], "priority": 3, "x_handle": null, "status": "review", "confidence": "likely", "last_verified": null, "notes": "UK-based writer for the highest-traffic defence-enthusiast outlet. Deep-dive kit pieces with long shelf life.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "politico-defence-slot", "name": "TBC", "outlet": "Politico Europe", "outlet_domains": ["politico.eu"], "role": "UK defence / Morning Defense contributors", "beats": ["politics-security", "procurement"], "priority": 2, "x_handle": null, "status": "vacant-slot", "confidence": "guessing", "last_verified": null, "notes": "Politico's defence newsletter is read in exactly the SW1 rooms your clients care about. Identify the current UK-focused byline.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "howard-mustoe", "name": "Howard Mustoe", "outlet": "Rearmament", "outlet_domains": ["rearmament.co.uk"], "role": "Founder / Editor", "beats": ["industry", "procurement", "cross-domain"], "priority": 1, "x_handle": "MustReadMustoe", "status": "active", "confidence": "verified", "last_verified": "2026-07-16", "notes": "Launched Rearmament in 2026 as a morning defence industry briefing after business desks at the Independent, Telegraph, BBC and Bloomberg. Daily-read potential in exactly the industry and SW1 audience that matters; covering Eurosatory, Challenger 2 delays, subscriber features. Early relationship-building here is cheap now and expensive later. X account is protected; LinkedIn and the newsletter itself are the channels.", "relationship_notes": "", "gnews_query": "\"Howard Mustoe\" OR Rearmament defence", "articles": [], "flags": []}, {"id": "globaldata-defence-verticals", "name": "TBC (shared GlobalData desk)", "outlet": "Army Technology / Naval Technology / Airforce Technology", "outlet_domains": ["army-technology.com", "naval-technology.com", "airforce-technology.com"], "role": "Defence reporters and analysts", "beats": ["land", "sea", "air", "industry"], "priority": 3, "x_handle": null, "status": "vacant-slot", "confidence": "guessing", "last_verified": null, "notes": "GlobalData verticals with a small shared editorial team and heavy analyst or syndicated content. Low editorial influence but reliable pickup of company announcements and strong SEO shelf life, so useful for coverage volume rather than agenda-setting. Identify the named defence reporters currently bylining across the three sites.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "defense-one-slot", "name": "TBC", "outlet": "Defense One", "outlet_domains": ["defenseone.com"], "role": "Global Business / Europe coverage", "beats": ["industry", "politics-security", "air"], "priority": 3, "x_handle": null, "status": "vacant-slot", "confidence": "guessing", "last_verified": null, "notes": "US policy-and-technology outlet, Washington-read. UK coverage is intermittent and usually tied to NATO, AUKUS or US-prime angles. Route in via the business desk when a UK story has a transatlantic hook.", "relationship_notes": "", "gnews_query": null, "articles": [], "flags": []}, {"id": "soldier-magazine", "name": "Editorial desk", "outlet": "Soldier Magazine", "outlet_domains": ["soldiermagazine.co.uk"], "role": "Official magazine of the British Army", "beats": ["land"], "priority": 3, "x_handle": "soldiermagazine", "status": "review", "confidence": "likely", "last_verified": null, "notes": "MoD-owned publication, not independent press. No news pitching in the conventional sense; content goes through Army channels. Useful for equipment-in-service features and reaching serving soldiers once kit is on contract, so a post-award channel rather than a campaign one.", "relationship_notes": "", "gnews_query": "\"Soldier Magazine\" British Army", "articles": [], "flags": []}];
+        let activeBeats = new Set();
+        let searchTerm = '';
+        
+        function initPage() {
+            renderBeats();
+            renderOutlets();
+            setupSearch();
+        }
+        
+        function renderBeats() {
+            const beatsSet = new Set();
+            allJournalists.forEach(j => {
+                if (j.status !== 'vacant-slot' && j.name !== 'TBC') {
+                    j.beats.forEach(b => beatsSet.add(b));
+                }
+            });
+            const beatsArray = Array.from(beatsSet).sort();
+            const container = document.getElementById('beatFilters');
+            container.innerHTML = '';
+            beatsArray.forEach(beat => {
+                const btn = document.createElement('button');
+                btn.className = 'beat-btn';
+                btn.textContent = beat;
+                btn.onclick = () => toggleBeat(beat, btn);
+                container.appendChild(btn);
+            });
+        }
+        
+        function toggleBeat(beat, btn) {
+            if (activeBeats.has(beat)) {
+                activeBeats.delete(beat);
+                btn.classList.remove('active');
+            } else {
+                activeBeats.add(beat);
+                btn.classList.add('active');
+            }
+            renderOutlets();
+        }
+        
+        function setupSearch() {
+            document.getElementById('searchInput').addEventListener('input', (e) => {
+                searchTerm = e.target.value.toLowerCase();
+                renderOutlets();
+            });
+        }
+        
+        function shouldShowJournalist(j) {
+            if (j.status === 'vacant-slot' || j.name === 'TBC') return false;
+            const matchesSearch = !searchTerm ||
+                j.name.toLowerCase().includes(searchTerm) ||
+                j.outlet.toLowerCase().includes(searchTerm) ||
+                (j.notes && j.notes.toLowerCase().includes(searchTerm));
+            if (!matchesSearch) return false;
+            if (activeBeats.size === 0) return true;
+            return j.beats.some(b => activeBeats.has(b));
+        }
+        
+        function renderOutlets() {
+            const byOutlet = {};
+            allJournalists.forEach(j => {
+                if (shouldShowJournalist(j)) {
+                    if (!byOutlet[j.outlet]) byOutlet[j.outlet] = [];
+                    byOutlet[j.outlet].push(j);
+                }
+            });
+            const sortedOutlets = Object.keys(byOutlet).sort();
+            let html = '';
+            if (sortedOutlets.length === 0) {
+                html = '<div class="no-results"><h2>No journalists found</h2></div>';
+            } else {
+                sortedOutlets.forEach(outlet => {
+                    html += '<div class="outlet-section"><h2 class="outlet-heading">' + escapeHtml(outlet) + '</h2><div class="journalists-grid">';
+                    byOutlet[outlet].sort((a, b) => (a.priority - b.priority) || a.name.localeCompare(b.name)).forEach(j => {
+                        html += renderCard(j);
+                    });
+                    html += '</div></div>';
+                });
+            }
+            document.getElementById('outletSections').innerHTML = html;
+            document.querySelectorAll('.journalist-card').forEach(card => {
+                card.addEventListener('click', (e) => {
+                    if (!e.target.closest('a')) openModal(card.dataset.id);
+                });
+            });
+        }
+        
+        function renderCard(j) {
+            const articles = j.articles || [];
+            const flags = j.flags || [];
+            let html = '<div class="journalist-card" data-id="' + j.id + '"><div class="card-header"><div><div class="journalist-name">' + escapeHtml(j.name) + '</div><div class="journalist-role">' + escapeHtml(j.role) + '</div></div><span class="priority-badge priority-' + j.priority + '">P' + j.priority + '</span></div><div class="beats">';
+            j.beats.forEach(b => {
+                html += '<span class="beat-tag">' + escapeHtml(b) + '</span>';
+            });
+            html += '</div><div class="article-count">' + articles.length + ' article' + (articles.length !== 1 ? 's' : '') + '</div>';
+            if (flags.length > 0) html += '<div class="flag-indicator">⚠️ Possible move</div>';
+            html += '</div>';
+            return html;
+        }
+        
+        function openModal(id) {
+            const j = allJournalists.find(x => x.id === id);
+            if (!j) return;
+            let html = '<div class="modal-header"><div class="modal-name">' + escapeHtml(j.name) + '</div><div class="modal-role">' + escapeHtml(j.role) + '</div><div class="modal-outlet">' + escapeHtml(j.outlet) + '</div></div>';
+            html += '<div class="modal-section"><h3>Coverage areas</h3><div class="beats-list">';
+            j.beats.forEach(b => {
+                html += '<span class="beat-tag-modal">' + escapeHtml(b) + '</span>';
+            });
+            html += '</div></div><div class="modal-section"><h3>Details</h3><div class="meta-info"><div class="meta-item"><strong>Priority:</strong> <span class="confidence-tag">' + j.priority + '</span></div><div class="meta-item"><strong>Confidence:</strong> <span class="confidence-tag">' + escapeHtml(j.confidence) + '</span></div><div class="meta-item"><strong>Verified:</strong> ' + escapeHtml(j.last_verified || 'Not yet') + '</div></div></div>';
+            if (j.notes) html += '<div class="modal-section"><h3>Coverage notes</h3><div class="notes">' + escapeHtml(j.notes) + '</div></div>';
+            if (j.articles && j.articles.length > 0) {
+                html += '<div class="modal-section"><h3>Recent articles</h3><ul class="articles-list">';
+                j.articles.forEach(a => {
+                    html += '<li class="article-item"><div class="article-title"><a href="' + escapeHtml(a.link) + '" target="_blank">' + escapeHtml(a.title) + '</a></div><div class="article-source">' + escapeHtml(a.source_name || 'Unknown') + '</div><div class="article-date">' + formatDate(a.published) + '</div></li>';
+                });
+                html += '</ul></div>';
+            } else {
+                html += '<div class="modal-section"><p class="no-articles">No recent articles found.</p></div>';
+            }
+            if (j.flags && j.flags.length > 0) {
+                html += '<div class="flag-section"><h4>⚠️ Job move alert</h4>';
+                j.flags.forEach(f => {
+                    if (f.type === 'possible-move') {
+                        html += '<div class="flag-detail">' + escapeHtml(f.detail) + '</div><div class="flag-detail" style="margin-top: 0.3rem; font-size: 0.85rem;">Flagged: ' + escapeHtml(f.raised) + '</div>';
+                    }
+                });
+                html += '</div>';
+            }
+            if (j.x_handle) {
+                html += '<div class="modal-section"><h3>Contact</h3><div class="contact-info"><a href="https://x.com/' + escapeHtml(j.x_handle) + '" target="_blank" class="contact-btn">@' + escapeHtml(j.x_handle) + '</a></div></div>';
+            }
+            document.getElementById('modalBody').innerHTML = html;
+            document.getElementById('modal').classList.add('show');
+        }
+        
+        function closeModal() {
+            document.getElementById('modal').classList.remove('show');
+        }
+        
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            try {
+                const d = new Date(dateStr);
+                return d.toLocaleDateString('en-GB', { year: 'numeric', month: 'short', day: 'numeric' });
+            } catch (e) {
+                return dateStr;
+            }
+        }
+        
+        function escapeHtml(text) {
+            if (!text) return '';
+            const map = {'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;'};
+            return text.replace(/[&<>"']/g, m => map[m]);
+        }
+        
+        document.getElementById('modal').addEventListener('click', (e) => {
+            if (e.target.id === 'modal') closeModal();
+        });
+        window.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeModal();
+        });
+        initPage();
+    </script>
+</body>
+</html>
