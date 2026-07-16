@@ -20,7 +20,8 @@
       "gnews_query": "Optional override for the nightly article search. Defaults to quoted name + outlet.",
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
-    }
+    },
+    "last_script_run": "2026-07-16T09:02:19+00:00"
   },
   "journalists": [
     {
@@ -44,7 +45,43 @@
       "notes": "Agenda-setting on MoD politics, procurement rows, Ukraine. Bylining actively as of June 2026. Strong record on personnel and kit stories across domains.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Keir Starmer sets up row with Andy Burnham over defence plan - The Times",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRE11QTZYdmdTNXJsSmZKTjNYVEJvSlZHMmJJdGkxY0ZfcjJvd043d2F3b1Q1a3FHZW01T0d6LU5vc0toZkZTZWd1eXZhVG1GWVdGTlJxRHdicFZidDgzbUFUVVc3Zlg3ckJfdmlBaWo0UTFSaGhXdWlkQkE0b3hKNm00YnhvcDBaejNoeXhtbWVkUFdmY05RZEhub1ZyTGNGTlNidmxaZmZXZlJkRVpZZQ?oc=5",
+          "published": "Tue, 23 Jun 2026 07:00:00 GMT",
+          "source_name": "The Times",
+          "source_domain": "thetimes.com"
+        },
+        {
+          "title": "Defence plan offers clarity — but not the cash needed - The Times",
+          "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPc0NvdDFLVnVnZkhxbkJEQ2didzRUMlI2aEM5NS1abk9qQVY5U2xBbnZUZDJNLThpVmt3M2NXQzY3aUJQNWZtS0t2Z05aQ01USmhJTENpM3VLdW5HYml3a29XcmpLelhzZE9GZ1dVQ2JqbTUwcDQ0elNyM0k1NkhLU2VIZEZISzVfRWVVbWZZUnVMS0NQY2JkbzNaZWxmVG40YUl1RW1R?oc=5",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "source_name": "The Times",
+          "source_domain": "thetimes.com"
+        },
+        {
+          "title": "Andy Burnham cannot play catch up in an arms race - The Times",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOckdhS2JGaEFEN0dBMmI4bDJ6NUEwa2RyZW10WllKeTUtMFExd1JtMjdHMTA0Zjd0a3hhQzZsMEZhaTZHaF9JQ2phNjg5NkozRVRWVXp4MGhOeFRXS2pxam1uVFdqWmZTa1lDQWdiMEdmb0VBTjJBRWpzQlFLTUdYOUFlSHRNNEVoTXQwV2dkek5UZw?oc=5",
+          "published": "Thu, 09 Jul 2026 11:40:07 GMT",
+          "source_name": "The Times",
+          "source_domain": "thetimes.com"
+        },
+        {
+          "title": "Dan Jarvis heads to Nato meeting on defence spending empty-handed - The Times",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOWTFLTm13a3FWQ0ZTazRWTC1JMlAwOGwxamxXMnBzeVJwcmNRaXdvT0xYZnJCeVRqLVZUY00tV2g5czZyYVhSal80UFV3bV9vbkh4TWs1T2FxRWhreUROMWlNQ3BZby1jSG9mQklSa0ZieFNlU1dUalVia2lZQzhGcE1BalZURW5yRTRUVTdOWTM4dHZX?oc=5",
+          "published": "Wed, 17 Jun 2026 07:00:00 GMT",
+          "source_name": "The Times",
+          "source_domain": "thetimes.com"
+        },
+        {
+          "title": "Buying British may backfire, defence experts tell Dan Jarvis - The Times",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPbWhYaUF0RGpkNjBXZV9ORFg5bzJUeENuVlUxcHB1Um4zMmV3YmEtZ3lIMlRRb0lLVEZtSmY2M2N2Ynp1TGVQc3lmVGhLRmhNTjNabjRkMHJVZlRLelJnZ2NJcEE5ZC1FLXgwQ1JRX2lsUFFZOU9fdEZ5ajYyYjNZajNmWmUxOEdiT2p0VDhMdWRmMG9CV2w0SnBFV2VxblAwS1E?oc=5",
+          "published": "Thu, 09 Jul 2026 19:30:00 GMT",
+          "source_name": "The Times",
+          "source_domain": "thetimes.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -68,7 +105,43 @@
       "notes": "Moved from politics to defence at The Times. Good on procurement detail and industrial policy. Confirm current title.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "How will Trump handle an Andy Burnham premiership? - The Times",
+          "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMzBBdFQzYlBzbTdBNFkwZm0xX0tBZGdSOHpfTnBQQlFZLTVQUGRlNlJCTjZ0SUU5UDAtNDJrWDROdi1fWHJNcVQ0YUFxSXZPa1hhd0ZucWUxLWxXQlNyWXNXSmpRVXZVTVpGS19tNHJFYmdSamd3dWxBemFVeDEyTXB6dGlGZFVIZlFKOGxHWHRnMDV0cEdJenNEcC15Ni1jWGdXNkdUUm5DOU12OExr?oc=5",
+          "published": "Mon, 22 Jun 2026 07:00:00 GMT",
+          "source_name": "The Times",
+          "source_domain": "thetimes.com"
+        },
+        {
+          "title": "Capitulate, seize the Strait or more bombs — Trump’s options to end Iran war - The Times",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPTFFSNVAtSTYzd2FueF81RTQyUTJkMGxGSTdtVnVHM05RbVR6STlkdVJhZ1ZKR2NncktXTWxtemlrMUZCY0pSdHIzUjBnTmM1TGEySWIzUGdrcHdYeWtodUQzMWFEVnJQek9SVEgtaGk0RS1jTWFWZW1OdFBRTi05cHdNVS1SUFNaQ2ZmZ0Fvdng1eGVuTVVFLWotcExITHBlVzF5Rk04dThPd3hWdTdvd0RVVUJ4dw?oc=5",
+          "published": "Fri, 10 Jul 2026 16:30:14 GMT",
+          "source_name": "The Times",
+          "source_domain": "thetimes.com"
+        },
+        {
+          "title": "US-Iran war ‘close to resuming’ after strikes disrupt Khamenei funeral - The Times",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPU0p1anptczlSU1dyR0VDbDBjMWRqVDRmSGJwbEFqNndTQ2xjejlic0JCdHhWSG52VVB5cEN2dEtZMXBZSm1Jdks3N21zNTFpTXVzTTIyTmhKaXhGVDl2ZnlhX0QyeHZGUzRDWXByUWJBNExQVU1FV2JhV1dvSE5wZ2Y4ZzE3cnI0MWVTaDVEOGVUNEhSajhxQlVBX2hoaFJoWkVyUmIxNWZieXI5UUk2U1o2MGxVZmhM?oc=5",
+          "published": "Thu, 09 Jul 2026 23:01:00 GMT",
+          "source_name": "The Times",
+          "source_domain": "thetimes.com"
+        },
+        {
+          "title": "FBI assists after death of US senator Lindsey Graham - The Times",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNYWJ2TTU4ekpBVjRfRVdzSjlSQlR4V2xnam9PRVRBVl9vUjFzbHNTWG1oRGxiaHpfMVJoMjhGbWxTa0k1UzdiMDlndnRRa2pLN21JUXF6MEc1S2NQVDA3b1FXeDZJWE5uOGpUcjc4RTBwRG9TWXJpVTlZUzA2THlLS2pFbHlHUnhOeWxfQU1ET0xHZndhSFhkQlNfcGlsM1JZS3pkdA?oc=5",
+          "published": "Mon, 13 Jul 2026 00:04:00 GMT",
+          "source_name": "The Times",
+          "source_domain": "thetimes.com"
+        },
+        {
+          "title": "Oil price jumps as Iran strikes tankers in Strait of Hormuz - The Times",
+          "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNMkdGYVpxeFZOYkZnMEdlX1NSLWJMUTJWZVpJMUkyOTlzVHVXMFMwanp6c1NTbzQ1djJNMVBZTmNFOXBaUk4zWjVxWElhaVQyakRNcHFEcTh3Q2h6dlY0Ml9lNTVUU1hiMFB6N2FqV2psR1lTWUwtTmdsUkk0ekl0X1lGMmFCUFJrTTVTdzVhLVM1VDJaQ0VmZ01LQTZGNEdSSWw2eF9wZUVqSmc4QzdBMWN1eVJSZDZBVUE?oc=5",
+          "published": "Tue, 14 Jul 2026 08:55:00 GMT",
+          "source_name": "The Times",
+          "source_domain": "thetimes.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -91,7 +164,15 @@
       "notes": "On maternity leave per her own X and Muck Rack bios. Identify who is covering the desk in her absence before pitching Telegraph.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Burnham: I’ll boost spending on defence - The Telegraph",
+          "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOZ3R1Y3ZrWHBFSnlPYkRmbmVkdVFwN2FQbnhZaDdmUnRpb2IwcERuNzd6Y0pTMWcxeFpSZkNhRkJaUG9fTDhuaDNtMUI0Y2pyamxVUlp3S1hHcGlpM1U3SEpTV1l0Nzd4RG93X29VYzVSdVk4VDJacEgzMDhXc0ozUnZiYUhFcjBReEREYU9hSU1fd1pT?oc=5",
+          "published": "Tue, 23 Jun 2026 07:00:00 GMT",
+          "source_name": "The Telegraph",
+          "source_domain": "telegraph.co.uk"
+        }
+      ],
       "flags": []
     },
     {
@@ -114,7 +195,43 @@
       "notes": "Former Army officer, co-hosts Ukraine: The Latest podcast. Likely the senior defence voice at the Telegraph while Sheridan is on leave. Land background makes him a natural LionStrike and GRAYBURN target.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Starmer’s defence plan proves the UK hasn’t learnt lessons from Iran and Ukraine wars - The Telegraph",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVEh0YndsMnpvbmxkeW16R1hBM05uVUp4WDJPc3paY0RtUDVMRndjNGVLelpSekxRMVU2ME5kSmdUV0ZiNHZLNFRYQU5uc0FKUHpFT2ZjWjl4dTYzTnZsUE1scFktWm1sRXFBQ092bHdmdFJYSFFBaWhrMXVudlpXcTB6Z20tTS1FMElXeEVndnY4bS1UOEVHYS1qOHF5VTJJXzhVRTItbkQ4UQ?oc=5",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "source_name": "The Telegraph",
+          "source_domain": "telegraph.co.uk"
+        },
+        {
+          "title": "Ukraine smashes major Russian oil refinery & US sells Tomahawks to Germany - Acast",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOM0s0RjJYUHZ2WjZzYVBZcmxMb2pycWJ0YXJWNEktMzNSRUtMTy1WWE03ck1JOFRoTkoxMWEtSFFiWV9Jb0FDVl9TNFdkU3ZaazZKZklHS3hhUlYzZW95U0RpQ2c1dklmS0h4VVpqbHlIOFZWUjZlYlo1RlRJazcxNXV2XzdhOWM5Z1QySWtUdy01THhWR2pVOVNoS1oxVVUxQi1mcEFNT1lnYTRSUUtZckdn?oc=5",
+          "published": "Fri, 10 Jul 2026 15:52:45 GMT",
+          "source_name": "Acast",
+          "source_domain": "shows.acast.com"
+        },
+        {
+          "title": "Putin Burns Through Best Missiles In ‘desperate’ Ukraine Fightback | Russia-Ukraine Latest War News Carrier (flhnITrLzz) - Fathom Journal",
+          "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA3LWFtWGVERGZmdHZOVnZvUF9qX0pFRE9WN3czZURKNDhPa1Z4eU1ubmZhUHJ5Zk5zcFhHNFlwcHMyUW1kMTRNdDJEUzlCTXNWYjEzNW1SQjBZNDB3NU1Zd0o1cExQbm1rc2c?oc=5",
+          "published": "Fri, 19 Jun 2026 23:43:08 GMT",
+          "source_name": "Fathom Journal",
+          "source_domain": "fathomjournal.org"
+        },
+        {
+          "title": "Trump: Nato failed my Iran war test - The Telegraph",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUjBHV1VlU1VWSFFSMV9nTWlSN2Myd3dMYTMzZ19HSzdqbGx1NnlLQzlfaEVqNElnSm0xZ1F1ZmM5bWFNZy1rY1U2ZEtoVDVvSFBUZFlOakJwZndfU05wMy1WanlwcHVTQ2t1UllRYjNYMFFjTmxuTEk2dVJkaVM1MVRoa2xJUQ?oc=5",
+          "published": "Tue, 07 Jul 2026 07:00:00 GMT",
+          "source_name": "The Telegraph",
+          "source_domain": "telegraph.co.uk"
+        },
+        {
+          "title": "What Does Ukraine Need To Get Through The Winter? - Independent Thinking Podcast Marshals (munNq9ENMO) - Mshale",
+          "link": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QeFhha3RYRUZMZDBOa3lsaTM4cHBNX1N5bFFzTDJ3T3F5NS1xbzdMVklyUjBaSFh2cGJlUlNpNjFoV2hXQXZMdEwtb0V2NjNzM2lxbUsya3Z6d002elBaTw?oc=5",
+          "published": "Sun, 12 Jul 2026 05:55:01 GMT",
+          "source_name": "Mshale",
+          "source_domain": "mshale.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -137,7 +254,43 @@
       "notes": "More policy and accountability angle than kit. Useful for spend-scrutiny framing, less receptive to straight industry stories.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Minister calls on Burnham to show path to 3.5% target on UK defence spending - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMW42Nlh0d0VyTTNBNEdLd2JGYTIwaWUyc1hxQ19rc1JScHFiNDdxYkZOSUZaTEx4dlBlTXViaU5LbWlvSkp6WGp4UEJaQ281VWlWZUw1T3ZBTFp3bEd6QVp1c3UtdmpOMHlHNXFaR2twQW1mOVUwQzR5Tjk3TjliR1BEdW50dWd6ejBmWEZ0VDF2RUZGT1I0?oc=5",
+          "published": "Sun, 05 Jul 2026 23:01:00 GMT",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        {
+          "title": "UK defence secretary promises delayed investment plan before Nato summit - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVi14YXUtUWZ5X29iajNaZEVvLVZoeDRBekQyMEM2d0VmS1hzaVlCckd0Q2s1a1UtTFVWWmozcEVTWmZMRS1SQzkwbFk5MFhhbGVWa3d0ZFdZbVFsLUV1c1ltbFBrenkxR1pjWXBTQUFDajhIczhDNGVlT3RlazZTdF9hMHFrWTF4V242NmowajlIRHRxajYyS1FuME5iNklkVUdjNXRaQmdoRHB5LVpXR2stTWhnMHdDWGpYMk5kSQ?oc=5",
+          "published": "Tue, 23 Jun 2026 07:00:00 GMT",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        {
+          "title": "Backing Ukraine, staying out of Iran and riding the Trump rollercoaster: how Starmer handled foreign affairs - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdXp0T3hiazM4dzF6dkQ0ZU96c0h4T2tQelF4M1pGYjZleExXSFB5LWo3VC10cjMyOW1fSnd2eFlZM1JxcjVFaEVQNlJCRVBxaEZiZ2Q4RGNEaHZ2aGVxVHllbk9jaWl0RmF1LTFfRzhwU1FqWUU0b3JOV0dnQVQ4aHBpcE5ycjdPS0EtUWR2Yzlhal9Wc1ZBTWxZT3pJYTNwSU9YUw?oc=5",
+          "published": "Mon, 22 Jun 2026 07:00:00 GMT",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        {
+          "title": "Israeli command system identified 850,000 targets in Gaza and Lebanon wars, says supplier - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPZVJwZVhSV3dlVnBGcWptdWZkRzVGQmJuSFBvbW5yWkM3Ql9EbnhSTjl5RlB2SXBCRTRVaE5xMnc4cFZSSFZkRkpueTdUNERXWEI4VW1NY2R1em9iUVQxRk5yY0dtSkdVSVB5c3RxX3RHX1FncXJQSHVaWW95dU43Vkp5Z1ljTnY3X1E3WE1YVmREcC1Pb0p6NDcxTFZVUzNyeUVHQ25ZRU9oeHBPR1NrMkFOcWplMG04cTY2UFJ0TVRicXN6ZndiMERCbjJPUQ?oc=5",
+          "published": "Mon, 06 Jul 2026 07:00:00 GMT",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        },
+        {
+          "title": "Russia preparing possible ‘provocation’ in Baltic states or Poland, sources say - The Guardian",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPa3llSW9ZbWYxQjRaOEFqdnVCVkhFWmM0eEZyX21vQk5pWHpOMU03bm1JOUh2TUY4X1NvNVpvY2RlN0lWTDBUVnlSYVQ0RlJBTVpXLXc5UUVWelRMeHpid1A3c2ZnOFV0Snh0Qk1OTUozVFJnMTBtc2JtekE5SHZOaHhWT1lsLXdVb2w3Mk9B?oc=5",
+          "published": "Fri, 26 Jun 2026 07:00:00 GMT",
+          "source_name": "The Guardian",
+          "source_domain": "theguardian.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -160,7 +313,43 @@
       "notes": "Ex-Times defence correspondent, now covers Whitehall including MoD. Strong on the politics of defence spending; investment plan and procurement policy sit squarely in her patch.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Transcript: Can anyone challenge Andy Burnham for PM? - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPV3J6SEZmNFFjN2R6T0Q2bEJMSXlucTZIQmQtTmE5b1B2SG1RYTFfdmxfbFJqMGp1Z0VWNUZKcC0wZ0FCenJaZlFhTnJNSW9YUElvaWZiMTVZdmRlWmY5REMtU2VqRDJwdEQ2M0h6SVcwOUlYTC1DMWVEZWRiWWR6TkI2UlI?oc=5",
+          "published": "Tue, 23 Jun 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        },
+        {
+          "title": "Andy Burnham left with £4.7bn Budget problem after Keir Starmer unveils defence plan - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOM0d2Y05OektaU3VReWVPaXJkMWVhYlJDSjU4eEVNNEdYekR3U0hNWnlxZ0JtRE9ORWgwcUpkOExQUnFmYURGbEpaVDQ1cmFjVDN1RUtXZzNpelJkSVRwZ0VPX29pZGNoZ3A5bGJ5M2o3NEFnSnFKLTlSa1B4NUNsLVJCY08?oc=5",
+          "published": "Tue, 30 Jun 2026 15:58:01 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        },
+        {
+          "title": "Keir Starmer says some road and energy projects will be scrapped to pay for £15bn defence plan - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQazRITjhhSEN3TW5vYkg1N2Fab1hjVzVfWDF1ZWZjSDVPUnlRWTUwb1RwMFdjTzdONjNWc2dVdTA0VU5zRkItMDFPckRpVGpPLVJ4SWQ5YUM0eVkwd0R2Wk1oV2xxNW5mdy1ySVRNYmQ3TnZmQ1VwYzVkMU1DamFobGdQSl8?oc=5",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        },
+        {
+          "title": "Power to the North: Burnham’s big idea - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPVDRHMTFCUDRwN21ySHpHTTlJVjgxLV9PQnpwaFF1djQ3OWZ5UEI2alZTVllGM2lSZ3podThjMnoyS3RwVFpvNy1rSWNBSXJOZ0pmaHpMYklWaDhyeVgyNmpib01oUlhib25UNUVZMUZud1VlMEpiRzg1TFhYdi1jdS1jOUU?oc=5",
+          "published": "Fri, 03 Jul 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        },
+        {
+          "title": "Keir Starmer risks clash with Andy Burnham over defence funding plan - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQNElSMjdNUTdJR2kwR0RGNXZCeE5ESmh6em9QaURBbFM2Wm83azVudGU5eDdneDlOX29zcl9ZcTNGaWN4Y2gwelVFdTRwRUR6TWlwVXlfR2hXOXlyUEpWQ2RKN3Y1RDJXMGVUR1YzWG0zeTBmb0c3RGRVWW9hUHh3SEJJdnY?oc=5",
+          "published": "Tue, 23 Jun 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -183,7 +372,43 @@
       "notes": "The key UK industry-side reporter. Covers primes, supply chain, sovereign capability arguments. First call for any manufacturing story with a business angle.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Helsing’s ‘crazy’ valuation raises defence tech bubble concerns - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOeVJQaC1aSkVoV2R2RzNyQzFTb21fRURvdUlYSU9YaEJ5LVF6RDNOZlFIRjg1cWVEdGFucFp1RWxlZXkycHc5RzNXSlRLdUpKZEdyMmVSN2M0M3EzT1UxRWZ0YndBUjFZQ2dtSnpVRDBDRmJRWUV2Q1FqN2VvZVNlUzhkR1g?oc=5",
+          "published": "Wed, 15 Jul 2026 04:00:42 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        },
+        {
+          "title": "Cost, speed and scale: How drone warfare is rewiring west’s arms production - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQR1NENzFobnpiTEYyOXYwX2NhWWFGWTRCbjgteXpnalVUWU5EVjgtVktWckQ2MDBkaThVdlRNMXE2SWdzU2FEWE9NQmZyQWpvM0Jqb01VbVZUZEpoanJMRFIxcFRReGE0RFdIUEhnQ1BPbHQ5QncyNEl1anRoN2dwdDFzODc?oc=5",
+          "published": "Sun, 05 Jul 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        },
+        {
+          "title": "French push to exclude UK from EU defence spending backfires - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVjhVUUVRbVN4VTB0OFNjSmpZYkpCeDlsWnMwakJrbHRXVjVJNWsxdURfZk54aENxeWdIODk1NG55VzAyMnRhQnZQZkluS0Y3N1ZvVXFYVlpoR0tBSURsT3ZJUmU2YjFsQkJLdkNpNkRoZ3Z6cFJ5V0lYSjFkVkxaMnRNZng?oc=5",
+          "published": "Sat, 04 Jul 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        },
+        {
+          "title": "BAE’s next-generation combat jet lifted by defence funding boost - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbVM1SENKRTVZUUd1UGppVDVfQlczMTA0ZDQ1YjdIa0g0Z2dqTVJpZ3R2RFByRjc3RHFCbEJrbjRvdjVVWUNqb2tmQ3NmWE9VOXczSmJfS0J2aHpwMUpQTllPYTdlNy1DMEhURFFxbmwtZ0d2Zk9peHJOMkJBLWxYWTZpa20?oc=5",
+          "published": "Wed, 01 Jul 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        },
+        {
+          "title": "Rheinmetall shares plunge after Germany scraps warship project - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSVN6ZTQ3RnVGRjBwUXUtMFVoUnlGaG83Ulp0bE1mSWl3N1FETlhpTE9SMFpvTE5pMnNmS1o4Szd4YnRYcWl5UkNrbWxCYW9rRmE2ZkVZZ09BS2l2TkhQamxPRGZYY3BqQXFHWEI5M3N6SHN4cEFwbUtHUDNGRkxLWXdlQ2k?oc=5",
+          "published": "Wed, 24 Jun 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -206,7 +431,43 @@
       "notes": "Covers strategy, NATO, threat picture at the FT alongside Pfeifer's industry beat.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Transcript: The Big Four’s problems Down Under - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9hdkw4UGQ5c2R6c25XLVhNanh3QldlMThXZDdWcmRQakxIZVZjZlhVV29UUTFjem9GT2xIX2V0d2ZaN1RkVlF1N2tYbUlkTDFXRHR5ZFY3YUloR0ZmX1JrNlJ4SmRQQ3c4bm1ib2R0OGU?oc=5",
+          "published": "Mon, 06 Jul 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        },
+        {
+          "title": "Turkey launches security crackdown ahead of Nato summit - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPcUU2N2JBSTdrbXptaUJ4V0U2Y0RvbDdnT1pNRC12QXpRYzNXZnZEcE9mNzlDR2Q4OVktQ1FwbnpCUlBkNmhRUFd4LXVRdWN0SE81YUJGM1ZpeDAxM01OaEdSTTZjZ2dxMnVnZmRBVnB3UUxSV3NPbjdxTUZiRWJlNkViR24?oc=5",
+          "published": "Fri, 26 Jun 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        },
+        {
+          "title": "Trump signals reversal of Turkey F-35 ban - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNVEdLeTN4ZFhlc25raUpJbzRXb3RESUJwZTk3NDFiUlg3eEhQVEQzdzFoODZCSE9zVTVTdVBVYnIyRDZLY1RDdXBHbGRHZXdxd2tsY3NKYUlGNF9PWGpTaTN5RnBhdlJiV3BOTTV3ektLSkc4U21oSWtnR0Jkckg3SlVPUGY?oc=5",
+          "published": "Tue, 07 Jul 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        },
+        {
+          "title": "Turkey’s defence industry is booming. Europe is in its sights - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOeGVJOWdBd0tvbVNOZXY1dTJwS1pvb1JjZm9rN09NR2xFRmRrNEdUZUFLelpiZndWendXOHBSck9SVTl3RVRRSDd4MHJMcjJLaHNSbGJIX2o2dTVBTzBVR1JTQ3ZmRmpPeDRVYzQ0aUNMX3l5VGRxZGhmOVZCNjBlVmMtdWs?oc=5",
+          "published": "Wed, 01 Jul 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        },
+        {
+          "title": "Erdoğan rival shuttled between trials as Nato meets in Turkey - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWnpLc1R2Y0tHVTkyQ211MGxKcS1sOEQza01aTV93ZHNET2pmQmx0c19kZi1LNmFnZXFsVlpYcW1qenRwNjNZRWhrc3N0Q2hiX0xSemU1NGhDWl9PZWdaNktjdGhnUGNRTlpRb1p4bGdtVnhOQTk4Z1VlQ0Q1YU53dHQ2c0w?oc=5",
+          "published": "Mon, 06 Jul 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -229,7 +490,43 @@
       "notes": "High-reach, kit-friendly, likes exclusives with strong visuals across all domains.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Watch The Sun’s Jerome Starkey drive ‘deadliest’ war truck that will defend Europe if Putin dares invade - The Sun",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQT0hvYUI5dC1PSE9MSDF6Sk9SOVRtMHdjakNTa3dtdkdpeUdFdkl3VU5ISE9FVnpVV3NweHRadG9vSUprZ0xvZ3FMcndhVmNOMy15aHgzM3hHT21rT2lRNFo5MGhBUEdGTV91ZHE4c0pEcXJTMW5uZ2dGMmRZb0w1SEQtRE1POXN6QXluZVNySXk?oc=5",
+          "published": "Thu, 02 Jul 2026 07:00:00 GMT",
+          "source_name": "The Sun",
+          "source_domain": "thesun.co.uk"
+        },
+        {
+          "title": "Army chief warns UK must be poised to strike Russia in 30 minutes - despite £28bn defence black hole - The Sun",
+          "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPSW1ZTldjYnM5SERWRUNHSjMxTkdQSjF0RWRPM0piZG1ScnZJUDY5cHRaaEUyUk1CeHZNcE9jcVBBUFd1djVmeTJ4dXZNVmhmUGY1R0xuSDRBdEtlSjhnZkhzQ1QtLTR0X1ByalkxQXBySUZRTEZlVnYwdDVCWmtWamZiRHZIcF9BQVgzWDdYdFZvd1FadV83Nkx3?oc=5",
+          "published": "Tue, 23 Jun 2026 07:00:00 GMT",
+          "source_name": "The Sun",
+          "source_domain": "thesun.co.uk"
+        },
+        {
+          "title": "Huge security blunder as highly sensitive docs from Army's largest garrison found dumped at council tip - The Irish Sun",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbWo4NWJPaURZT0RsVHhtRm85cjFadW1tRjBDZlo0MWtyQThDd29VTVBvdWwyN0huZFd4c0dIdVp5SWp1UEdsYjl0SjB1YzcxLVJRa21LdTBjdXhKcHRpQ3dIYVQwVXdDSUd0Y3hpUFRuSDdVczZWUWZnX3BWLTViQw?oc=5",
+          "published": "Sat, 04 Jul 2026 20:36:59 GMT",
+          "source_name": "The Irish Sun",
+          "source_domain": "thesun.ie"
+        },
+        {
+          "title": "Royal Navy Captain who starred in BBC documentary denies rape & sexual assault - The Irish Sun",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOV3N1cU5XU2lyX3JtQzl5d1YtQmt5a3hwaDBwQ19GQjBWVlV3WnRwUDFOYmJjbFNITlFoVVFvckVaSGlRek1IR2VsZndWd1VKODdDWks2cWZHMnNzX2tmVWVBeGJYc1lKRW4zZm1rSHgyMDVWMjA2QTJGbjNHN2ZRR0lQQ0ZHeVJMUkE?oc=5",
+          "published": "Thu, 18 Jun 2026 07:00:00 GMT",
+          "source_name": "The Irish Sun",
+          "source_domain": "thesun.ie"
+        },
+        {
+          "title": "How Britain designed, built, and test-fired three missiles for Ukraine in record time in 'Dragons’ Den-style contest' - The Sun",
+          "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbC1vQUtpV3JIanNqMGx3OVVWMTVkYlFpNjdTbEVqb0RkT2pTdjhkRkhJQ200UmVMSUFpTHRRaHhNRzkyY1hxZkNUMy1KZ3NHaWVGMEQxY0QwXzBHOE1SNFp6MEp0bTlHODlLeUdWVTVBOXM2clU3TGtuQUJZaTVXcXYwZE10MFJSVXc?oc=5",
+          "published": "Sat, 20 Jun 2026 07:00:00 GMT",
+          "source_name": "The Sun",
+          "source_domain": "thesun.co.uk"
+        }
+      ],
       "flags": []
     },
     {
@@ -252,7 +549,43 @@
       "notes": "Confirm both name and title. Mail defence desk has churned; verify who holds it before adding to any distribution list.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "A WMD on Commons notepaper - InPublishing",
+          "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9TSVpxdzJPLUlVWWRjSzVtZDRoblhnX0xESXJiNUljbmk4UEhIaHZmMEREMVFoTUtqWDZ2VzltRTRKRzk3MVB6UFlzQkM2N3VyQ2RWZjk1N1hWcWhHc0YzMlh1NTZwUlZqazEybVRDU1RtaFhvaWV4dFJ0dDk?oc=5",
+          "published": "Thu, 18 Jun 2026 07:00:00 GMT",
+          "source_name": "InPublishing",
+          "source_domain": "inpublishing.co.uk"
+        },
+        {
+          "title": "Report links Russian drones over RAF bases to shadow fleet ship - MSN",
+          "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQSWR5RjhJMU5vcS1ZV1NGTU9vbkgxTnIyZzE0WDNJZWNFdjZ3bVdCVTRNSmFmQk5ZVkwzWWtwcGhsODFwQ1ZxSHBRZ3IxbnlENkJ6bTJpcGltaTlHTEdKeGtpaUdTRGNrVElUVm1BRlROUVVSVTZuaVhySjNmT082ZHF0T1Eyb0VpbGNZYjNmLXJIRDdGMm11SFhmczRzd0x6dnhqZEVQa3NTejI1QkttLThZOGpFRGJVbWFjd21wLWtkVHB4V0tNdGVxUDlKQ1JibUVIX29pTjdLaDNGaW51R2M5NFFtMExR?oc=5",
+          "published": "Thu, 02 Jul 2026 07:00:00 GMT",
+          "source_name": "MSN",
+          "source_domain": "msn.com"
+        },
+        {
+          "title": "How ground troops and manned tanks will make way for drones and crewless submarines - MSN",
+          "link": "https://news.google.com/rss/articles/CBMi2ANBVV95cUxQTEo4QXN0RGJiY1AzeHdDVHNvOXM1aVpPNnNuYklXMjdkemlDUFVBcTRQdGRBa25hbGczM0dpaDVhQzU5VTViQW42WnJBUTVPQ1FJTnQwdmM5SHRTVzZFdUFyUURuUF9tcXlLbjR3S1RmMGszUWhBYzloSHQ5SnZaOVBla2NhdU9OV1lJakZrdnJRNnloY2daNmFiZ2l1enJpX2FnbjRNY2t4SU9lUUZZbUpETXNwZHE2Mi1lUjZZazJ6Z09kWDdNOVJyZkFLWFlSSDhLSWRkODZSdUY5YWQ5TVZXVG9XTm4ybEdTZENtWjBmQUxvMkJWR2NFWG5RSUtKVFVnb0YyZnN6QkNhT1JidWluelZXY1lUbmF6YUVMSjYzZ01NaEZvSzYxX0djUVZOcmx0VEZ5US0xdlNpcFU5SDAtS25xRU1iaFBJcHEtQW5EbGJIc2J3Mk9uY1kxRDZmNFd1eEVyQjY4NzJaUEl6QXNKLVVzX3dFcjdDOXpzRmJmSE1NZDVWekM1anZDNlVhSzJfU25JWWxTaHZqdHFzQ0VVTmsxeXNhV3Nna1RVN3cwbF9MTGkxWmNmMnBXWDMxVUVTdVp0UmExcWZBS0ZFMkZrTmhFMHRE?oc=5",
+          "published": "Wed, 15 Jul 2026 14:55:10 GMT",
+          "source_name": "MSN",
+          "source_domain": "msn.com"
+        },
+        {
+          "title": "Is Labour's 'lacklustre' defence investment plan Starmer's parting U-turn? - MSN",
+          "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPRkhZckxoeXF3UFhXVUt2dDlRNTI0c1BYY2ZPaFhPT1o3STZLbW15ZVNuX1lJZ25zWmswNVVYUklIc3l6MjlhbDE2emctSVN0RTdVYk1oNWNuRVFvY3c4Nzdhdmx4V2I0bFY2Y29HWXU1Ymxid3NwQ3A0Z3BYbkgzbjYxSnBRUDNnYzVDMkdfNDh0SGR1RVFiUzNUcXZqSE9Ld216TnZpREFQV1pCX2dpVFBUbVJBMG5KQi1OYW02NlB0Y3Z1dHk1WQ?oc=5",
+          "published": "Sat, 04 Jul 2026 20:27:04 GMT",
+          "source_name": "MSN",
+          "source_domain": "msn.com"
+        },
+        {
+          "title": "PM unveils his defence plan - but there's a £5bn black hole and the MoD has to make £10bn in cuts - MSN",
+          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMUVsNmppQVlGZjU0dnRtZ2tORkR3aDhIc0Z3NjJuVF9TMzNRbENxNUVVTUVNSmc1NUliTXhhRW12b21YU1AyY3BjaHVodFlacjRUVi11UVB4UmZ6RS1QeXpIWEwxSTlIZWdYRXhzVmtFaFNVb0RBRFNDQmZNQVlnQWtXMnI0VFQ1U1BUdzlXNk1KbEM0djRYeENVYmVGNUZfM1JOLXd1Ump0UzhiaUpZV2xISEpCdDZsTXBfZVZiV3VEaU82N3lwQnVPYU8yRVJoX2JHYVl2UHV4OWs?oc=5",
+          "published": "Tue, 14 Jul 2026 01:20:30 GMT",
+          "source_name": "MSN",
+          "source_domain": "msn.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -274,7 +607,43 @@
       "notes": "Long-serving. Useful for forces-welfare and personnel angles.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Britain's military boosted by £15billion spend in huge move to defend against Russian attack - The Mirror",
+          "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcjZXVUg1XzlHbXRmNm1wV2NDdld2STJnWW1zY0RnRkkwMjBZUlFhbGxyMFRUY0xkUlNKZUlTM2VRcTQ0OG55SWdtN1BBY0ViUVBMUmZ6em5uRHQ1aG16QU1UX2pEUDVyeUJiSVhrU1hwY1FSd2dmRmVqekdsUVV0S9IBhgFBVV95cUxNbm1YSXhLVXdLLUZiWmdQRWN3dDNLMFNmdEFlWTl5ZldHaG5USkNNN0F4bDNIeWZfcEI0bW1rSDhzSHZpTnBqYjV5VHFnOFZjRkdxQmF2emFKQVBxcDEwVFJBY3NVZFFsSDl4T1lURkFWVmZoX2JpaVZqdVlVa252a25fMWlLQQ?oc=5",
+          "published": "Wed, 01 Jul 2026 07:00:00 GMT",
+          "source_name": "The Mirror",
+          "source_domain": "mirror.co.uk"
+        },
+        {
+          "title": "Donald Trump's petrol-bomb diplomacy adds fuel to Middle East blaze - The Mirror",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1DYlZvSUVSc2lyZmxGMk1TcWtqS1VLOGZaTmI1Q3NjVVkwak1RYUFFY1cyV2V5RHRGOEtVanlpVktPZFZiVUc0ZDhwY2N6OUswQ2NQeVpEdHRlUFliRWVMMlNxUGZ2dGNDMW5pSEkwNDMxZGxFUjNhZFB0Z9IBgAFBVV95cUxQYVpVQkRIaVBXU0l6aDNwTUFQUFl2dHlxdWRQaVB0aVBaclc0T0ZwVlllXzFjM29ZUjc1R3V3Tno2RnlzbjRjaDl4MGlxZ0xhYVl1SVptNk5vdjg0YWJ1d3hHQUIxeTFyTEViM0w0ajJJb2hkT011aGx0NlFPMEVuZQ?oc=5",
+          "published": "Wed, 08 Jul 2026 10:15:00 GMT",
+          "source_name": "The Mirror",
+          "source_domain": "mirror.co.uk"
+        },
+        {
+          "title": "'Some say Dan Jarvis' £15billion defence spend is still not enough amid Russia's warnings' - The Mirror",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNNjB1LU04TzFkLWpVMzFNQWFkaElUQmwwYkwwMzFuM1NmSF8zU0hCX01aREliMG9vQmVZTGU5YVdUSGM5UjBmeUt3WWlJY1FybG9jbHhoUnUyN3A0YUhkSGdxX0JEcTNqSFZKQmc0X0dwSjBRaV9GbW5GVVFfblRISHRtQTdrQjVQc2U4?oc=5",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "source_name": "The Mirror",
+          "source_domain": "mirror.co.uk"
+        },
+        {
+          "title": "Israel hits Hezbollah in defiance of Trump's so-called Iran deal - The Mirror",
+          "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOM204NW92c3hZYVZacllNQm9JZlhuNmJMOEIzUUpKZ2o2czZpZktBczJmeExSYUV2QlVCYmJlc3dqS010OHhFekhtblI3UUJ4MGgxUEY4QTZWR29MNzVmSldBUVRjQUNaQTFrLU9Dak9oU1dQWlJwR2xBYjQ5Si02cFIyWmwwMzjSAYwBQVVfeXFMTmNWaW9yUF9nTTZqOVBSV2RkY2xqMkFrZG1KVHcwWU9nOWhJTFpGSDZqT1lxRHZzcUZWVDFsUHNFWlF5aV9LN1lSaXNkNEFxM3VVcjctazV3LXRrSWRqWTN0YXJsZ2xIZUY4LVZUdEZybEx0WHliUTNNTGlESUl3OGRnVW1lQXlDZHpocUk?oc=5",
+          "published": "Thu, 18 Jun 2026 07:00:00 GMT",
+          "source_name": "The Mirror",
+          "source_domain": "mirror.co.uk"
+        },
+        {
+          "title": "'Donald Trump's Iran peace deal is just a multi-billion pound retreat from Middle East' - The Mirror",
+          "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5tNVFobDQtTU9VaFlhbk9YRS1qblJGS0JlcUxsVk14SXpfWkU1NUxERGNJMjl6cHpMNUtPQlNlTV9HY1ZySjFvWDl1c0tzMFVFcEx4NkVQbE5haGh3bFFlcUEwdmJxNGRjUXRjT3phVEswN0Z2WG43aHJGSlZZUdIBgwFBVV95cUxQaFFlODMzOGxId2E0QngwTENJSmFzbzlKS1dQdE9tZnBhcmh5amd5MVREMnMzWjZDRDZJU3dmRW56aUxIYlJQekVpVXpJMWxpSXgxdTlJdnZyWnlsaV9rYTlYWlZWMXV4Mm85Mk50LUxEZUtRTDBMcUxtSFRBaXVmOVFzUQ?oc=5",
+          "published": "Wed, 17 Jun 2026 07:00:00 GMT",
+          "source_name": "The Mirror",
+          "source_domain": "mirror.co.uk"
+        }
+      ],
       "flags": []
     },
     {
@@ -319,7 +688,43 @@
       "notes": "Most influential analytical defence journalist in the UK. Not a product-story target, but shapes the strategic argument every other outlet borrows. Worth briefing on the sovereign capability thesis rather than pitching.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "The Next Russia Threat: Moscow’s Military Power After Ukraine - Carnegie Endowment for International Peace",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPTXEzaXFqc29vcFpFSllHTTBMWVhBbDBITjFfdkIwR0VkQXVZR2xJMGc5SlNvcUlkck80cWVlc3ZhTnROVzdJWjJIVnZpb0VkQ051a2ZIaUU1VG02cDhOand3UG92VHB1VW5IUGozRmFhamdGVERFVHFIdGpzV2UwQXZpLW5ENUd2eV9TQXFUXzhlYTJOVWk3UDAyTWlIR2w2MUJmMXJUdw?oc=5",
+          "published": "Thu, 09 Jul 2026 07:00:00 GMT",
+          "source_name": "Carnegie Endowment for International Peace",
+          "source_domain": "carnegieendowment.org"
+        },
+        {
+          "title": "The general and the magazine: why The Economist's new Defence Editor appointment raises questions about the military-industrial complex's reach - Action on Armed Violence - AOAV",
+          "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxOVkp4TUtOeW15WGRxa3E4STM2aWs1djhrTnl0WlJFVVBYdHVvYmdqazZMcVppSVVjNHBxWXFFZFQybGlRS1lUQlNzbHdvSHRxcWVuSVA1bWNBeTRHdVlxM2lGdWdZWloyZmFCQlRYRHVUMHdUcVJhZld6cTFDdjBxRlFVcE5CWDdOMWF4eFZvUG9tZ1hiMTA1Y1pXNFc3MERMWmhvWDVXZ3kyQTc2ckxkTkJCOFJ3c3lNMFVqSHhOcDFQNXhIb3lmUXdEOGZ4WTJERXloM3Y1QnQ5eWdNWVRNbUVqTlpXanppNUZhYWJQRkQ2d3ZFbkVaaE13?oc=5",
+          "published": "Fri, 19 Jun 2026 07:00:00 GMT",
+          "source_name": "Action on Armed Violence - AOAV",
+          "source_domain": "aoav.org.uk"
+        },
+        {
+          "title": "The War Room newsletter: The defence row behind Starmergeddon - The Economist",
+          "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPbGdROVY3TlRSM1VVZ3lXeUdGSUVNcTBhZ0NJY284ZkJrd0RNNnJkUjVSTTY5Yy1BNWZYdzJPc1laVUE0LUJWYUUxcV9TdFp6Ry00elJTQmlKQ1ZlV2RYMVFwQmgzRWZCa1J0Nmx0VXRhNFdDdjJGX1hEUVBGa0s0aWxDazdTa3FxZmRqb3E5aVpBNURvZjJYd2VMT2Q2SkxsQmt6NWFQLVg?oc=5",
+          "published": "Mon, 22 Jun 2026 07:00:00 GMT",
+          "source_name": "The Economist",
+          "source_domain": "economist.com"
+        },
+        {
+          "title": "Getting the Brits Ready to Fight - Center for a New American Security | CNAS",
+          "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZmxieDVPeWM5bl9jd250YkNSeldrVXhCSFRsdV9uZk8ya3otcndZcXZ1MVlLcEpsVWxoYkxLaE1PZUlWcUFTaUZDcFU5SlVwMTRFUzJSX2xpNkRvXzNxbld1aEhCMzEySnhrLVFuZWFVMWNfUmVuT09IalRMN0Y4VlVER09wQXY3N1ZMbl93?oc=5",
+          "published": "Mon, 22 Jun 2026 07:00:00 GMT",
+          "source_name": "Center for a New American Security | CNAS",
+          "source_domain": "cnas.org"
+        },
+        {
+          "title": "General who led shadowy army psy-ops unit is new Economist defence editor - thecanary.co",
+          "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE1LUDNNSTJDaUpHUkZ2dFVTNGxkMXV0TWlRaERjYmliZjBNWUEwTnIwSTZReFpVUFBjWnRBSE83OHVXOW9JcDVUcmtfUkRZenhmOVYwSU15OWRvbzNKcUJOalhzbDZQMXI4MWNOZlNwZlhDUQ?oc=5",
+          "published": "Fri, 19 Jun 2026 07:00:00 GMT",
+          "source_name": "thecanary.co",
+          "source_domain": "thecanary.co"
+        }
+      ],
       "flags": []
     },
     {
@@ -365,7 +770,43 @@
       "notes": "Security and intelligence rather than kit. Relevant when the story is threat-led.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Frank Gardner: Key points from government's defence spending plan - BBC",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1BeTRzMFlLelRuWERCVm15T0Nzc09GY3l6LTl0Q3J2V2JWMDYtRnNqUm1jSmhtbWMyc081Mkl4dS1zYmx5eFRGZEtRTXZ0ZTh2NzZvR3Y3cnlKUU9C?oc=5",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "source_name": "BBC",
+          "source_domain": "bbc.co.uk"
+        },
+        {
+          "title": "Why Starmer's defence plan leaves next PM with £4.7bn headache - BBC",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5UdWRneF90V3lzM00yWm5DQmdtOGp3V2FiVHFHR2RmTllxWWFCUFRpT1ZMa2N1NHYtTXRBajQyaVVjYWNQQW1sLVJHWGhIWXVmWkF0VlNuMzNodw?oc=5",
+          "published": "Wed, 01 Jul 2026 07:00:00 GMT",
+          "source_name": "BBC",
+          "source_domain": "bbc.com"
+        },
+        {
+          "title": "Frank Gardner: Navy plans reflect sea change in how wars are fought - BBC",
+          "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1aMDl0dUk5bkJoaS1JZUozTFpxenBadjVYRGNsU2dDNWxId1J3UnZuWEt4dUQ5Z3BUUzdjcHJ2RURYOUFtQi1ESUNMeXROTEZwelFzMTlhRjZTSGNP?oc=5",
+          "published": "Mon, 29 Jun 2026 07:00:00 GMT",
+          "source_name": "BBC",
+          "source_domain": "bbc.co.uk"
+        },
+        {
+          "title": "Trump looms large as Nato grapples with challenge of rearming Europe - BBC",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBDUDZhM3F1aHVTeEZDR0xIQmNzMWdhMFo3ZmdPdFg1U3lhbVQyMWJUZjlFNUdWN0ZKaXVKelVuT2J6QmcyVzZwRWtSSlNGWnVLWmt5ZHFwbTBndw?oc=5",
+          "published": "Tue, 07 Jul 2026 07:00:00 GMT",
+          "source_name": "BBC",
+          "source_domain": "bbc.com"
+        },
+        {
+          "title": "Nato allies announce £37bn for new missile project - BBC",
+          "link": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5OWWF4bkJyelllNU5pV0d6emExd1d2NWczb0xGZHo1SEU4VkVxOTNpNVI1cFd2NENwM3Qxdm1lTUxGcjBCNU1GU0xNdnhfcUhxTFZmWF9oNUx3UQ?oc=5",
+          "published": "Wed, 08 Jul 2026 05:57:53 GMT",
+          "source_name": "BBC",
+          "source_domain": "bbc.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -389,7 +830,43 @@
       "notes": "Ex-Times defence editor. The Wargame podcast is being turned into a TV series, announced June 2026, so her profile is rising further. Strong on preparedness and resilience narratives.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Deborah Haynes: PM's defence plan 'a big gamble' - Sky News",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQWWZXdjA1VXBnX01xU0lDMy0xeVg1bk81MzlUaS1qUnFHLXp5UHhuQkc2OEtuYmtRbGFUejUybFc5ZE5mX1ltMXhhM2N0ejl0eWIxaTM2Y215anhUVzZyX24wbG51a0FUdFB0VjdpQTFnMFFMTmtYWk1ydEZ4MWVZel9EQVBrZzZDSGVjMEdWdExuLWNvM1E?oc=5",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "source_name": "Sky News",
+          "source_domain": "news.sky.com"
+        },
+        {
+          "title": "Sky announces immersive documentary series The Wargame - skygroup.sky",
+          "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbkd6eVZzOUV3MVUtNjNPTXVPS2FFT19Mb3BadWdKR2RFeXp2ZVNsaWpvV24yVUxfVG4xbV9qYTJLZVluQUZoaFBiTHZjNUVOZXFhcFd3S2owand6blJzVGdrU3p3QVVzYlRvWk1OUVZjOFVSOXpYY3lZWDU3ZDZlSDYxZmMxYko2WTMyc0NjV1g?oc=5",
+          "published": "Sat, 20 Jun 2026 07:00:00 GMT",
+          "source_name": "skygroup.sky",
+          "source_domain": "skygroup.sky"
+        },
+        {
+          "title": "What will the UK's biggest home defence exercise in decades involve? - Sky News",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNdFVxTUktNm45Q2hfeTBOLXU0MVhnYlZTMmo1eWVUYU5CZy1SejZlZ3dzMWFjNlllREJSRmw5cFo4bnltU0lORmZiLVJ2OGUxMlloZm43M0MzMk5IaTAwYWdaRnl0Y0hfb25za1M0c2lxYVV5QURTWlhrLU9LQi1GZ0Q3THlNNHg4SHhRbG10dGlfVkJVdFV4QzhseVNMWFNNbWdGdg?oc=5",
+          "published": "Tue, 14 Jul 2026 19:43:20 GMT",
+          "source_name": "Sky News",
+          "source_domain": "news.sky.com"
+        },
+        {
+          "title": "Is an extra £15bn in the defence plan enough to protect Britain? - Sky News",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWTVkVUZPam1PMXJNXzhhaGMtQmljZHpTTUw0Ynd3dHBid1VJRmw0NTU5b0tqVVJlOWxhN1dYOFluTkViT2xjdnhxOExBXzRYd1VZSGhnUUU4RlBuTklTcGt1UGQ1X1kxUi12ZnRIWTFScnR2TGpJSDN1WE80Sjh2eEZOQ2s0aEFleTJfNHRzSlA0SVViM2NKRHhGMXZzVFU?oc=5",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "source_name": "Sky News",
+          "source_domain": "news.sky.com"
+        },
+        {
+          "title": "NATO needs to see a credible trajectory for when the UK will be ready for war - and that is no longer in Sir Keir's gift - Sky News",
+          "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOUHVfY3YwVlZBSWlHb0FEd3d0bHRQRWNvYlpjWUp1UXJrZ2xScTg1MkJNdWM2SExPb25XT1h0eGI3ZE56a0pHRVVXM3ZUX3VpbzFZVU1qek1QX29tNmlkcTZHM29XVmJjVmdTQkdrTDBHaFJqdUUxcWNhaC0xRU10UXhnQ1JYTDIxNng5RDFYRldOSEZQQWFrZ3U4RG1zSVhoOERZX0NSX2VBVUVxTm9KTkZQU1BHOElNaDV2YWIzRFYwWXpzV2xxbmVJY1VkWGlTMnJRbzBsODkxRnVhRGdLZW9wX281cWho?oc=5",
+          "published": "Thu, 25 Jun 2026 07:00:00 GMT",
+          "source_name": "Sky News",
+          "source_domain": "news.sky.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -412,7 +889,43 @@
       "notes": "Formerly Sky defence and security correspondent, now Middle East. Kept on the map as a worked example of the moved status. Not a UK defence pitch target now.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Why Ukraine could now have fresh hope of vital US support - Sky News",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOcmNRbnFEXzVXcElENE9Id1RxN3Z4YWN2cnRVRmt3Z2lCWWVvanB1TUk0STVjSFRmRWV3eFptR0UzbWh6OVUwQmUwQzJpN3N2QlRaWkZKZVZhSE9rTlRpUW9jdzlxblpKTk9PSkthRW1kVVczUzJHRThWalZNNm55YTd6Q3gyanpxeHc3NW5VWUVtN09FNTZNQQ?oc=5",
+          "published": "Wed, 17 Jun 2026 07:00:00 GMT",
+          "source_name": "Sky News",
+          "source_domain": "news.sky.com"
+        },
+        {
+          "title": "Sky News Australia. . Firefighters in Spain are working to control a large wildfire. - facebook.com",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYWRQclJBd0JGeFpTVGRHZGdzZ3pwR2s1Z1Uxb09xMndvSUxvZVVZQkRrSEEyVGdHU2E0OXEtUURxQXluSHdITzFHbWhPd3lVSlc1S05zVHNOU3E4Vy1XVlZMejZ3YmF6aF96ejg5MkxGQmthenNhcXgwNVcxNXppdEs0T2tTZkQwRHJVUUNGNklVT0NiZ3cxRUZnWmdLSk91ZUFuNkhnNTYySk54RGRXTVNRMVprMXNwdzNkVjk2bkNTR3lsUTVPUFd2dHo?oc=5",
+          "published": "Sat, 11 Jul 2026 20:57:32 GMT",
+          "source_name": "facebook.com",
+          "source_domain": "facebook.com"
+        },
+        {
+          "title": "European populists making fresh bids for power - ABC News & Headlines – Australian Broadcasting Corporation",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNOWthYW5mQ3RZYVF3dW51N0wzSENSZ3dxTk83UUZ6eVZKUnAxdzlkb2FPNF9OTmxVVXJmUkxMRGhPWkdtdnYtNlVPbzNuTVQ4Mml2ZkdGelo3XzU0RzdCLXVvMTJQaTdWb1JNRnhyQ0lTanpqRURYVUNHTk9kQnpqdm5ELVBkRzVWMDBabVZDN1RQZVVucGl5WVhaQ2ZienZBNk1Dcy15MVdIMXM?oc=5",
+          "published": "Fri, 10 Jul 2026 21:35:00 GMT",
+          "source_name": "ABC News & Headlines – Australian Broadcasting Corporation",
+          "source_domain": "abc.net.au"
+        },
+        {
+          "title": "Brits in Spain describe wildfire 'armageddon' - Sky News",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQNTVVMHZWelQxQlpPd3JNMmI4RU5sdmVOb3EweHV0NzZUbm4zOVVaS0lNSUlNLWZ2NkcwR1kxZFBFdWNpN3FpOFJkRlhoWFdnQ1ZyelNGRTZYc1pMakthUXVGQXdSc3Y3M2dsTE5Kc3RZY1FZaVZDSFNGMDEzNWJFUzZVZE4tUQ?oc=5",
+          "published": "Sun, 12 Jul 2026 22:26:59 GMT",
+          "source_name": "Sky News",
+          "source_domain": "news.sky.com"
+        },
+        {
+          "title": "'Horrible': Spain locals describe 'chaos' evacuating wildfire - Sky News",
+          "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOcHFmMHB3alI5UlduRFowWGpadTZlR0NkVHBnWUFrU200SmFZWm43YjU2MnBXeFV5d1RVbXR6VElSR05OSFZ5X0MtVVVVS3VNRXNJcmRRM0Q4RE52eGMwY2EzZ0xxMDRaR3pjeUhpR2pSMDFiSmlCZi1Hb1BIN0tRT2VOSWhnUUh4S203eUU3ZHNrZ0RkODZN?oc=5",
+          "published": "Sat, 11 Jul 2026 19:57:48 GMT",
+          "source_name": "Sky News",
+          "source_domain": "news.sky.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -527,7 +1040,43 @@
       "notes": "Very high social reach in the UK defence-interested public. Fast, fair, and will cover procurement announcements the nationals skip.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Steel tariff impact on Defence Investment Plan still unclear - UK Defence Journal",
+          "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxObnB0YmNHbDRjNkpfUFRhM0ROOUd2eHE3WmtDT1NIUVZJZkNlcjF6dER4anRnaGxkRWVuc2JsN21Vd2h2aU9yNDZYMnZTeFZJRUV1a01KazNMbGJHdzl5SGt0ZmtfeGdoSE4zb1JFWFh6LTRPOVlqSVZrTG0zM0xKQmJ1QkQweGpoX2xreVdDanYxVWl5cmpCOQ?oc=5",
+          "published": "Mon, 22 Jun 2026 07:00:00 GMT",
+          "source_name": "UK Defence Journal",
+          "source_domain": "ukdefencejournal.org.uk"
+        },
+        {
+          "title": "UK seeks disposable jet engines for low-cost missiles - UK Defence Journal",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxONkpzOXFSMzZ4aFd0Q3hwQzRNcUpDaEUzeUdCRXJnQmZvNUVQeUhJUklkTVkycm5nSHM5WmFZdmp0RVk4ckxuNXpDTmtYQ2FvMVJvdHdhcWdDRC14ajlNSGFBelBacjBBdVNiZ1ZORTlsSUd3UTlkMk5tRDdhekNRbGVzMzVXMlI3cklmaFVoSQ?oc=5",
+          "published": "Tue, 07 Jul 2026 07:00:00 GMT",
+          "source_name": "UK Defence Journal",
+          "source_domain": "ukdefencejournal.org.uk"
+        },
+        {
+          "title": "Drone strike on young football team bus could drag Belarus into Russia-Ukraine war - Metro.co.uk",
+          "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOY3NoR2RJS3MwSExsLWY2c0FsUE1BQkdWVE5vcl9HT0FoZE9HSF9Bc1NpQlM3NnJpTC1zaTRycGtMY1lkNUZRRFJSVnNmejVIb18tcDhSMUxGRVlPY19LczdTTXNDQ3VuQkJ6NWM0YTljUVRVVVpOdTB1U095TjZvNWZXODhOM3ZiQ1BkSWxCNjhmQmlOYl9YRGl6cXBpYVBGb1ZmN1BqWjRwTnFIaUHSAbMBQVVfeXFMTXBKQmhGVFFWZGlHbjV4bEJ1Rlo3cTRveDN5YktzVnNvaTdMb0RLS05aRnFCU1N1b3dyaHpJVENaRllYMnU3dzJobV9ENGcwaUxhVE5QRS1hRGwzdjA4NWt2M1Ayczc1LTdZQjMxVWZzUkxvN09NT3RjOGJ3djU4c3dxRVV6clFwSnpoVHpBNWZwQmoxb2Qyckd6QVllYlg3XzZoUmdCUWoyY0RCTTBVU19ydUU?oc=5",
+          "published": "Thu, 18 Jun 2026 07:00:00 GMT",
+          "source_name": "Metro.co.uk",
+          "source_domain": "metro.co.uk"
+        },
+        {
+          "title": "UK starts defining Dreadnought successor this Parliament - UK Defence Journal",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPY2luR3FoU2k3TFUwWWx1WTk3WnRVWUtTRnFKTVZwMkZkX2dmdDFKc0FQWVN3ZWFCUk0wM0xUMGZ1Yi1LNURqVDhjLTVWZDVjb0tXaUM4RHh6ZTM1UWkzcUJoVUhpMDE4YXl5OUtXZU83NlVzd3BENXZUYU55bVZPZ3VxVUxtTkQ2c2tDV3VVczdNeDQ?oc=5",
+          "published": "Sun, 05 Jul 2026 07:00:00 GMT",
+          "source_name": "UK Defence Journal",
+          "source_domain": "ukdefencejournal.org.uk"
+        },
+        {
+          "title": "Shipbuilding boom risks another bust, Sweeney warns - UK Defence Journal",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPS29TQ01uVllWbmRfOENfX2N1SlhjaXVaYmhKQmZPRXZRMTFBNjQxaGhFMUNWZDltaEQyTWM4UGJZXzRTQmpTd1BBX2dNd2RLREE0U0l6VGxsal90OHBwdENwanRiV0xvQTZUdEpwODZ2b1JIaDhNQVNBdEJUb2d5VWJNNjcwd2o5NC1B?oc=5",
+          "published": "Wed, 08 Jul 2026 17:04:01 GMT",
+          "source_name": "UK Defence Journal",
+          "source_domain": "ukdefencejournal.org.uk"
+        }
+      ],
       "flags": []
     },
     {
@@ -549,7 +1098,43 @@
       "notes": "The authoritative independent RN watcher. Largely pseudonymous; engage via the site and X.",
       "relationship_notes": "",
       "gnews_query": "\"Navy Lookout\"",
-      "articles": [],
+      "articles": [
+        {
+          "title": "Squaring the circle: the nine decisions that will make or break the Hybrid Navy - Navy Lookout",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxON2VfbVNkd0VWOTZ6WjJsa0pBLUlmMHFfcTBLcENNSFB4QmpJQ2FBQnBMZDlvQXVvdXpsOHlMbjZDME9mbmsxOHphZWN2UUtDOXAwMXVnNDBKNldQVDdXWlhlUmdkemxNT0pIUGtxVUNTZ3E2cHBQTG95V2dsMDhpMjZyZkp2b3AycWU0WkVJUDQzbE9MbHRlSXQwejMwbEkxUlN3VlluZEYxRWM?oc=5",
+          "published": "Fri, 03 Jul 2026 07:00:00 GMT",
+          "source_name": "Navy Lookout",
+          "source_domain": "navylookout.com"
+        },
+        {
+          "title": "What the Defence Investment Plan means for the Royal Navy - Navy Lookout",
+          "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQeElWR2M1VEljVmxWVG1ZTUplWUE1bXdkdnNRbURWUktRRUc3NFpIMmVxUlR5R05QR3ZZeGo1dlI2aVk3ZmZrM1JUaURQSXhJUVBZd0RYWVVodFdzVVRfVWdxNE42c0F4LXpMeFpHWWJFSDZaMDRDWGNzeElNYjZoLVA5dTZQdC1XVTNfMUZyVQ?oc=5",
+          "published": "Wed, 01 Jul 2026 07:00:00 GMT",
+          "source_name": "Navy Lookout",
+          "source_domain": "navylookout.com"
+        },
+        {
+          "title": "All in on the hybrid navy – the Royal Navy’s surface fleet gamble - Navy Lookout",
+          "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOdWNpYTNEektXX3E5X2lBejM3ZWhIZ1pEM1pyM2xuUEd1ZlkxUWpxNTdJQkVENXJiVlhyZ3diSWRMc2VoaHdldHg4U0E0eG1zU0J6VlJpX0tfVjZSWG1RTmlHejZhT0llVllUaTFVekZ3YlJlRXNOLTc2UllsbjV5dm5kOGg4S2Jjd2kwM1pnNF9EOUhKRlE?oc=5",
+          "published": "Mon, 29 Jun 2026 07:00:00 GMT",
+          "source_name": "Navy Lookout",
+          "source_domain": "navylookout.com"
+        },
+        {
+          "title": "Royal Navy downsizes its assault ship ambitions - Navy Lookout",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQNF80akxFbUwtTHlMWmFkcUZMQ3BNM2hrVE80ZW5GVHFUa3ZDUEhLak1hazZodzZIcGNRZDI3QV9lMnA2RG5uUzNUZVEyU3Z2T2pSdGdJSXcxZFNielo4T2V2SnkwelhQSnlxbHRmTGVTbENDd1p2VHZ4Skg2ZnFaNnNn?oc=5",
+          "published": "Mon, 29 Jun 2026 07:00:00 GMT",
+          "source_name": "Navy Lookout",
+          "source_domain": "navylookout.com"
+        },
+        {
+          "title": "Royal Navy attack submarine fleet update – all boats alongside - Navy Lookout",
+          "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPUDV0UzBXVWJqQ0o4R3E1LTRHc2tWMF9oTFFJMk1wYjJEaXJCQXpEX2w2ekc2UzA2YUFjM0Q3V1dGbVJXVEpaXzl5bFRDNTJnNEl2aHlIX3gycGc5TTZTSUE2STdrZk5QVFJ1WTI1ZWRFbGRlUWdLeE94MzJES1I5WEFCV0syTVM2VUpqWExwODNwT1E?oc=5",
+          "published": "Thu, 25 Jun 2026 07:00:00 GMT",
+          "source_name": "Navy Lookout",
+          "source_domain": "navylookout.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -572,8 +1157,29 @@
       "notes": "Not a journalist, but the most-read independent voice on UK land systems and quoted constantly by those who are. Treat as an influencer node, not a media target.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
-      "flags": []
+      "articles": [
+        {
+          "title": "Andy Burnham cannot play catch up in an arms race - The Times",
+          "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOckdhS2JGaEFEN0dBMmI4bDJ6NUEwa2RyZW10WllKeTUtMFExd1JtMjdHMTA0Zjd0a3hhQzZsMEZhaTZHaF9JQ2phNjg5NkozRVRWVXp4MGhOeFRXS2pxam1uVFdqWmZTa1lDQWdiMEdmb0VBTjJBRWpzQlFLTUdYOUFlSHRNNEVoTXQwV2dkek5UZw?oc=5",
+          "published": "Thu, 09 Jul 2026 11:40:07 GMT",
+          "source_name": "The Times",
+          "source_domain": "thetimes.com"
+        },
+        {
+          "title": "Future of the Royal Navy: cheap drones and autonomous vessels - The Times",
+          "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOS1FpamVvdlpBVUFOVGZuNjZyb1p2MFAxQUlEazA5a3hIMGY1N0JjSUpqdzBMR3llRHZUckoxVjVTRVJSdGZGSmRWeE9LRVA4cjBsRWJTUnU1MGJRSm1VWmlrR2pDeGtwcGctdGJMVXJHZV9lRFRrM25WNWo1QlZHUU5WNXF5YWRHSER3VmlvWEtGMlJMT04yWHNiNA?oc=5",
+          "published": "Wed, 01 Jul 2026 07:00:00 GMT",
+          "source_name": "The Times",
+          "source_domain": "thetimes.com"
+        }
+      ],
+      "flags": [
+        {
+          "type": "possible-move",
+          "detail": "Last 2 bylines all from thetimes.com, expected one of ['uklandpower.com']. Review manually; could be a guest column, freelance piece, or a genuine move.",
+          "raised": "2026-07-16"
+        }
+      ]
     },
     {
       "id": "francis-tusa",
@@ -593,7 +1199,43 @@
       "notes": "The procurement scrutineer other journalists ring. Subscription newsletter, so the nightly article feed will catch little; his value is broadcast punditry and being quoted. Brief, don't pitch.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Keir through the looking glass: This fairytale defence plan has made the UK a laughing stock - The Independent",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPOXZmOHotOG5GLVdoV0hxZVJ3V2tJdXN2SmxUNTA3N0VZWURRR2trV2pLQ0dRLXJ4cktsQ19NcDhJNXNaZ3FBVUhnczdyVGtnVWxfMXpKQ3FoS054dTYwLXNXNHJoYTVXb2pwQ3pIN3l1LVNwV0hRTTVreDJDSUFhMlF6ZnNHem1QdkdraS1hWHEybU5CdmVzbFdvZU0?oc=5",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "source_name": "The Independent",
+          "source_domain": "independent.co.uk"
+        },
+        {
+          "title": "Even a Non-Answer Can Speak Volumes… - Defence Eye",
+          "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcGRBeXM1dWZtZDlXN3BsVFRtRmM2YXdtZTgtNEJwRk40aWlhelJycS1maW8xTGFpM3lYaUdEMDV5SnNGeGJKSjBwd2dwd2lFenJqUVU4STFTRk9IaFN4eGVnMFdocmRhelFreFJCdnpBLUN4Q3BZT1hwNTdfSHhQdm53?oc=5",
+          "published": "Tue, 14 Jul 2026 09:42:35 GMT",
+          "source_name": "Defence Eye",
+          "source_domain": "defenceeye.co.uk"
+        },
+        {
+          "title": "The Defence Investment Plan: setting up for failure? - Navy Lookout",
+          "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNaXJpTEYxeUo3V2ROWkxSSWdOcXdUU0tTVjF5dUhiYmhjUEtneXgxN1R1T1o1bUdKS0JDcERla3hCTEFqdEYzYWx4MTBsN05IUmhpMWxWc3A4YlNmZEI1N3FvTUl5YVBIbzBNRmdwR2YtS2VsaEdheExId0ktVmRLeGd5b0U0dw?oc=5",
+          "published": "Mon, 13 Jul 2026 04:50:54 GMT",
+          "source_name": "Navy Lookout",
+          "source_domain": "navylookout.com"
+        },
+        {
+          "title": "UK defense plan to unlock fresh GCAP contract before Farnborough Airshow - Defense News",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxORml5YnBFQWhndTNDSGtwc0RhUFZPd2RWY00wckkxc2w2VzhFX2hRMS1vSnVGclhIUXNOZ2hNMFFQYVBBRU9pNW1BV1lfYjVBcVZhNmlGbERjbmlPWUlabVY4VEcxVW9EdGMtTENxTXZYV1NPR2RrRmR4cmRDcFJMdGVJSzNWVUVrOHpickZfRFBaVUo1RFRwWnZQa0dqOUlxZ3oxUGh6OFh5TkQ3eENqcEFuTnIxeU9wZVg3X3ZzdDk5RW5a?oc=5",
+          "published": "Wed, 01 Jul 2026 07:00:00 GMT",
+          "source_name": "Defense News",
+          "source_domain": "defensenews.com"
+        },
+        {
+          "title": "Defence Investment Plan – Done Deal? Final Product, Or More To Come? - Defence Eye",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZ0xGRDZUcHhseDNEZmNxLXpIWnZjdUdQLVBnRGY4NzJCVkRfalphX2pPZ0xKcDhSN0dRa1AxVGZ1WGVPTHhUMkdEaDBlZExTRzFkV00wYWJubEl0UEVTVUFzUlJnYW9RTUcxNXhLRWZQNUlSVk51LUprUUpVMHNoT3dSckdTY3JsMmRXa2tZYk1yRHlBSU5pQTh6RDNXWGpucFBhbXkxcw?oc=5",
+          "published": "Thu, 09 Jul 2026 15:05:02 GMT",
+          "source_name": "Defence Eye",
+          "source_domain": "defenceeye.co.uk"
+        }
+      ],
       "flags": []
     },
     {
@@ -666,7 +1308,43 @@
       "notes": "Belfast-based, covers UK programmes for a US and international industry audience. Good route to reach US primes' UK-watching audiences.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Drones, fighters, armored vehicles: Highlights from the UK’s Defence Investment Plan - Breaking Defense",
+          "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNdEhsTXQzQmVYY051emlfVGFGTXNoZ3k3MmxGS0V6QW1iaWxGdjdIVk4tcGZLcWNYUE85T21HY2JwTEY0cXNEeEdoY3JWbWhmM25KTkQtOG1FankwRDZUQlVlLUZDdmdoWmQyLVdET2l0ZjlqUkVkZExXTzI3UmYwTmdzRVhCbWFkcGJpdUkxUUREZjhITjVqQXN0YWZpTEM4bUJDby15QzZLUlZsM0xBdDZ1ZXJSY0dP?oc=5",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "source_name": "Breaking Defense",
+          "source_domain": "breakingdefense.com"
+        },
+        {
+          "title": "Belgium splashes $3.5 billion to build shared air defense arsenal with the Netherlands - Breaking Defense",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPcU5EbkZTTnJIVmI5d2xqUnMzd1E2SHh3eTZFM2lSR0R5QXBlLTM1OE1STmVCd3ViRDVFLXhJMklzMHhQTkc2OS1Xb19iUWdXaklCRGxtS2dmb2ZIQXlkLUN2emh1a3M2TzYwSTFSQnhoZGlhRDZyMHlQbzFwLW9UcWhkdVRkbGJycl9wTEJhTkRMOEkwdW1QX01oVWhaUFhJY1lrNFQ0T0xJR3ZrQXB2V1Zqc3lPX2puWnVjSnZWaw?oc=5",
+          "published": "Wed, 08 Jul 2026 14:57:10 GMT",
+          "source_name": "Breaking Defense",
+          "source_domain": "breakingdefense.com"
+        },
+        {
+          "title": "European coalition pledges $50 billion to modernize deep precision strike capabilities - Breaking Defense",
+          "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVnlhUlVoSWw3Qkw5LXI2eS1iNzVXcndnNmNHZ1BXd1liVTdYeFA4dVlxMTBzOVh0UlB4MW1oTDJiRC15VWRSNmNkN1ZhSldyUko5djNqUXM4LWx4ZV8xeVlodGxDcEktQ3lSQWJkVy16X2N6d0FwdUxEUFdNNVlOaHg5TDRJdDZNaVZKVWJlMUZjbFZWUlAwZTFad25GY0FlR0FlV25ENkluaTBkTXdkdzBYWW5BNTJBV1pyWlZKSQ?oc=5",
+          "published": "Thu, 09 Jul 2026 16:47:14 GMT",
+          "source_name": "Breaking Defense",
+          "source_domain": "breakingdefense.com"
+        },
+        {
+          "title": "France and Germany commit to equal shareholding in KNDS as potential IPO nears - Breaking Defense",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNSVFESXZkdWw2VXZHTEtjVmJyQnFPMVYyS0dXYnBBVXROS2ZyZ0RrTm4yemJJNDMzMHp5dVBzVDBkQTRZZzc5b2FTd3F5dG9FRmtKYUZYcl9OUm5yaVpSdmkxN1VtWmV2UkRiNGV0eG9KWk5MTUhHanZCNkNIb3pCMExLcURuWk9DT1hyTm51TTk2dWRFM1U5MUZSb29KVDRodVVVRlBJSTN2bThHZVN5bEJqYmluZw?oc=5",
+          "published": "Mon, 22 Jun 2026 07:00:00 GMT",
+          "source_name": "Breaking Defense",
+          "source_domain": "breakingdefense.com"
+        },
+        {
+          "title": "European tank-maker KNDS postpones IPO due to ‘market volatility’ - Breaking Defense",
+          "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVlh2MEdxVjRQSVFJbmp1UUc2emRMdUdPZmZtUlU4djRmM1EwWHBfSmFMV0kzbnBMVGd0bVdRQzBERHlpRnV2aHRIS1YzTHNtVEVoZ2ZNRG54NlM4b1dpbXRkR1dsVWNzc2JPcG1XYm5IaWNueUFLdktoWHRiRGJnSGxjV3FKN0paTXlMQjdoN09MRHVudzBqUURzZlRtTnYzM0E?oc=5",
+          "published": "Thu, 02 Jul 2026 13:47:17 GMT",
+          "source_name": "Breaking Defense",
+          "source_domain": "breakingdefense.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -712,7 +1390,43 @@
       "notes": "The UK air-domain trade reference. RIAT circuit regular.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "France remains committed to Eurodrone but could delay acquisition, Airbus official says - FlightGlobal",
+          "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOano4eDZqNEJ3WTJoV3B1bHYyNFdMRU16S1NrOUtpUlAwVkNqOTdVMUVibVhxNkdCZnZvbEVyN2RUbDFISkhIQThJMVBrdFpISWJXemVtNEpQRW9BeWZRdVNwTGVFNl8tbVJ5VHVyWWFSblpEREVyWjNJUi1sbzNCbXVkYWllUEhwNUF6QUJHMFVFQ2Y5N0tHWFFVVmJSd3A2YzlLam5jYTItTUNlM18ya2F1SWFRVVdRaU1qUE16MG9rRDFmdEFLZ0paV2c?oc=5",
+          "published": "Wed, 17 Jun 2026 07:00:00 GMT",
+          "source_name": "FlightGlobal",
+          "source_domain": "flightglobal.com"
+        },
+        {
+          "title": "UK defence plan targets Storm Shadow, Meteor successor investments - FlightGlobal",
+          "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPbERfOWJvT2hGdm5mYkN5Qk9rUHc4RFRaTTJMcWVXVWl3YUxxWWlqMVd2SUJsckNQNmdlMmlkTTlrWGJ2ZU8yRWt1UzhnZG5TemhCVGgyNzVvVml4NFByYXRsZlBlQXp5WjNrbUo1TUlyMWtNY01nRjVUYmVLcUdVT1lHejIydUxZZnlfa0liTm41eVRQVVZjNUdFUUwyd1hER1pMQkRsakZsOGFnNTRNUg?oc=5",
+          "published": "Thu, 02 Jul 2026 07:00:00 GMT",
+          "source_name": "FlightGlobal",
+          "source_domain": "flightglobal.com"
+        },
+        {
+          "title": "Denmark confirms plan to purchase two Boeing P-8A maritime patrol aircraft - FlightGlobal",
+          "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQaURkb3FtT2ZwM0VDZ2lXWHM5cDEzVE5TMjJjRW9zZ0oyU0VzaVNFMk9TaEJCTzVTXzVwS245b1VVeTRvdk1ZUWs2bjYycDNpZDVoNzIyMjVQZG9nQWptMXFuTlZwemJxN2FwQnFMMENrN2dnVkU4RWdFZ0ZkNU5uaVV3S29LaktJdHdJRFJJY2pLTGJFV2hkTUE4NmdWR0hzYnd2ZmVJaWJnTDFzNVNnMW1ZTUhrNVc0bHp6Sw?oc=5",
+          "published": "Wed, 08 Jul 2026 05:39:06 GMT",
+          "source_name": "FlightGlobal",
+          "source_domain": "flightglobal.com"
+        },
+        {
+          "title": "Ukraine signs for 16 Saab Gripen E fighters, as Sweden advances C/D transfer plan - FlightGlobal",
+          "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQd3p6WjlRMXRYdDBzZ3Z5bE45ZWJraG44M3h4aUFwVWpxRXB1aHJwSWI5T2s3VzZjN3QyM0ZqOU5WOXRZc21RTUhkeWozWUwxOUVTRlFYemxEZXd0YmFBV2dNaHRpSEVnU2Q2Z0d4d3g0al9OWVlzSG5CbmtuSEF0VHgzNVhaajNyNk9kMzVWTmZEWjllRExDazlKVldGakp1WXNmS2JyUkFXLXJrT24zMGIzdnFTb05iU2hnaDc1MG42eWtn?oc=5",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "source_name": "FlightGlobal",
+          "source_domain": "flightglobal.com"
+        },
+        {
+          "title": "NATO confirms GlobalEye selection for AWACS replacement need - FlightGlobal",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOeE0zSndzcXdhSnBUcDRoZkNTcFZnU0UtalR2X01HUFZ6dFVkYWxvWG9YNTBiaE43Sjl4YktEbUx4aGNfQXQ5YjB6a19yNGJqSXNBMFFVbGhCUlRqSHJXWnFoS1RWV2NOVUlYQVVyRklJblJBS1UzZkFiOUlaN0pCSEJvUy1oUGRwY21YelhqMTVlenpFaUM0c2hTMXRzQ044dmJkVWhSemoxQQ?oc=5",
+          "published": "Tue, 07 Jul 2026 09:15:56 GMT",
+          "source_name": "FlightGlobal",
+          "source_domain": "flightglobal.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -735,7 +1449,43 @@
       "notes": "European military aviation lead for AvWeek.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Debrief: China’s Unlikely Military Aerospace Debut In U.S. - Aviation Week",
+          "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSkhJY3ZvUmlCTl9DRW5RaDljdE1meTMzU3lZcUdReGRuM0JYT2UyZW9CeGxTcHZ4SjZ5QU9PWFNtMmJJbGhONk9NOTUzRU0zRU1BYU5pUF9SamJHZDdDYmNna0lLS0dLeFVweW4tQ3ZtNE1DM0d2LUpLZFVoSlpvVlFnc2JKMGhUcFdGV3BncmdRX2Y3VlE4ektWNm5KNnc4RWRCdVAxcw?oc=5",
+          "published": "Thu, 02 Jul 2026 14:11:11 GMT",
+          "source_name": "Aviation Week",
+          "source_domain": "aviationweek.com"
+        },
+        {
+          "title": "GCAP, Drones Prioritized In UK Defense Spending Plans - Aviation Week",
+          "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSG0tZFAtdTdJZGdaQlREdmZPZGVXSDF1bHJyNXhUb1hGZHhWWVprbzJpOGYxVkE3V3NPVVpsd1BWY0M1RkNmVHNxSGZ5TDZuX01nbC1nVUs4YVBuMjExUGRXNDE2anh5dnUyX1N4U0Rja1U5aTB0OVgwanNONTdNN2MtYmJnM1N2M1pLWGZJdU5YM3RGQkdjWE93WWV0d0lsYmxZNF9ENWdBbVk?oc=5",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "source_name": "Aviation Week",
+          "source_domain": "aviationweek.com"
+        },
+        {
+          "title": "Turkish Air Force To Receive First C-130Js Before Year’s End - Aviation Week",
+          "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOblVnT2l4dnlyZHQ0UUc4NnNzNDRJTEpPNlVaZlFFbVJ2SVdMZjAwU05sQTdmTFphbmlEaWFsOWhGSHRsX1dvMDhoR1FPWWJiMmNMY19JTWQxQ3FQX0tWRzREWjR4Rk16TXpwV0VJVEhtQlVBSEJoTnlZS2tEUTZfWTN4cTc0eGg5VVV4RE9Tb0FCQ2hIc0d4OGZfVHNodHlXOTdvQQ?oc=5",
+          "published": "Fri, 26 Jun 2026 16:45:23 GMT",
+          "source_name": "Aviation Week",
+          "source_domain": "aviationweek.com"
+        },
+        {
+          "title": "UK Defense Spending Plan Bolsters Royal Air Force Combat Fleet - Aviation Week",
+          "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWWlhNzBwd2NaSGtpb3BjTVYxczhUUjRraEwzUVgwbV83LV9KLVQ3WTNHSWZOQjlla0VQZEJnN0JHRk0tODJjOFBtR2NlSnpJS0FGMS1PRnJRaGlOeWdJblZuUmpjelZVUkg5WUFEMUV3WEZmcTBNeUlzcG9VYmVCNFpzV0g4Vmtpb25INmp6RXhlTWZwTGdndmgyNGQycGtxWkprMnVkWWM0MFlyZUl3cDNhODhnZw?oc=5",
+          "published": "Fri, 03 Jul 2026 07:00:00 GMT",
+          "source_name": "Aviation Week",
+          "source_domain": "aviationweek.com"
+        },
+        {
+          "title": "NATO Seeks To Strengthen Strike, Space, Missile Defense Capabilities - Aviation Week",
+          "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQWXZNM2ZzVk1RaWdJVG9oOFM5aHVXVHc1ZHJ6MUtwZjA2QWVKbjNEaGNsdVVwbWlINFZzUkU5S29EQUk0Q21LZm0taGw1MkppQ0ZHMnhPYk9BS1BmeC1HN1VoT2thX3BDc21DNkVfb0JXblJHS3VFdk1UMS1BV2Y3VDVzNVd4YVNWem9nX0xtN0UyRXRSVUE2TmVBNzhHblBlLTB4UUJwR2pHN3NYVHhJSk5KLUJhWEdNamd0NGx3?oc=5",
+          "published": "Tue, 07 Jul 2026 13:40:53 GMT",
+          "source_name": "Aviation Week",
+          "source_domain": "aviationweek.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -759,7 +1509,43 @@
       "notes": "UK-based writer for the highest-traffic defence-enthusiast outlet. Deep-dive kit pieces with long shelf life.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "MQ-28 Ghost Bat Drone Debuts In Large-Force Combat Exercise In The Pacific - TWZ",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQNTVTeEV2SGozU1dpc0Q3bzlFZ01qUHdra1NWN1Vtcmd4OGNpNm1RMmc5SDFuamhEWmpzclNmWGJ3cTN3c3M3TWJuUW42Qy1KY3AwMlB6bmxmbGQxYnpMZFZyYkpydEZYMGNiYmV5eXl1TWpraVVlZ2tITGI0SWk4S3R0bUpEa0h2Q3BfenJEMDlyMUloOXhsdHliM0E5NU0?oc=5",
+          "published": "Wed, 24 Jun 2026 07:00:00 GMT",
+          "source_name": "TWZ",
+          "source_domain": "twz.com"
+        },
+        {
+          "title": "The “Jellyfish-Like” Drone Swarm The Downed F-15E Over Iran - RealClearDefense",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQSTZFaV8tN2ZUSV8tUDhBSGl4MmpyOHo1S19PNm1jZ1g1eXFfYUs4TU5sQU9HUkpKTGg4OUZMYk9LWXhmaTBYVEFjQnVDblBZb1ZIcEtkQkN3YnV6LXVHNGtLb3lZaWFtNDlzUXdydWJXQlAtdG82UXdfY0JVTDR3TzRkZmVtc3FhMGZEOGZiWnFYYzhEdngzWXJ2QVNPSTc4SjFWenBMNG1qeFJFbnlrNDNzZmM?oc=5",
+          "published": "Wed, 24 Jun 2026 07:00:00 GMT",
+          "source_name": "RealClearDefense",
+          "source_domain": "realcleardefense.com"
+        },
+        {
+          "title": "Canada Throws A Curveball As It Signals Interest In Joining GCAP Sixth-Gen Fighter Program - TWZ",
+          "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOT1dJeElUN21UVGZWc3pHVGxBdUxVUmgxbGNqWEtDTE1Jc2trQTF3U2VLVUhVTTRDUTh6SzdnSDA0bGN0V1l2cjIxZ2lDNzdTa0JxWXJYSGdNczdYalVoaC0wMHJrakJMQ1A5emtoYllNZXBFOUQ4ZG9zS1hIamdoUFJuU3Y5ZE9tcWVIZnVPejh0MkRQaGl1b0Vnc2RHU3NfLWFuYjRxUURUaEtrZEZ5UUNteTc?oc=5",
+          "published": "Fri, 26 Jun 2026 07:00:00 GMT",
+          "source_name": "TWZ",
+          "source_domain": "twz.com"
+        },
+        {
+          "title": "Gripen E Fighters Officially Ordered By Ukraine - TWZ",
+          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5lc0hKc2p1QTVKcWdCcVB6ZDZ6cjkxaFByMW1YMzBZUnNzZVNiZ1ZuTWhhMFpZUnpBNTEyZ19tQzRjaGhUdzc2MGFDb2hocVNndW9hM2czYlVFNWRQb3pHTU1HZ01rbW1ud0NER1VjeUs4VGlaQjR4SVd0bw?oc=5",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "source_name": "TWZ",
+          "source_domain": "twz.com"
+        },
+        {
+          "title": "Ukraine To Help Fulfill Europe’s Long-Range Strike Missile Needs - TWZ",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNHRQbi1wQzdUcWo4emVEVlVwd3ZIV1Q5bHhUT0h2aHUtOXVKdHE0WHJCSmNiRFJaYTUyTWxxelFLVmNvR3FEelFsMUZkWVRWSzZfeHdBSVdUdE84M1VCVzZmbktZOG0yYlh5TElGUUwxZGh4UVUwekRtUDlYX0pPNkJuRjBQeUxGbmZveFNYZFdiVS00SFkwZklkRUFUQTQ?oc=5",
+          "published": "Wed, 17 Jun 2026 07:00:00 GMT",
+          "source_name": "TWZ",
+          "source_domain": "twz.com"
+        }
+      ],
       "flags": []
     },
     {
@@ -806,7 +1592,43 @@
       "notes": "Launched Rearmament in 2026 as a morning defence industry briefing after business desks at the Independent, Telegraph, BBC and Bloomberg. Daily-read potential in exactly the industry and SW1 audience that matters; covering Eurosatory, Challenger 2 delays, subscriber features. Early relationship-building here is cheap now and expensive later. X account is protected; LinkedIn and the newsletter itself are the channels.",
       "relationship_notes": "",
       "gnews_query": "\"Howard Mustoe\" OR Rearmament defence",
-      "articles": [],
+      "articles": [
+        {
+          "title": "Europe’s rearmament problem is demand, not ‘help to buy’ - Bruegel",
+          "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxObzBvOVZON1FBbXk4Qng0Y09wdEdPT3RZa0d6SGhVbHlHU1BPMzMwSEM3YWlpa3VZN0FETEFCSGpGOFJ4SmpzOExtcjktOV9mNXRwREFic0NLUWIxb2JiaDJSU3BaTDM5czJYd05MemIwYUUxdjZ1NmVkdFpmVXhmVVFPOXZ3dm4yZDRv?oc=5",
+          "published": "Mon, 06 Jul 2026 12:05:07 GMT",
+          "source_name": "Bruegel",
+          "source_domain": "bruegel.org"
+        },
+        {
+          "title": "Europe’s rearmament drive is sustaining 195,000 US defence jobs, Nato chief says - Financial Times",
+          "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYU13TUhVTFJ1TXhRX1ozRlFvLTZFd2pxUVVna3JVUWR2Y0g1WkY0bXdkUFRoZHBYUlpNQ29iR2ExUzhadWstR1BuMGlOTmtUazROVWZQZjBIaUl0UFA0VjVLME01OXQxVmdFUlM4Qjl1MUUtOEp1N3hxbjgzRDVYZUtZUFo?oc=5",
+          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "source_name": "Financial Times",
+          "source_domain": "ft.com"
+        },
+        {
+          "title": "Alain Berset: Europe must look beyond rearmament to safeguard democratic security - coe.int",
+          "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOU05uTXQ3UFBBUkxRbTdCYUtmUnlZQ0xxZWwzZHhTSzBWd3pWMFZHTDZ0cTFHckVPUTZWMUI0M0JxeEV0LS1ELWZFZnA2T2ZPMEdIZWNVcWtQY1lSVnlaX20zQzVVeG8tZzJkQmZuWjQxSEg0VVhZWENERm9fd090QVBxY1QxQXhoaXFnSy1leWpWbnB3bXAxX0wwYVZ3UG5xYXNQR0xMdGZsbmkyVFRGeUkwQ3AzMVk?oc=5",
+          "published": "Mon, 29 Jun 2026 16:12:46 GMT",
+          "source_name": "coe.int",
+          "source_domain": "coe.int"
+        },
+        {
+          "title": "The Nato member powering Europe’s rearmament - The Telegraph",
+          "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQ1E0RDF5aXQ1eEZPQURlNGhfWHF3V0wtMVBNUFQyay0wbERzdWVsZ0VVOG9VUFVqajJ3bnZIV3BNMFRsTkxoYUY0eEgtb2tOOWtoMFBLRmZzVTdyOHZPNFZaOVpGX0tqOUxoLW9leHd1VVh5Vzdia2JhNFBfdE83Z3dHZ1ZyUWx5aTlNODNRMmduV3J5Z1otUHd0OFQ?oc=5",
+          "published": "Thu, 09 Jul 2026 07:00:00 GMT",
+          "source_name": "The Telegraph",
+          "source_domain": "telegraph.co.uk"
+        },
+        {
+          "title": "Defence firms near Russia outpace Western peers in rearmament push, ING says - euractiv.com",
+          "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxONjlxNWY1X2RyWl9vZ09QMGZEV2pXc3hwT21jelYtSkI1YkFWcmJ2ckFoOWFCNXBBS0JTWnhPcWNwamRfZ1Z6RHQtVmlTTVlDcDYyMFBzZ19OTkhjbFV4MFhNcFhMMlZTN19CWVBkd25tNzJBX2ktaU5uRzNFSVpidWFQNzJZSXU2SWtzNzFVX2tDcGZrWjVFekZIb0hXTWZQSGwxRkRJTC1OZw?oc=5",
+          "published": "Fri, 19 Jun 2026 07:00:00 GMT",
+          "source_name": "euractiv.com",
+          "source_domain": "euractiv.com"
+        }
+      ],
       "flags": []
     },
     {
