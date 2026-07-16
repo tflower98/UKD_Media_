@@ -2,8 +2,8 @@ name: Nightly media map update
 
 on:
   schedule:
-    - cron: "15 2 * * *"   # 02:15 UTC nightly; odd minute avoids the on-the-hour crush
-  workflow_dispatch: {}     # manual run button for testing
+    - cron: "15 2 * * *"
+  workflow_dispatch: {}
 
 permissions:
   contents: write
@@ -19,13 +19,15 @@ jobs:
           python-version: "3.12"
 
       - name: Run updater
+        env:
+          NEWSAPI_KEY: ${{ secrets.NEWSAPI_KEY }}
         run: python update_articles.py
 
       - name: Commit changes if any
         run: |
           git config user.name "media-map-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/journalists.json
+          git add data/journalists.json index.html
           git diff --cached --quiet && echo "No changes" && exit 0
           git commit -m "Nightly article refresh $(date -u +%F)"
           git push
