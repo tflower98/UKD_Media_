@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-07-16T09:02:19+00:00"
+    "last_script_run": "2026-07-16T09:28:17+00:00"
   },
   "journalists": [
     {
@@ -565,6 +565,13 @@
           "source_domain": "msn.com"
         },
         {
+          "title": "Starmer accused of delivering 'half-measures' with £15billion defence funding plan - MSN",
+          "link": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxQTV9YWENwYW9KVmNQN1RTdklRdkRJdkFscmdfZ3Y1bEVVejNOY2lKNzYwSmdvcUZnMGZNaDdheUtCTmNxRU83UlFmaWEyc2ozal8xY2xNYUZEWk5ONXh5aUpLZmp1SDhQcEdSOWJFREhJOW53Q0JqT2ViajdDU01lSXBlLXdFc0NIU3E1QWRPUG16ZDRLMFNJcXFGSmo1bXR0djdMRFIyc3l6Rk5pZU03R1JLa3pLRjY0QjJKeFVWblF1Z1kzTzhPVV90dmxVbWtmbENLdXY0aElKY3dDNVVlZ0NsSkpGSWZORFEtUjl4dWhUUGUwaWVzX05qQlN2NFAwQ3QzU3pIYk5PQlh0Y010a0ItcUthRDJUb19LSS1JWFlCLXIxQ0E1Wnc3MFVIbkNtSHR3WHlsVFQtdkktV3lsR2QyemJteC1xeHhhSVE4VVkwLXJudzA1eDhIYzNZRFRQYWtTUkdPSXhqaE0?oc=5",
+          "published": "Wed, 15 Jul 2026 20:05:28 GMT",
+          "source_name": "MSN",
+          "source_domain": "msn.com"
+        },
+        {
           "title": "How ground troops and manned tanks will make way for drones and crewless submarines - MSN",
           "link": "https://news.google.com/rss/articles/CBMi2ANBVV95cUxQTEo4QXN0RGJiY1AzeHdDVHNvOXM1aVpPNnNuYklXMjdkemlDUFVBcTRQdGRBa25hbGczM0dpaDVhQzU5VTViQW42WnJBUTVPQ1FJTnQwdmM5SHRTVzZFdUFyUURuUF9tcXlLbjR3S1RmMGszUWhBYzloSHQ5SnZaOVBla2NhdU9OV1lJakZrdnJRNnloY2daNmFiZ2l1enJpX2FnbjRNY2t4SU9lUUZZbUpETXNwZHE2Mi1lUjZZazJ6Z09kWDdNOVJyZkFLWFlSSDhLSWRkODZSdUY5YWQ5TVZXVG9XTm4ybEdTZENtWjBmQUxvMkJWR2NFWG5RSUtKVFVnb0YyZnN6QkNhT1JidWluelZXY1lUbmF6YUVMSjYzZ01NaEZvSzYxX0djUVZOcmx0VEZ5US0xdlNpcFU5SDAtS25xRU1iaFBJcHEtQW5EbGJIc2J3Mk9uY1kxRDZmNFd1eEVyQjY4NzJaUEl6QXNKLVVzX3dFcjdDOXpzRmJmSE1NZDVWekM1anZDNlVhSzJfU25JWWxTaHZqdHFzQ0VVTmsxeXNhV3Nna1RVN3cwbF9MTGkxWmNmMnBXWDMxVUVTdVp0UmExcWZBS0ZFMkZrTmhFMHRE?oc=5",
           "published": "Wed, 15 Jul 2026 14:55:10 GMT",
@@ -575,13 +582,6 @@
           "title": "Is Labour's 'lacklustre' defence investment plan Starmer's parting U-turn? - MSN",
           "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPRkhZckxoeXF3UFhXVUt2dDlRNTI0c1BYY2ZPaFhPT1o3STZLbW15ZVNuX1lJZ25zWmswNVVYUklIc3l6MjlhbDE2emctSVN0RTdVYk1oNWNuRVFvY3c4Nzdhdmx4V2I0bFY2Y29HWXU1Ymxid3NwQ3A0Z3BYbkgzbjYxSnBRUDNnYzVDMkdfNDh0SGR1RVFiUzNUcXZqSE9Ld216TnZpREFQV1pCX2dpVFBUbVJBMG5KQi1OYW02NlB0Y3Z1dHk1WQ?oc=5",
           "published": "Sat, 04 Jul 2026 20:27:04 GMT",
-          "source_name": "MSN",
-          "source_domain": "msn.com"
-        },
-        {
-          "title": "PM unveils his defence plan - but there's a £5bn black hole and the MoD has to make £10bn in cuts - MSN",
-          "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPMUVsNmppQVlGZjU0dnRtZ2tORkR3aDhIc0Z3NjJuVF9TMzNRbENxNUVVTUVNSmc1NUliTXhhRW12b21YU1AyY3BjaHVodFlacjRUVi11UVB4UmZ6RS1QeXpIWEwxSTlIZWdYRXhzVmtFaFNVb0RBRFNDQmZNQVlnQWtXMnI0VFQ1U1BUdzlXNk1KbEM0djRYeENVYmVGNUZfM1JOLXd1Ump0UzhiaUpZV2xISEpCdDZsTXBfZVZiV3VEaU82N3lwQnVPYU8yRVJoX2JHYVl2UHV4OWs?oc=5",
-          "published": "Tue, 14 Jul 2026 01:20:30 GMT",
           "source_name": "MSN",
           "source_domain": "msn.com"
         }
@@ -853,16 +853,16 @@
           "source_domain": "news.sky.com"
         },
         {
+          "title": "Sky Confirms Production Of Crisis Room Docuseries ‘The Wargame’ - Forbes",
+          "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNXzMySVpJQkJIbFNLQ2wxWmFGbGRWZDhsU21PQlZ3Y3BkV1g5YVZYekNNYjVJVlB4TWoxTUk5U3FkeFhwa1NUaTM3UmNITHhvWjVWeVF3NWwzNXUzWDhjWnE2M00xblQwZkJBUXNYYTJfWTZJZTF2SHBWV24yUHlkX2pNY29kTXZqYUZsV3ZscGFJOXRpZWk2LURwaXVUUlR2VXpDcFdYcFV5QUFnazFKQ05B?oc=5",
+          "published": "Sun, 21 Jun 2026 07:00:00 GMT",
+          "source_name": "Forbes",
+          "source_domain": "forbes.com"
+        },
+        {
           "title": "Is an extra £15bn in the defence plan enough to protect Britain? - Sky News",
           "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWTVkVUZPam1PMXJNXzhhaGMtQmljZHpTTUw0Ynd3dHBid1VJRmw0NTU5b0tqVVJlOWxhN1dYOFluTkViT2xjdnhxOExBXzRYd1VZSGhnUUU4RlBuTklTcGt1UGQ1X1kxUi12ZnRIWTFScnR2TGpJSDN1WE80Sjh2eEZOQ2s0aEFleTJfNHRzSlA0SVViM2NKRHhGMXZzVFU?oc=5",
           "published": "Tue, 30 Jun 2026 07:00:00 GMT",
-          "source_name": "Sky News",
-          "source_domain": "news.sky.com"
-        },
-        {
-          "title": "NATO needs to see a credible trajectory for when the UK will be ready for war - and that is no longer in Sir Keir's gift - Sky News",
-          "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOUHVfY3YwVlZBSWlHb0FEd3d0bHRQRWNvYlpjWUp1UXJrZ2xScTg1MkJNdWM2SExPb25XT1h0eGI3ZE56a0pHRVVXM3ZUX3VpbzFZVU1qek1QX29tNmlkcTZHM29XVmJjVmdTQkdrTDBHaFJqdUUxcWNhaC0xRU10UXhnQ1JYTDIxNng5RDFYRldOSEZQQWFrZ3U4RG1zSVhoOERZX0NSX2VBVUVxTm9KTkZQU1BHOElNaDV2YWIzRFYwWXpzV2xxbmVJY1VkWGlTMnJRbzBsODkxRnVhRGdLZW9wX281cWho?oc=5",
-          "published": "Thu, 25 Jun 2026 07:00:00 GMT",
           "source_name": "Sky News",
           "source_domain": "news.sky.com"
         }
@@ -1176,7 +1176,7 @@
       "flags": [
         {
           "type": "possible-move",
-          "detail": "Last 2 bylines all from thetimes.com, expected one of ['uklandpower.com']. Review manually; could be a guest column, freelance piece, or a genuine move.",
+          "detail": "Last 2 bylines all from thetimes.com, expected one of ['uklandpower.com']. Review manually.",
           "raised": "2026-07-16"
         }
       ]
@@ -1532,16 +1532,16 @@
           "source_domain": "twz.com"
         },
         {
-          "title": "Gripen E Fighters Officially Ordered By Ukraine - TWZ",
-          "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5lc0hKc2p1QTVKcWdCcVB6ZDZ6cjkxaFByMW1YMzBZUnNzZVNiZ1ZuTWhhMFpZUnpBNTEyZ19tQzRjaGhUdzc2MGFDb2hocVNndW9hM2czYlVFNWRQb3pHTU1HZ01rbW1ud0NER1VjeUs4VGlaQjR4SVd0bw?oc=5",
-          "published": "Tue, 30 Jun 2026 07:00:00 GMT",
+          "title": "Ukraine To Help Fulfill Europe’s Long-Range Strike Missile Needs - TWZ",
+          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNHRQbi1wQzdUcWo4emVEVlVwd3ZIV1Q5bHhUT0h2aHUtOXVKdHE0WHJCSmNiRFJaYTUyTWxxelFLVmNvR3FEelFsMUZkWVRWSzZfeHdBSVdUdE84M1VCVzZmbktZOG0yYlh5TElGUUwxZGh4UVUwekRtUDlYX0pPNkJuRjBQeUxGbmZveFNYZFdiVS00SFkwZklkRUFUQTQ?oc=5",
+          "published": "Wed, 17 Jun 2026 07:00:00 GMT",
           "source_name": "TWZ",
           "source_domain": "twz.com"
         },
         {
-          "title": "Ukraine To Help Fulfill Europe’s Long-Range Strike Missile Needs - TWZ",
-          "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNNHRQbi1wQzdUcWo4emVEVlVwd3ZIV1Q5bHhUT0h2aHUtOXVKdHE0WHJCSmNiRFJaYTUyTWxxelFLVmNvR3FEelFsMUZkWVRWSzZfeHdBSVdUdE84M1VCVzZmbktZOG0yYlh5TElGUUwxZGh4UVUwekRtUDlYX0pPNkJuRjBQeUxGbmZveFNYZFdiVS00SFkwZklkRUFUQTQ?oc=5",
-          "published": "Wed, 17 Jun 2026 07:00:00 GMT",
+          "title": "Rafale Fighter Adds Cheap Drone Killing Rocket To Its Armory - TWZ",
+          "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOYXl5MTk1S0tzM2VlM0VwSWlPNzQyVnlROEJDU2RpRlBQdnFCWE5CNU96TzNDQlpfcURQNE9xYTU0dWxINEV6a0lGS2ktcDJLWjZ1MXhWbUxlTkZVSWZPeXBCOGdNWUJ5YjFYc25FelZzQmFtalhiOGFLVFdYR3lvSVZoTV9KY0pMV1l4Qw?oc=5",
+          "published": "Mon, 13 Jul 2026 20:41:00 GMT",
           "source_name": "TWZ",
           "source_domain": "twz.com"
         }
