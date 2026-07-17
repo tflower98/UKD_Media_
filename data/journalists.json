@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-07-16T12:59:32+00:00"
+    "last_script_run": "2026-07-17T09:29:42+00:00"
   },
   "journalists": [
     {
@@ -45,22 +45,7 @@
       "notes": "Agenda-setting on MoD politics, procurement rows, Ukraine. Bylining actively as of June 2026. Strong record on personnel and kit stories across domains.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [
-        {
-          "title": "Britain braced for Trump to turn on Keir Starmer publicly at Nato summit",
-          "link": "https://freerepublic.com/focus/f-news/4386528/posts",
-          "published": "2026-07-03T18:33:42Z",
-          "source_name": "Freerepublic.com",
-          "source_domain": "freerepublic.com"
-        },
-        {
-          "title": "Trouble in Whitehall: UK Armed Forces Chief Warns of Operational Cutbacks Without Additional Funding",
-          "link": "https://theaviationist.com/2026/06/18/trouble-in-whitehall-uk-defence-budget/",
-          "published": "2026-06-18T00:47:36Z",
-          "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com"
-        }
-      ],
+      "articles": [],
       "flags": [],
       "pinned_articles": []
     },
@@ -181,15 +166,7 @@
       "notes": "Ex-Times defence correspondent, now covers Whitehall including MoD. Strong on the politics of defence spending; investment plan and procurement policy sit squarely in her patch.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [
-        {
-          "title": "Russian Frigate Opens Fire With Warning Shots in the English Channel",
-          "link": "https://theaviationist.com/2026/06/16/russian-frigate-opens-fire-with-warning-shots-in-the-english-channel/",
-          "published": "2026-06-16T18:52:17Z",
-          "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com"
-        }
-      ],
+      "articles": [],
       "flags": [],
       "pinned_articles": []
     },
@@ -285,29 +262,8 @@
       "notes": "Confirm both name and title. Mail defence desk has churned; verify who holds it before adding to any distribution list.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [
-        {
-          "title": "Is Labour's 'lacklustre' Defence Investment Plan Starmer's parting U-turn? MARK NICOL takes aim at the 'colossal political misjudgment' that saw an extra £1.5 billion appear only AFTER Healey and Carns quit",
-          "link": "https://www.dailymail.com/news/article-15945099/labour-defence-investment-plan-starmer-u-turn-mark-nicol.html",
-          "published": "2026-07-02T06:00:49Z",
-          "source_name": "Dailymail.com",
-          "source_domain": "dailymail.com"
-        },
-        {
-          "title": "Starmer versus reality: His speech had so many startling boasts you wondered why he was forced out. Here's our fact check...",
-          "link": "https://www.dailymail.com/news/article-15921211/Starmer-speech-fact-check.html",
-          "published": "2026-06-22T23:01:52Z",
-          "source_name": "Dailymail.com",
-          "source_domain": "dailymail.com"
-        }
-      ],
-      "flags": [
-        {
-          "type": "possible-move",
-          "detail": "Last 2 bylines all from dailymail.com, expected one of ['dailymail.co.uk']. Review manually.",
-          "raised": "2026-07-16"
-        }
-      ],
+      "articles": [],
+      "flags": [],
       "pinned_articles": []
     },
     {
@@ -329,36 +285,7 @@
       "notes": "Long-serving. Useful for forces-welfare and personnel angles.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [
-        {
-          "title": "Silicon Valley Needs Washington After All",
-          "link": "http://prospect.org/2026/07/14/silicon-valley-needs-washington-intel-facebook-meta-zuckerberg-openai-anthropic/",
-          "published": "2026-07-14T09:00:00Z",
-          "source_name": "The American Prospect",
-          "source_domain": "prospect.org"
-        },
-        {
-          "title": "Britain's military boosted by £15billion spend in huge move to defend against Russian attack",
-          "link": "https://freerepublic.com/focus/f-news/4386119/posts",
-          "published": "2026-06-30T19:15:20Z",
-          "source_name": "Freerepublic.com",
-          "source_domain": "freerepublic.com"
-        },
-        {
-          "title": "David Beckham treats mum Sandra to their annual day out in Wimbledon's Royal Box - as son Romeo and his girlfriend Kim Turnbull take in the tennis from the stands",
-          "link": "https://www.dailymail.com/tvshowbiz/article-15938381/David-Beckham-treats-mum-Sandra-annual-day-Wimbledons-Royal-Box-son-Romeo-girlfriend-Kim-Turnbull-tennis-stands.html",
-          "published": "2026-06-29T13:12:56Z",
-          "source_name": "Dailymail.com",
-          "source_domain": "dailymail.com"
-        },
-        {
-          "title": "The rise of machine identities and agentic AI: Securing trust in the next era of digital autonomy",
-          "link": "https://10.51.0.121/2026/06/16/delinea-securing-machine-identities-and-agentic-ai/",
-          "published": "2026-06-16T05:00:09Z",
-          "source_name": "0.121",
-          "source_domain": "10.51.0.121"
-        }
-      ],
+      "articles": [],
       "flags": [],
       "pinned_articles": []
     },
@@ -405,15 +332,7 @@
       "notes": "Most influential analytical defence journalist in the UK. Not a product-story target, but shapes the strategic argument every other outlet borrows. Worth briefing on the sovereign capability thesis rather than pitching.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [
-        {
-          "title": "The War Room newsletter: What eight years as defence editor looks like",
-          "link": "https://biztoc.com/x/f0cc60696cfbea47",
-          "published": "2026-06-15T18:48:15Z",
-          "source_name": "Biztoc.com",
-          "source_domain": "biztoc.com"
-        }
-      ],
+      "articles": [],
       "flags": [],
       "pinned_articles": []
     },
@@ -463,6 +382,13 @@
       "gnews_query": null,
       "articles": [
         {
+          "title": "Watch: Nato chief asked if there really is 'unity' in Nato",
+          "link": "https://www.bbc.co.uk/news/videos/cx2vj284415o",
+          "published": "2026-07-08T18:56:36Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.co.uk"
+        },
+        {
           "title": "Watch: Why is there a 'black cloud' over unity at the Nato summit?",
           "link": "https://www.bbc.co.uk/news/videos/cn75n0lyzedo",
           "published": "2026-07-08T16:05:37Z",
@@ -482,13 +408,6 @@
           "published": "2026-06-30T19:38:00Z",
           "source_name": "BBC News",
           "source_domain": "bbc.co.uk"
-        },
-        {
-          "title": "Frank Gardner: Key points from government's defence spending plan - BBC",
-          "link": "https://slashdot.org/firehose.pl?op=view&amp;id=184216404",
-          "published": "2026-06-30T19:33:38Z",
-          "source_name": "Slashdot.org",
-          "source_domain": "slashdot.org"
         },
         {
           "title": "Frank Gardner: Key points from government's defence spending plan",
@@ -522,22 +441,7 @@
       "notes": "Ex-Times defence editor. The Wargame podcast is being turned into a TV series, announced June 2026, so her profile is rising further. Strong on preparedness and resilience narratives.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [
-        {
-          "title": "Sky adapts political crisis podcast The Wargame for TV, featuring Michael Gove",
-          "link": "https://www.c21media.net/news/sky-adapts-political-crisis-podcast-the-wargame-for-tv-featuring-michael-gove/",
-          "published": "2026-06-22T07:54:24Z",
-          "source_name": "C21media.net",
-          "source_domain": "c21media.net"
-        },
-        {
-          "title": "Sky Confirms Production Of Crisis Room Docuseries ‘The Wargame’",
-          "link": "https://www.forbes.com/sites/rickellis/2026/06/21/sky-confirms-production-of-crisis-room-docuseries-the-wargame/",
-          "published": "2026-06-21T19:10:39Z",
-          "source_name": "Forbes",
-          "source_domain": "forbes.com"
-        }
-      ],
+      "articles": [],
       "flags": [],
       "pinned_articles": []
     },
@@ -681,29 +585,8 @@
       "notes": "Very high social reach in the UK defence-interested public. Fast, fair, and will cover procurement announcements the nationals skip.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [
-        {
-          "title": "The untold story of Arsenal’s wartime triumphs and heartbreaking sacrifices",
-          "link": "https://www.justarsenal.com/the-untold-story-of-arsenals-wartime-triumphs-and-heartbreaking-sacrifices/417598",
-          "published": "2026-06-26T22:00:00Z",
-          "source_name": "Just Arsenal News",
-          "source_domain": "justarsenal.com"
-        },
-        {
-          "title": "How Ted Drake’s Legacy Has Shaped My Life and Arsenal Journey",
-          "link": "https://www.justarsenal.com/how-ted-drakes-legacy-has-shaped-my-life-and-arsenal-journey/417502",
-          "published": "2026-06-24T22:00:00Z",
-          "source_name": "Just Arsenal News",
-          "source_domain": "justarsenal.com"
-        }
-      ],
-      "flags": [
-        {
-          "type": "possible-move",
-          "detail": "Last 2 bylines all from justarsenal.com, expected one of ['ukdefencejournal.org.uk']. Review manually.",
-          "raised": "2026-07-16"
-        }
-      ],
+      "articles": [],
+      "flags": [],
       "pinned_articles": []
     },
     {
@@ -725,36 +608,8 @@
       "notes": "The authoritative independent RN watcher. Largely pseudonymous; engage via the site and X.",
       "relationship_notes": "",
       "gnews_query": "\"Navy Lookout\"",
-      "articles": [
-        {
-          "title": "The UK’s £298B Defence Investment Plan At A Glance: 6th Generation Force Design or Creative Accounting?",
-          "link": "https://theaviationist.com/2026/07/04/uk-defence-investment-plan-at-a-glance/",
-          "published": "2026-07-04T14:20:40Z",
-          "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com"
-        },
-        {
-          "title": "Royal Navy Trials First At-Sea Strike Drone Launch",
-          "link": "https://theaviationist.com/2026/07/03/royal-navy-trials-strike-drone-launch/",
-          "published": "2026-07-03T14:12:20Z",
-          "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com"
-        },
-        {
-          "title": "Trouble in Whitehall: UK Armed Forces Chief Warns of Operational Cutbacks Without Additional Funding",
-          "link": "https://theaviationist.com/2026/06/18/trouble-in-whitehall-uk-defence-budget/",
-          "published": "2026-06-18T00:47:36Z",
-          "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com"
-        }
-      ],
-      "flags": [
-        {
-          "type": "possible-move",
-          "detail": "Last 2 bylines all from theaviationist.com, expected one of ['navylookout.com']. Review manually.",
-          "raised": "2026-07-16"
-        }
-      ],
+      "articles": [],
+      "flags": [],
       "pinned_articles": []
     },
     {
@@ -777,15 +632,7 @@
       "notes": "Not a journalist, but the most-read independent voice on UK land systems and quoted constantly by those who are. Treat as an influencer node, not a media target.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [
-        {
-          "title": "The UK’s £298B Defence Investment Plan At A Glance: 6th Generation Force Design or Creative Accounting?",
-          "link": "https://theaviationist.com/2026/07/04/uk-defence-investment-plan-at-a-glance/",
-          "published": "2026-07-04T14:20:40Z",
-          "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com"
-        }
-      ],
+      "articles": [],
       "flags": [],
       "pinned_articles": []
     },
@@ -931,15 +778,7 @@
       "notes": "The UK air-domain trade reference. RIAT circuit regular.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [
-        {
-          "title": "Airbus and Kawasaki Team Up for Anti-Submarine Warfare Eurodrone Variant",
-          "link": "https://theaviationist.com/2026/06/26/airbus-kawasaki-asw-eurodrone/",
-          "published": "2026-06-26T15:29:36Z",
-          "source_name": "Theaviationist.com",
-          "source_domain": "theaviationist.com"
-        }
-      ],
+      "articles": [],
       "flags": [],
       "pinned_articles": []
     },
@@ -1037,43 +876,7 @@
       "notes": "Launched Rearmament in 2026 as a morning defence industry briefing after business desks at the Independent, Telegraph, BBC and Bloomberg. Daily-read potential in exactly the industry and SW1 audience that matters; covering Eurosatory, Challenger 2 delays, subscriber features. Early relationship-building here is cheap now and expensive later. X account is protected; LinkedIn and the newsletter itself are the channels.",
       "relationship_notes": "",
       "gnews_query": "\"Howard Mustoe\" OR Rearmament defence",
-      "articles": [
-        {
-          "title": "Senate approves ₦50m for families of security personnel, teachers killed in Oyo rescue operation",
-          "link": "https://www.vanguardngr.com/2026/07/senate-approves-₦50m-for-families-of-security-personnel-teachers-killed-in-oyo-rescue-operation/",
-          "published": "2026-07-15T12:59:19Z",
-          "source_name": "Vanguard",
-          "source_domain": "vanguardngr.com"
-        },
-        {
-          "title": "As the US restarts war on Iran, is its weapons stockpile running low?",
-          "link": "https://www.aljazeera.com/news/2026/7/15/as-the-us-restarts-war-on-iran-is-its-weapons-stockpile-running-low",
-          "published": "2026-07-15T12:55:33Z",
-          "source_name": "Al Jazeera English",
-          "source_domain": "aljazeera.com"
-        },
-        {
-          "title": "Annexation with a Sales Pitch",
-          "link": "https://www.lrb.co.uk/blog/2026/july/annexation-with-a-sales-pitch",
-          "published": "2026-07-15T12:53:50Z",
-          "source_name": "London Review of Books",
-          "source_domain": "lrb.co.uk"
-        },
-        {
-          "title": "Post-Quantum's Algorithm - Classic McEliece - Achieves Global ISO Standardization to Protect the World From Quantum Cyber Attack",
-          "link": "https://onlinenews9.in/business/post-quantums-algorithm-classic-mceliece-achieves-global-iso-standardization-to-protect-the-world-from-quantum-cyber-attack/",
-          "published": "2026-07-15T12:52:44Z",
-          "source_name": "Onlinenews9.in",
-          "source_domain": "onlinenews9.in"
-        },
-        {
-          "title": "Brit paratrooper hero faces £60,000 bill after he was imprisoned in Georgia for possessing legally prescribed drugs",
-          "link": "https://www.dailymail.com/news/article-15979309/Brit-paratrooper-hero-bill-imprisoned-Georgia-possessing-legal-drugs.html",
-          "published": "2026-07-15T12:47:56Z",
-          "source_name": "Dailymail.com",
-          "source_domain": "dailymail.com"
-        }
-      ],
+      "articles": [],
       "flags": [],
       "pinned_articles": []
     },
@@ -1149,29 +952,8 @@
       "notes": "MoD-owned publication, not independent press. No news pitching in the conventional sense; content goes through Army channels. Useful for equipment-in-service features and reaching serving soldiers once kit is on contract, so a post-award channel rather than a campaign one.",
       "relationship_notes": "",
       "gnews_query": "\"Soldier Magazine\" British Army",
-      "articles": [
-        {
-          "title": "Soldier Magazine - July/August 2026",
-          "link": "https://post.rlsbb.to/soldier-magazine-july-august-2026/",
-          "published": "2026-07-02T15:41:16Z",
-          "source_name": "Rlsbb.to",
-          "source_domain": "post.rlsbb.to"
-        },
-        {
-          "title": "Soldier Magazine - June 2026",
-          "link": "https://post.rlsbb.to/soldier-magazine-june-2026/",
-          "published": "2026-06-19T12:53:16Z",
-          "source_name": "Rlsbb.to",
-          "source_domain": "post.rlsbb.to"
-        }
-      ],
-      "flags": [
-        {
-          "type": "possible-move",
-          "detail": "Last 2 bylines all from post.rlsbb.to, expected one of ['soldiermagazine.co.uk']. Review manually.",
-          "raised": "2026-07-16"
-        }
-      ],
+      "articles": [],
+      "flags": [],
       "pinned_articles": []
     }
   ]
