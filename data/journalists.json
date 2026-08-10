@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-08-09T05:31:37+00:00"
+    "last_script_run": "2026-08-10T06:53:54+00:00"
   },
   "journalists": [
     {
@@ -380,22 +380,7 @@
       "notes": "Security and intelligence rather than kit. Relevant when the story is threat-led.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [
-        {
-          "title": "Watch: Nato chief asked if there really is 'unity' in Nato",
-          "link": "https://www.bbc.co.uk/news/videos/cx2vj284415o",
-          "published": "2026-07-08T18:56:36Z",
-          "source_name": "BBC News",
-          "source_domain": "bbc.co.uk"
-        },
-        {
-          "title": "Watch: Why is there a 'black cloud' over unity at the Nato summit?",
-          "link": "https://www.bbc.co.uk/news/videos/cn75n0lyzedo",
-          "published": "2026-07-08T16:05:37Z",
-          "source_name": "BBC News",
-          "source_domain": "bbc.co.uk"
-        }
-      ],
+      "articles": [],
       "flags": [],
       "pinned_articles": []
     },
