@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-08-28T14:19:04+00:00"
+    "last_script_run": "2026-08-29T09:00:16+00:00"
   },
   "journalists": [
     {
@@ -380,7 +380,22 @@
       "notes": "Security and intelligence rather than kit. Relevant when the story is threat-led.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "What we should make of CIA boss's secret trip to Moscow",
+          "link": "https://www.bbc.com/news/articles/cx2z8l8xdg2o?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bnews%5D-%5Bbizdev%5D-%5Bisapi%5D",
+          "published": "2026-08-27T17:05:18Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.com"
+        },
+        {
+          "title": "What we should make of CIA boss's secret trip to Moscow",
+          "link": "https://www.bbc.co.uk/news/articles/cx2z8l8xdg2o",
+          "published": "2026-08-27T17:02:33Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.co.uk"
+        }
+      ],
       "flags": [],
       "pinned_articles": []
     },
