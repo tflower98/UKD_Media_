@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-09-02T07:04:27+00:00"
+    "last_script_run": "2026-09-03T07:08:48+00:00"
   },
   "journalists": [
     {
@@ -781,7 +781,15 @@
       "notes": "European military aviation lead for AvWeek.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Saab Enters Collaborative Combat Aircraft Race with High-End Concept",
+          "link": "https://aviationweek.com/defense/aircraft-propulsion/saab-enters-collaborative-combat-aircraft-race-high-end-concept",
+          "published": "2026-09-01T14:19:30Z",
+          "source_name": "Aviation Week",
+          "source_domain": "aviationweek.com"
+        }
+      ],
       "flags": [],
       "pinned_articles": []
     },
