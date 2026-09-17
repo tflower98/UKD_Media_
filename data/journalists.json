@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-09-16T07:40:03+00:00"
+    "last_script_run": "2026-09-17T07:36:12+00:00"
   },
   "journalists": [
     {
@@ -356,7 +356,15 @@
       "notes": "Bylining actively through 2026. Broadcast reach plus online. Embeds and access-led pieces are his preferred format; site visits and exercises beat press releases.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "Warning of space arms race as US confirms weapons in Earth's orbit",
+          "link": "https://www.bbc.co.uk/news/videos/cmn07yjqg5rwo",
+          "published": "2026-09-15T17:35:02Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.co.uk"
+        }
+      ],
       "flags": [],
       "pinned_articles": []
     },
