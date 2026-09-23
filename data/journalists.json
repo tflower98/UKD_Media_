@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-09-22T07:40:58+00:00"
+    "last_script_run": "2026-09-23T07:43:29+00:00"
   },
   "journalists": [
     {
@@ -389,6 +389,27 @@
       "relationship_notes": "",
       "gnews_query": null,
       "articles": [
+        {
+          "title": "Yemenis flee across Red Sea as Houthis and Saudi-backed forces escalate war",
+          "link": "https://www.bbc.com/news/articles/cw4gm7l742dmo",
+          "published": "2026-09-21T14:43:17Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.com"
+        },
+        {
+          "title": "Yemenis flee across Red Sea as Houthis and Saudi-backed forces escalate war",
+          "link": "https://www.bbc.co.uk/news/articles/cw4gm7l742dmo",
+          "published": "2026-09-21T14:14:16Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.co.uk"
+        },
+        {
+          "title": "Inside a camp for Yemeni refugees who have fled to Djibouti",
+          "link": "https://www.bbc.co.uk/news/videos/c6z0z2nne11vo",
+          "published": "2026-09-21T10:00:31Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.co.uk"
+        },
         {
           "title": "What we should make of CIA boss's secret trip to Moscow",
           "link": "https://www.bbc.com/news/articles/cx2z8l8xdg2o?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bnews%5D-%5Bbizdev%5D-%5Bisapi%5D",
