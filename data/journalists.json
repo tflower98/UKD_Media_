@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-09-29T08:25:33+00:00"
+    "last_script_run": "2026-09-30T08:29:13+00:00"
   },
   "journalists": [
     {
@@ -390,6 +390,13 @@
       "gnews_query": null,
       "articles": [
         {
+          "title": "Watch: Were the arrests near RAF Fairford 'pure luck'?",
+          "link": "https://www.bbc.co.uk/news/videos/cqlyk0p7kdmzo",
+          "published": "2026-09-28T12:47:31Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.co.uk"
+        },
+        {
           "title": "Why is the Bab al-Mandab Strait so important?",
           "link": "https://www.bbc.co.uk/news/videos/c6kgw4xklvx3o",
           "published": "2026-09-22T12:57:59Z",
@@ -416,13 +423,6 @@
           "published": "2026-09-21T10:00:31Z",
           "source_name": "BBC News",
           "source_domain": "bbc.co.uk"
-        },
-        {
-          "title": "What we should make of CIA boss's secret trip to Moscow",
-          "link": "https://www.bbc.com/news/articles/cx2z8l8xdg2o?xtor=AL-72-%5Bpartner%5D-%5Byahoo.north.america%5D-%5Bheadline%5D-%5Bnews%5D-%5Bbizdev%5D-%5Bisapi%5D",
-          "published": "2026-08-27T17:05:18Z",
-          "source_name": "BBC News",
-          "source_domain": "bbc.com"
         }
       ],
       "flags": [],
