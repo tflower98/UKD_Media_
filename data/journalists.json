@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-10-05T08:58:13+00:00"
+    "last_script_run": "2026-10-06T08:56:19+00:00"
   },
   "journalists": [
     {
@@ -390,6 +390,13 @@
       "gnews_query": null,
       "articles": [
         {
+          "title": "Is RAF Fairford Safe?",
+          "link": "https://www.bbc.co.uk/sounds/play/p0pf3kmk?at_medium=display_ad&amp;at_ptr_name=bbc&amp;at_objective=consumption",
+          "published": "2026-10-03T00:00:00Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.co.uk"
+        },
+        {
           "title": "Watch: Were the arrests near RAF Fairford 'pure luck'?",
           "link": "https://www.bbc.co.uk/news/videos/cqlyk0p7kdmzo",
           "published": "2026-09-28T12:47:31Z",
@@ -414,13 +421,6 @@
           "title": "Yemenis flee across Red Sea as Houthis and Saudi-backed forces escalate war",
           "link": "https://www.bbc.co.uk/news/articles/cw4gm7l742dmo",
           "published": "2026-09-21T14:14:16Z",
-          "source_name": "BBC News",
-          "source_domain": "bbc.co.uk"
-        },
-        {
-          "title": "Inside a camp for Yemeni refugees who have fled to Djibouti",
-          "link": "https://www.bbc.co.uk/news/videos/c6z0z2nne11vo",
-          "published": "2026-09-21T10:00:31Z",
           "source_name": "BBC News",
           "source_domain": "bbc.co.uk"
         }
