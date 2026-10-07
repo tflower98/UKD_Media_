@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-10-06T08:56:19+00:00"
+    "last_script_run": "2026-10-07T08:36:09+00:00"
   },
   "journalists": [
     {
@@ -390,6 +390,13 @@
       "gnews_query": null,
       "articles": [
         {
+          "title": "Watch: What caused the US to remove its bombers from UK base in such a hurry?",
+          "link": "https://www.bbc.co.uk/news/videos/cq99zvdk5235o",
+          "published": "2026-10-05T15:47:35Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.co.uk"
+        },
+        {
           "title": "Is RAF Fairford Safe?",
           "link": "https://www.bbc.co.uk/sounds/play/p0pf3kmk?at_medium=display_ad&amp;at_ptr_name=bbc&amp;at_objective=consumption",
           "published": "2026-10-03T00:00:00Z",
@@ -416,13 +423,6 @@
           "published": "2026-09-21T14:43:17Z",
           "source_name": "BBC News",
           "source_domain": "bbc.com"
-        },
-        {
-          "title": "Yemenis flee across Red Sea as Houthis and Saudi-backed forces escalate war",
-          "link": "https://www.bbc.co.uk/news/articles/cw4gm7l742dmo",
-          "published": "2026-09-21T14:14:16Z",
-          "source_name": "BBC News",
-          "source_domain": "bbc.co.uk"
         }
       ],
       "flags": [],
