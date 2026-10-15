@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-10-14T07:32:58+00:00"
+    "last_script_run": "2026-10-15T07:23:02+00:00"
   },
   "journalists": [
     {
@@ -390,6 +390,13 @@
       "gnews_query": null,
       "articles": [
         {
+          "title": "State threats and AI: Key takeaways from MI5 chief's speech",
+          "link": "https://www.bbc.co.uk/news/videos/crz65d93w1eeo",
+          "published": "2026-10-13T12:48:07Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.co.uk"
+        },
+        {
           "title": "Who are the Houthis, and why are they so hard to fight?",
           "link": "https://www.bbc.co.uk/news/videos/cmy56nzd6y69o",
           "published": "2026-10-12T12:15:01Z",
@@ -414,13 +421,6 @@
           "title": "Watch: Were the arrests near RAF Fairford 'pure luck'?",
           "link": "https://www.bbc.co.uk/news/videos/cqlyk0p7kdmzo",
           "published": "2026-09-28T12:47:31Z",
-          "source_name": "BBC News",
-          "source_domain": "bbc.co.uk"
-        },
-        {
-          "title": "Why is the Bab al-Mandab Strait so important?",
-          "link": "https://www.bbc.co.uk/news/videos/c6kgw4xklvx3o",
-          "published": "2026-09-22T12:57:59Z",
           "source_name": "BBC News",
           "source_domain": "bbc.co.uk"
         }
