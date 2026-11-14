@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-11-13T09:28:11+00:00"
+    "last_script_run": "2026-11-14T08:55:52+00:00"
   },
   "journalists": [
     {
@@ -393,13 +393,6 @@
           "title": "State threats and AI: Key takeaways from MI5 chief's speech",
           "link": "https://www.bbc.co.uk/news/videos/crz65d93w1eeo",
           "published": "2026-10-13T12:48:07Z",
-          "source_name": "BBC News",
-          "source_domain": "bbc.co.uk"
-        },
-        {
-          "title": "Who are the Houthis, and why are they so hard to fight?",
-          "link": "https://www.bbc.co.uk/news/videos/cmy56nzd6y69o",
-          "published": "2026-10-12T12:15:01Z",
           "source_name": "BBC News",
           "source_domain": "bbc.co.uk"
         }
