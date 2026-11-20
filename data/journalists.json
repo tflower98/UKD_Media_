@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-11-19T10:15:21+00:00"
+    "last_script_run": "2026-11-20T09:58:08+00:00"
   },
   "journalists": [
     {
@@ -357,6 +357,13 @@
       "relationship_notes": "",
       "gnews_query": null,
       "articles": [
+        {
+          "title": "Inside the old gas pipeline where Ukraine is fighting an underground war with Russia",
+          "link": "https://www.bbc.co.uk/news/videos/c8p3vw4q6nzzo",
+          "published": "2026-11-18T17:00:40Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.co.uk"
+        },
         {
           "title": "Meet the Peaky Blinders, Ukraine's drone unit protecting a devastated front-line city",
           "link": "https://www.bbc.co.uk/news/videos/cm2l4l59gjp7o",
