@@ -21,7 +21,7 @@
       "articles": "Script-managed. Do not edit by hand.",
       "flags": "Script-managed. Possible-move flags land here for your review."
     },
-    "last_script_run": "2026-11-24T12:24:13+00:00"
+    "last_script_run": "2026-11-25T11:12:19+00:00"
   },
   "journalists": [
     {
@@ -395,7 +395,22 @@
       "notes": "Security and intelligence rather than kit. Relevant when the story is threat-led.",
       "relationship_notes": "",
       "gnews_query": null,
-      "articles": [],
+      "articles": [
+        {
+          "title": "What strike on Russian ship in Libya says about spread of Ukraine war",
+          "link": "https://www.bbc.com/news/articles/cm894p88jzxpo",
+          "published": "2026-11-23T20:48:35Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.com"
+        },
+        {
+          "title": "What strike on Russian ship in Libya says about spread of Ukraine war",
+          "link": "https://www.bbc.co.uk/news/articles/cm894p88jzxpo",
+          "published": "2026-11-23T20:48:35Z",
+          "source_name": "BBC News",
+          "source_domain": "bbc.co.uk"
+        }
+      ],
       "flags": [],
       "pinned_articles": []
     },
